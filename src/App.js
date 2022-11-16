@@ -1,16 +1,18 @@
-import HeaderMenu from './components/Header/Header'
-// import Footer from './components/Footer'
-import Hero from './components/Hero'
+import HeaderMenu from "./components/Header/Header";
+import { Carousel } from "./components/Carousel/Carousel";
+import "./components/Carousel/Carousel.style.css";
 
-
-const App = () =>{
-  return(
+const App = () => {
+  return (
     <>
-      <HeaderMenu/>
-      <Hero/>
-      {/* <Footer/> */}
+      <HeaderMenu />
+      <Carousel>
+        <div className="Img1"></div>
+        <div className="Img2"></div>
+        <div className="Img3"></div>
+      </Carousel>
     </>
-  )
-}
+  );
+};
 
 export default App;
