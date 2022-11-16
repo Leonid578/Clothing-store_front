@@ -1,6 +1,6 @@
 import {Header} from './Header.styled'
 
-const HeaderMenu = () =>{
+const HeaderMenu = () => {
     return(
         <Header/>
     )
