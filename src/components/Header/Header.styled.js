@@ -35,14 +35,14 @@ export const HeaderLogo = styled.a`
   padding-bottom: 14px;
 `;
 
-export const Menu_ul = styled.ul`
+export const MenuUl = styled.ul`
   height: 100%;
   list-style: none;
   display: flex;
   margin:5px auto;
 `;
 
-export const Menu_li = styled.li`
+export const MenuLi = styled.li`
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -53,7 +53,7 @@ export const Menu_li = styled.li`
   }
 `;
 
-export const Menu_a = styled.a`
+export const MenuA = styled.a`
   display: block;
   color: #212121;
   font-size: 12px;

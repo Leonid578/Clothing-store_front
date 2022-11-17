@@ -1,9 +1,9 @@
 import {
   LogInContainer,
   HeaderLogo,
-  Menu_ul,
-  Menu_li,
-  Menu_a,
+  MenuUl,
+  MenuLi,
+  MenuA,
 } from "./Header.styled";
 
 const HeaderMenu = () => {
@@ -11,32 +11,32 @@ const HeaderMenu = () => {
     <LogInContainer>
       <HeaderLogo>LOGO</HeaderLogo>
 
-      <Menu_ul>
-        <Menu_li>
-          <Menu_a>ABCD1</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD2</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD3</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD4</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD5</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD6</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD7</Menu_a>
-        </Menu_li>
-        <Menu_li>
-          <Menu_a>ABCD</Menu_a>
-        </Menu_li>
-      </Menu_ul>
+      <MenuUl>
+        <MenuLi>
+          <MenuA>ABCD1</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD2</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD3</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD4</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD5</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD6</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD7</MenuA>
+        </MenuLi>
+        <MenuLi>
+          <MenuA>ABCD</MenuA>
+        </MenuLi>
+      </MenuUl>
     </LogInContainer>
   );
 };
