@@ -1,5 +1,6 @@
-import HeaderMenu from "./components/Header/Header";
-import FooterMenu from './components/Footer/Footer'
+import Header from "./components/Header/Header";
+import Footer from './components/Footer/Footer'
+import HitsOfSales from './components/hitsOfSales/HitsOfSales'
 import { Carousel } from "./components/Carousel/Carousel";
 import "./components/Carousel/Carousel.style.css";
 
@@ -7,13 +8,14 @@ import "./components/Carousel/Carousel.style.css";
 const App = () => {
   return (
     <>
-      <HeaderMenu />
+      <Header />
       <Carousel>
         <div className="Img1"></div>
         <div className="Img2"></div>
         <div className="Img3"></div>
       </Carousel>
-      <FooterMenu />
+      <HitsOfSales />
+      <Footer />
     </>
   );
 };

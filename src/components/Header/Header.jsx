@@ -1,9 +1,12 @@
-import {Header} from './Header.styled'
+import { Headerr } from "./Header.styled";
+import HeaderMenu from "./HeaderMenu";
 
-const HeaderMenu = () => {
-    return(
-        <Header/>
-    )
-}
+const Header = () => {
+  return (
+    <Headerr>
+      <HeaderMenu />
+    </Headerr>
+  );
+};
 
-export default HeaderMenu;
+export default Header;

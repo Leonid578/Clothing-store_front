@@ -1,9 +1,14 @@
-import {Footer} from './Footer.styled'
+import { Footerr} from "./Footer.styled";
+import FooterMenu from "./FooterMenu";
 
-const FooterMenu = () => {
-    return(
-        <Footer/>
-    )
-}
+const Footer = () => {
+  return (
+    <>
+      <Footerr>
+        <FooterMenu />
+      </Footerr>
+    </>
+  );
+};
 
-export default FooterMenu;
+export default Footer;
