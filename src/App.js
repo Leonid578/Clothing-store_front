@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 // import HitsOfSales from './components/hitsOfSales/HitsOfSales'
 import { Carousel } from "./components/Carousel/Carousel";
 import "./components/Carousel/Carousel.style.css";
-
+import Products from './components/Products/Products'
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
         <div className="Img2"></div>
         <div className="Img3"></div>
       </Carousel>
+      <Products/>
       {/* <HitsOfSales /> */}
       {/* <Footer /> */}
     </>

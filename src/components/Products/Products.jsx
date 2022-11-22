@@ -18,7 +18,7 @@ const ProductsCard = () => {
         <Cards>
             <ProductImg>
                 <ImgI >
-                <img width={300} src={luboeNazvanie}/>
+                    <img width={300} src={luboeNazvanie} alt="luboeNazvanie"/>
                 </ImgI>
             </ProductImg>
             <CardsInf>
