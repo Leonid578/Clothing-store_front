@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header";
+
 // import Footer from './components/Footer/Footer'
 // import HitsOfSales from './components/hitsOfSales/HitsOfSales'
 import { Carousel } from "./components/Carousel/Carousel";
