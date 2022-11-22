@@ -4,7 +4,12 @@ import {
   MenuUl,
   MenuLi,
   MenuA,
+  Button,
+  Input,
+  Search,
 } from "./Header.styled";
+
+import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 
 const HeaderMenu = () => {
   return (
@@ -36,7 +41,14 @@ const HeaderMenu = () => {
         <MenuLi>
           <MenuA>ABCD</MenuA>
         </MenuLi>
-      </MenuUl>
+      </MenuUl> 
+
+      <form>
+        <Search>
+          <Input type="text" placeholder="Поиск..." id="searchInput" />
+          <Button type="submit"><Magnifier/></Button>
+        </Search>
+      </form>
     </LogInContainer>
   );
 };

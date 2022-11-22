@@ -39,7 +39,7 @@ export const MenuUl = styled.ul`
   height: 100%;
   list-style: none;
   display: flex;
-  margin:5px auto;
+  margin: 5px auto;
 `;
 
 export const MenuLi = styled.li`
@@ -47,9 +47,9 @@ export const MenuLi = styled.li`
   vertical-align: middle;
   position: relative;
 
-  &:hover{
+  &:hover {
     // cursor: pointer;
-    background-color:rgba(255, 255, 255, 0.6); 
+    background-color: rgba(255, 255, 255, 0.6);
   }
 `;
 
@@ -66,8 +66,39 @@ export const MenuA = styled.a`
   position: relative;
   letter-spacing: 0.01em;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
-    background-color:#a0a0a0;
+    background-color: #a0a0a0;
   }
+`;
+
+export const Button = styled.button`
+  width: 28px;
+  height: 28px;
+  // padding: 5px;
+  background-color: #f5f7fa;
+  border: none;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: #f5f7fa;
+  }
+  &.active {
+    background-color: #f5f7fa;
+  }
+`;
+
+export const Input = styled.input`
+  width: 200px;
+  height: 28px;
+  margin-right:15px;
+  &:hover {
+    cursor: text;
+    // background-color:#a0a0a0;
+  }
+`;
+
+export const Search = styled.div`
+  display: flex;
+  margin:14px;
 `;
