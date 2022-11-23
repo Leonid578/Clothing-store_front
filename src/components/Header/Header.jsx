@@ -1,5 +1,5 @@
 import { Headerr } from "./Header.styled";
-import HeaderMenu from "./HeaderMenu";
+import HeaderMenu from "./HeaderMenuKG";
 
 const Header = () => {
   return (
