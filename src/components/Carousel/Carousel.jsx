@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.style.css";
