@@ -102,3 +102,38 @@ export const Search = styled.div`
   display: flex;
   margin:14px;
 `;
+
+export const DropDiv = styled.div`
+    display: flex;
+    height: 100%;
+    margin:5px auto;
+`;
+export const DropMenu = styled.div`
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+`;
+export const DropDown = styled.div`
+    position: relative;
+    display: inline-block;
+    &:hover ${DropMenu}{
+        display: block;
+    }
+`;
+export const DropBtn = styled.button`
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+`;
+
+export const MenuLinks = styled.a`
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+`;
