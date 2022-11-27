@@ -4,18 +4,20 @@ import Header from "./components/Header/Header";
 // import HitsOfSales from './components/hitsOfSales/HitsOfSales'
 import { Carousel } from "./components/Carousel/Carousel";
 import "./components/Carousel/Carousel.style.css";
-import Products from './components/Products/Products'
+// import Products from './components/Products/Products'
+import Slayd from "./components/Carousel/Slayd";
 
 const App = () => {
   return (
     <>
       <Header />
       <Carousel>
-        <div className="Img1"></div>
+        <Slayd />
+        {/* <div className="Img1"></div>
         <div className="Img2"></div>
-        <div className="Img3"></div>
+        <div className="Img3"></div> */}
       </Carousel>
-      <Products/>
+      {/* <Products/> */}
       {/* <HitsOfSales /> */}
       {/* <Footer /> */}
     </>

@@ -2,13 +2,13 @@ import React from 'react'
 import { useState, useEffect, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.style.css";
-
-const PAGE_WIDTH = 900;
+import Slayd from './Slayd';
 
 export const Carousel = ({ children }) => {
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
 
+  const PAGE_WIDTH = 900;
   const handleLeftArrowClick = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset + PAGE_WIDTH;
@@ -26,7 +26,7 @@ export const Carousel = ({ children }) => {
 
   useEffect(() => {
     setPages(
-      Children.map(children, (child) => {
+      Children.map(Slayd, (child) => {
         return cloneElement(child, {
           style: {
             height: "100%",
