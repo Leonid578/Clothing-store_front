@@ -123,6 +123,7 @@ const HeaderMenu = () => {
           <Button type="submit">
             <Magnifier />
           </Button>
+          
         </Search>
       </form>
     </LogInContainer>
