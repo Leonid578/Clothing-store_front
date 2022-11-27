@@ -36,9 +36,7 @@ export const HeaderLogo = styled.a`
 `;
 
 export const Button = styled.button`
-  width: 28px;
-  height: 28px;
-  // padding: 5px;
+  display: block;
   background-color: #f5f7fa;
   border: none;
   border-radius: 50%;
@@ -51,10 +49,28 @@ export const Button = styled.button`
   }
 `;
 
+export const ButtonSun = styled.button`
+  display: block;
+  width:30px;
+  height: 30px;
+  margin: 16px 0 0 45px;
+  background-color: #f5f7fa;
+  border: none;
+  border-radius: 50%;
+  align-items: center;  
+  &:hover {
+    cursor: pointer;
+    background-color: #f5f7fa;
+  }
+  &.active {
+    background-color: #f5f7fa;
+  }
+`;
+
 export const Input = styled.input`
   width: 200px;
   height: 28px;
-  margin-right:15px;
+  margin-right: 15px;
   &:hover {
     cursor: text;
     // background-color:#a0a0a0;
@@ -63,7 +79,14 @@ export const Input = styled.input`
 
 export const Search = styled.div`
   display: flex;
-  margin:14px;
+  margin: 14px;
+`;
+
+export const BackgroundChange = styled.button`
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 `;
 
 export const DropDiv = styled.div`
