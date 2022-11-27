@@ -3,12 +3,14 @@ import { useState, ReactDOM } from "react";
 import {
   LogInContainer,
   HeaderLogo,
-  MenuUl,
-  MenuLi,
-  MenuA,
   Button,
   Input,
   Search,
+  DropDiv,
+  DropDown,
+  DropBtn,
+  DropMenu,
+  MenuLinks,
   ButtonSun,
 } from "./Header.styled";
 
@@ -35,7 +37,40 @@ const HeaderMenu = () => {
   return (
     <LogInContainer>
       <HeaderLogo>LOGO</HeaderLogo>
-
+        <DropDiv>
+            <DropDown>
+                <DropBtn>Drop Menu 1</DropBtn>
+                <DropMenu>
+                    <MenuLinks>Link 1</MenuLinks>
+                    <MenuLinks>Link 2</MenuLinks>
+                    <MenuLinks>Link 3</MenuLinks>
+                </DropMenu>
+            </DropDown>
+            <DropDown>
+                <DropBtn>Drop Menu 2</DropBtn>
+                <DropMenu>
+                    <MenuLinks>Link 1</MenuLinks>
+                    <MenuLinks>Link 2</MenuLinks>
+                    <MenuLinks>Link 3</MenuLinks>
+                </DropMenu>
+            </DropDown>
+            <DropDown>
+                <DropBtn>Drop Menu 3</DropBtn>
+                <DropMenu>
+                    <MenuLinks>Link 1</MenuLinks>
+                    <MenuLinks>Link 2</MenuLinks>
+                    <MenuLinks>Link 3</MenuLinks>
+                </DropMenu>
+            </DropDown>
+            <DropDown>
+                <DropBtn>Drop Menu 4</DropBtn>
+                <DropMenu>
+                    <MenuLinks>Link 1</MenuLinks>
+                    <MenuLinks>Link 2</MenuLinks>
+                    <MenuLinks>Link 3</MenuLinks>
+                </DropMenu>
+            </DropDown>
+        </DropDiv>
       <ButtonSun
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -51,22 +86,6 @@ const HeaderMenu = () => {
           <img  width={22} height={22}  src={Moon} alt="sun" />
         )}
       </ButtonSun>
-
-      <MenuUl>
-        <MenuLi>
-          <MenuA>ABCD1</MenuA>
-        </MenuLi>
-        <MenuLi>
-          <MenuA>ABCD2</MenuA>
-        </MenuLi>
-        <MenuLi>
-          <MenuA>ABCD3</MenuA>
-        </MenuLi>
-        <MenuLi>
-          <MenuA>ABCD4</MenuA>
-        </MenuLi>
-      </MenuUl>
-
       <form>
         <Search>
           <Input type="text" placeholder="Поиск..." id="searchInput" />

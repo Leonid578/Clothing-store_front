@@ -35,43 +35,6 @@ export const HeaderLogo = styled.a`
   padding-bottom: 14px;
 `;
 
-export const MenuUl = styled.ul`
-  height: 100%;
-  list-style: none;
-  display: flex;
-  margin: 5px auto;
-`;
-
-export const MenuLi = styled.li`
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-
-  &:hover {
-    // cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-`;
-
-export const MenuA = styled.a`
-  display: block;
-  color: #212121;
-  font-size: 12px;
-  font-family: "Proxima Nova Regular", Helvetica, Arial, sans-serif;
-  line-height: 50px;
-  text-transform: uppercase;
-  padding: 0 20px;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  position: relative;
-  letter-spacing: 0.01em;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #a0a0a0;
-  }
-`;
-
 export const Button = styled.button`
   display: block;
   background-color: #f5f7fa;
@@ -124,4 +87,47 @@ export const BackgroundChange = styled.button`
   width: 30px;
   height: 30px;
   padding: 5px;
+`;
+
+export const DropDiv = styled.div`
+    display: flex;
+    height: 100%;
+    margin:5px auto;
+`;
+export const DropMenu = styled.div`
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition-delay: 1s;
+    z-index: 1;
+`;
+export const DropDown = styled.div`
+    position: relative;
+    display: inline-block;
+    &:focus ${DropMenu}{
+      display: block;
+    }
+    &:hover ${DropMenu}{
+      display: block;
+    }
+`;
+export const DropBtn = styled.button`
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+`;
+
+export const MenuLinks = styled.a`
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      background: #fff;
+    }
 `;
