@@ -108,7 +108,7 @@ export const DropDown = styled.div`
     position: relative;
     display: inline-block;
     &:focus ${DropMenu}{
-      display: block;
+      display: inline-block;
     }
     &:hover ${DropMenu}{
       display: block;
