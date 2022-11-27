@@ -51,13 +51,13 @@ export const Button = styled.button`
 
 export const ButtonSun = styled.button`
   display: block;
-  width:30px;
+  width: 30px;
   height: 30px;
   margin: 16px 0 0 45px;
   background-color: #f5f7fa;
   border: none;
   border-radius: 50%;
-  align-items: center;  
+  align-items: center;
   &:hover {
     cursor: pointer;
     background-color: #f5f7fa;
@@ -89,45 +89,63 @@ export const BackgroundChange = styled.button`
   padding: 5px;
 `;
 
-export const DropDiv = styled.div`
-    display: flex;
-    height: 100%;
-    margin:5px auto;
+export const DropContainer = styled.div`
+  display: flex;
+  // height: 100%;
+  margin: 5px auto;
+  text-align: center;
 `;
-export const DropMenu = styled.div`
-    display: none;
-    margin-top: 5px;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    transition-delay: 1s;
-    z-index: 1;
+
+export const Menu = styled.ul`
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
 `;
-export const DropDown = styled.div`
-    position: relative;
-    display: inline-block;
-    &:focus ${DropMenu}{
-      display: inline-block;
-    }
-    &:hover ${DropMenu}{
-      display: block;
-    }
-`;
-export const DropBtn = styled.button`
-    background-color: white;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+export const DropLi = styled.li`
+  margin-top: 10px;
+  // position: absolute;
+  background-color: #f1f1f1;
+  // min-width: 120px;
+  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  // transition-delay: 1s;
+  z-index: 1;
 `;
 
 export const MenuLinks = styled.a`
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  &:hover {
+    background: #fff;
+    cursor: pointer;
+  }
+`;
+
+export const DropMenu = styled.ul`
+  display: none;
+  padding: 0; 
+  margin-top: 5px;
+  background-color: #f1f1f1;
+  // min-width: 120px;
+  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  // transition-delay: 1s;
+  z-index: 1;
+  list-style: none;
+`;
+
+export const MenuLi = styled.li`
+  list-style: none;
+  color: black;
+  // padding: 15px;
+  font-size: 16px;
+  
+ 
+  &:focus ${DropMenu} {
     display: block;
-    &:hover {
-      background: #fff;
-    }
+  }
+  &:hover ${DropMenu} {
+    display: block;
+  }
 `;

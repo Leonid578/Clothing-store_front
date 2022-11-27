@@ -6,12 +6,14 @@ import {
   Button,
   Input,
   Search,
-  DropDiv,
-  DropDown,
-  DropBtn,
+  DropContainer,
+  DropUl,
+  DropLi,
   DropMenu,
   MenuLinks,
   ButtonSun,
+  MenuLi,
+  Menu,
 } from "./Header.styled";
 
 import Sun1 from "../../images/png/Sun.png";
@@ -37,7 +39,70 @@ const HeaderMenu = () => {
   return (
     <LogInContainer>
       <HeaderLogo>LOGO</HeaderLogo>
-      <DropDiv>
+
+      <DropContainer>
+        <Menu>
+          <MenuLi>
+            <MenuLinks>Drop Menu 1</MenuLinks>
+            <DropMenu>
+              <DropLi>
+                <MenuLinks>Link 1</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks>Link 2</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks>Link 3</MenuLinks>
+              </DropLi>
+            </DropMenu>
+          </MenuLi>
+
+          <MenuLi>
+            <MenuLinks href="">Drop Menu 2</MenuLinks>
+            <DropMenu>
+              <DropLi>
+                <MenuLinks href="">Link 1</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks href="">Link 2</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks href="">Link 3</MenuLinks>
+              </DropLi>
+            </DropMenu>
+          </MenuLi>
+          <MenuLi>
+            <MenuLinks href="">Drop Menu 2</MenuLinks>
+            <DropMenu>
+              <DropLi>
+                <MenuLinks href="">Link 1</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks href="">Link 2</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks href="">Link 3</MenuLinks>
+              </DropLi>
+            </DropMenu>
+          </MenuLi>
+          <MenuLi>
+            <MenuLinks href="">Drop Menu 2</MenuLinks>
+            <DropMenu>
+              <DropLi>
+                <MenuLinks href="">Link 1</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks href="">Link 2</MenuLinks>
+              </DropLi>
+              <DropLi>
+                <MenuLinks href="">Link 3</MenuLinks>
+              </DropLi>
+            </DropMenu>
+          </MenuLi>
+        </Menu>
+      </DropContainer>
+
+      {/* <DropDiv>
         <DropDown>
           <DropBtn>Drop Menu 1</DropBtn>
           <DropMenu>
@@ -70,7 +135,8 @@ const HeaderMenu = () => {
             <MenuLinks>Link 3</MenuLinks>
           </DropMenu>
         </DropDown>
-      </DropDiv>
+      </DropDiv> */}
+
       <ButtonSun
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
