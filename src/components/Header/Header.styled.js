@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import zelenii from "../../images/png/zelenii-fon.png";
 // import { NavLink } from "react-router-dom";
 
 export const Headerr = styled.header`
@@ -9,16 +10,14 @@ export const Headerr = styled.header`
   position: sticky;
   z-index: 1000;
   top: 0px;
-
-  // @media screen and (min-width: 1280px) {
-  //   width: 1280px;
-  // }
 `;
 
 export const LogInContainer = styled.div`
   display: flex;
   padding-right: 20px;
   padding-left: 20px;
+
+  background-image: url(${zelenii});
 `;
 
 export const HeaderLogo = styled.a`
@@ -73,7 +72,6 @@ export const Input = styled.input`
   margin-right: 15px;
   &:hover {
     cursor: text;
-    // background-color:#a0a0a0;
   }
 `;
 
@@ -91,9 +89,12 @@ export const BackgroundChange = styled.button`
 
 export const DropContainer = styled.div`
   display: flex;
-  // height: 100%;
   margin: 5px auto;
   text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    opacity: 0;
+  }
 `;
 
 export const Menu = styled.ul`
@@ -102,50 +103,62 @@ export const Menu = styled.ul`
   padding: 0;
   position: relative;
 `;
-export const DropLi = styled.li`
-  margin-top: 10px;
-  // position: absolute;
-  background-color: #f1f1f1;
-  // min-width: 120px;
-  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  // transition-delay: 1s;
-  z-index: 1;
-`;
 
-export const MenuLinks = styled.a`
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  &:hover {
-    background: #fff;
-    cursor: pointer;
-  }
+export const DropLi = styled.li`
+  z-index: 1;
+  // background-color: white;
+  width: 120px;
+  // &:hover {
+  //   background-color: #f0f0f0;
+  // }
 `;
 
 export const DropMenu = styled.ul`
-  display: none;
-  padding: 0; 
-  margin-top: 5px;
-  background-color: #f1f1f1;
-  // min-width: 120px;
-  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  // transition-delay: 1s;
+  // background-color: #f1f1f1;
+  background-color: green;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  list-style: none;
+
+  padding: 19px 0 21px 0;
+  position: absolute;
+  top: 0;
+  font-style: normal;
+  font-weight: normal;
+  transform: translateY(-101%);
+  transition: transform;
+  transition-duration: 1.5s;
+  opacity: 0;
+`;
+
+export const Div = styled.div`
+  width: 200%;
+  height: 400%;
+  // margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+`;
+
+export const MenuLinks = styled.a`
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
 `;
 
 export const MenuLi = styled.li`
-  list-style: none;
   color: black;
-  // padding: 15px;
   font-size: 16px;
-  
- 
   &:focus ${DropMenu} {
-    display: block;
+    transform: translateY(0%);
+    opacity: 1;
   }
   &:hover ${DropMenu} {
-    display: block;
+    transform: translateY(0%);
+    opacity: 1;
   }
 `;

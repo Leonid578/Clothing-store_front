@@ -13,6 +13,7 @@ import {
   ButtonSun,
   MenuLi,
   Menu,
+  Div,
 } from "./Header.styled";
 
 import Sun1 from "../../images/png/Sun.png";
@@ -42,62 +43,70 @@ const HeaderMenu = () => {
       <DropContainer>
         <Menu>
           <MenuLi>
-            <MenuLinks>Drop Menu 1</MenuLinks>
-            <DropMenu>
-              <DropLi>
-                <MenuLinks>Link 1</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks>Link 2</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks>Link 3</MenuLinks>
-              </DropLi>
-            </DropMenu>
+            <MenuLinks> Drop Menu 1</MenuLinks>
+            <Div>
+              <DropMenu>
+                <DropLi>
+                  <MenuLinks>Link 1</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 2</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 3</MenuLinks>
+                </DropLi>
+              </DropMenu>
+            </Div>
+          </MenuLi>
+          <MenuLi>
+            <MenuLinks> Drop Menu 2</MenuLinks>
+            <Div>
+              <DropMenu>
+                <DropLi>
+                  <MenuLinks>Link 1</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 2</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 3</MenuLinks>
+                </DropLi>
+              </DropMenu>
+            </Div>
+          </MenuLi>
+          <MenuLi>
+            <MenuLinks> Drop Menu 3</MenuLinks>
+            <Div>
+              <DropMenu>
+                <DropLi>
+                  <MenuLinks>Link 1</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 2</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 3</MenuLinks>
+                </DropLi>
+              </DropMenu>
+            </Div>
+          </MenuLi>
+          <MenuLi>
+            <MenuLinks> Drop Menu 4</MenuLinks>
+            <Div>
+              <DropMenu>
+                <DropLi>
+                  <MenuLinks>Link 1</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 2</MenuLinks>
+                </DropLi>
+                <DropLi>
+                  <MenuLinks>Link 3</MenuLinks>
+                </DropLi>
+              </DropMenu>
+            </Div>
           </MenuLi>
 
-          <MenuLi>
-            <MenuLinks href="">Drop Menu 2</MenuLinks>
-            <DropMenu>
-              <DropLi>
-                <MenuLinks href="">Link 1</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks href="">Link 2</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks href="">Link 3</MenuLinks>
-              </DropLi>
-            </DropMenu>
-          </MenuLi>
-          <MenuLi>
-            <MenuLinks href="">Drop Menu 3</MenuLinks>
-            <DropMenu>
-              <DropLi>
-                <MenuLinks href="">Link 1</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks href="">Link 2</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks href="">Link 3</MenuLinks>
-              </DropLi>
-            </DropMenu>
-          </MenuLi>
-          <MenuLi>
-            <MenuLinks href="">Drop Menu 4</MenuLinks>
-            <DropMenu>
-              <DropLi>
-                <MenuLinks href="">Link 1</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks href="">Link 2</MenuLinks>
-              </DropLi>
-              <DropLi>
-                <MenuLinks href="">Link 3</MenuLinks>
-              </DropLi>
-            </DropMenu>
-          </MenuLi>
         </Menu>
       </DropContainer>
 
@@ -122,7 +131,6 @@ const HeaderMenu = () => {
           <Button type="submit">
             <Magnifier />
           </Button>
-          
         </Search>
       </form>
     </LogInContainer>
