@@ -59,7 +59,7 @@ const HeaderMenu = () => {
             </Div>
           </MenuLi>
           <MenuLi>
-            <MenuLinks> Drop Menu 1</MenuLinks>
+            <MenuLinks> Drop Menu 2</MenuLinks>
             <Div>
               <DropMenu>
                 <DropLi>
@@ -75,7 +75,7 @@ const HeaderMenu = () => {
             </Div>
           </MenuLi>
           <MenuLi>
-            <MenuLinks> Drop Menu 1</MenuLinks>
+            <MenuLinks> Drop Menu 3</MenuLinks>
             <Div>
               <DropMenu>
                 <DropLi>
@@ -91,7 +91,7 @@ const HeaderMenu = () => {
             </Div>
           </MenuLi>
           <MenuLi>
-            <MenuLinks> Drop Menu 1</MenuLinks>
+            <MenuLinks> Drop Menu 4</MenuLinks>
             <Div>
               <DropMenu>
                 <DropLi>

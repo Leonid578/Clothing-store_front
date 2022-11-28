@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import zelenii from "../../images/png/zelenii-fon.png";
 // import { NavLink } from "react-router-dom";
 
 export const Headerr = styled.header`
@@ -15,6 +16,8 @@ export const LogInContainer = styled.div`
   display: flex;
   padding-right: 20px;
   padding-left: 20px;
+
+  background-image: url(${zelenii});
 `;
 
 export const HeaderLogo = styled.a`
@@ -103,20 +106,20 @@ export const Menu = styled.ul`
 
 export const DropLi = styled.li`
   z-index: 1;
-  background-color: white;
+  // background-color: white;
   width: 120px;
-  &:hover {
-    background-color: #f0f0f0;
-  }
+  // &:hover {
+  //   background-color: #f0f0f0;
+  // }
 `;
 
 export const DropMenu = styled.ul`
   // background-color: #f1f1f1;
-  background-color: #fff;
+  background-color: green;
   box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
-  padding: 19px 0 21px 0; 
+  padding: 19px 0 21px 0;
   position: absolute;
   top: 0;
   font-style: normal;
@@ -130,20 +133,20 @@ export const DropMenu = styled.ul`
 export const Div = styled.div`
   width: 200%;
   height: 400%;
-  margin-top: 10px;
+  // margin-top: 15px;
   position: relative;
   overflow: hidden;
 `;
 
 export const MenuLinks = styled.a`
-  color: black;
+  color: rgba(255, 255, 255, 0.6);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   border-radius: 10px;
   &:hover {
-    background-color: #f0f0f0;
     cursor: pointer;
+    color: #fff;
   }
 `;
 
