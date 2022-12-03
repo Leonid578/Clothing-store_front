@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 import { useState, useEffect, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.style.css";
 
-const PAGE_WIDTH = 900;
+const PAGE_WIDTH = 1200;
+const TIMER_OFFSET = 5000;
 
 export const Carousel = ({ children }) => {
   const [pages, setPages] = useState([]);
@@ -23,6 +24,31 @@ export const Carousel = ({ children }) => {
       return Math.max(newOffset, maxOffset);
     });
   };
+
+    if (offset === 0) {
+      setTimeout(() => {
+        setOffset(() => {
+          const newOffset = -PAGE_WIDTH;
+          return newOffset;
+        });
+      }, TIMER_OFFSET);
+    } else if(offset === -1200){
+      setTimeout(() => {
+        setOffset(() => {
+          const newOffset = -2 * PAGE_WIDTH;
+          return newOffset;
+        });  
+      }, TIMER_OFFSET);
+    }
+    else if(offset === -2400){
+      setTimeout(() => {
+        setOffset((currentOffset) => {
+          const newOffset = 0;
+          const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
+          return Math.max(newOffset, maxOffset);
+        });  
+      }, TIMER_OFFSET);
+    }
 
   useEffect(() => {
     setPages(

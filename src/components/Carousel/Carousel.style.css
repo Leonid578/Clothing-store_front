@@ -18,8 +18,8 @@
 }
 
 .main-container {
-  height: 500px;
-  width: 900px;
+  height: 700px;
+  width: 1200px;
 
   display: flex;
   align-items: center;
@@ -48,21 +48,21 @@
 
 .Img1 {
   background-image: url("../../images/jpg/img1.jpg");
-  width: 900px;
+  width: 1200px;
   background-size: cover;
 }
 .Img2 {
   background-image: url("../../images/jpg/img4.jpg");
-  width: 900px;
+  width: 1200px;
   background-size: cover;
 }
 .Img3 {
   background-image: url("../../images/jpg/img3.jpg");
-  width: 900px;
+  width: 1200px;
   background-size: cover;
 }
 .Img4 {
   background-image: url("../../images/jpg/img2.jpg");
-  width: 300px;
+  width: 1200px;
   background-size: cover;
 }
