@@ -1,0 +1,13 @@
+.MenuLinks {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.DropMenu{
+  /* opacity: 0; */
+  transform: translateY(101%);
+}
+
+.MenuLinks:hover .DropMenu {
+  /* opacity: 1; */
+  transform: translateY(0%);
+}
