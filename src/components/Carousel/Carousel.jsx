@@ -1,4 +1,4 @@
-import React from "react";
+import { useCallback } from "react";
 import { useState, useEffect, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.style.css";
@@ -16,39 +16,25 @@ export const Carousel = ({ children }) => {
       return Math.min(newOffset, 0);
     });
   };
-
-  const handleRightArrowClick = () => {
+  const handleRightArrowClick = useCallback(() => {
     setOffset((currentOffset) => {
+      const lastIndex = pages.length - 1;
       const newOffset = currentOffset - PAGE_WIDTH;
-      const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
-      return Math.max(newOffset, maxOffset);
+      const maxOffset = -(PAGE_WIDTH * lastIndex);
+      if (offset === maxOffset) {
+        setOffset(0);
+      }
+      return newOffset;
+      // return Math.max(newOffset, maxOffset);
     });
-  };
+  }, [offset, pages.length]);
 
-    if (offset === 0) {
-      setTimeout(() => {
-        setOffset(() => {
-          const newOffset = -PAGE_WIDTH;
-          return newOffset;
-        });
-      }, TIMER_OFFSET);
-    } else if(offset === -1200){
-      setTimeout(() => {
-        setOffset(() => {
-          const newOffset = -2 * PAGE_WIDTH;
-          return newOffset;
-        });  
-      }, TIMER_OFFSET);
-    }
-    else if(offset === -2400){
-      setTimeout(() => {
-        setOffset((currentOffset) => {
-          const newOffset = 0;
-          const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
-          return Math.max(newOffset, maxOffset);
-        });  
-      }, TIMER_OFFSET);
-    }
+  useEffect(() => {
+    let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
+    return () => {
+      clearInterval(timerId);
+    };
+  }, [handleRightArrowClick]);
 
   useEffect(() => {
     setPages(
