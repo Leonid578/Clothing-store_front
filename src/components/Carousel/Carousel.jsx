@@ -3,7 +3,7 @@ import { useState, useEffect, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.style.css";
 
-const PAGE_WIDTH = 1200;
+const PAGE_WIDTH = 1920;
 const TIMER_OFFSET = 5000;
 
 export const Carousel = ({ children }) => {
@@ -42,8 +42,10 @@ export const Carousel = ({ children }) => {
         return cloneElement(child, {
           style: {
             height: "100%",
-            minWidth: `${PAGE_WIDTH}px`,
-            maxWidth: `${PAGE_WIDTH}px`,
+            // minWidth: `${PAGE_WIDTH}px`,
+            // maxWidth: `${PAGE_WIDTH}px`,
+            minWidth: `1920px`,
+            maxWidth: `1920px`,
           },
         });
       })
@@ -52,7 +54,7 @@ export const Carousel = ({ children }) => {
 
   return (
     <div className="main-container">
-      <FaChevronLeft className="arrow" onClick={handleLeftArrowClick} />
+      <FaChevronLeft className="arrow left" onClick={handleLeftArrowClick} />
       <div className="window">
         <div
           className="all-pages-container"
@@ -61,7 +63,7 @@ export const Carousel = ({ children }) => {
           {pages}
         </div>
       </div>
-      <FaChevronRight className="arrow" onClick={handleRightArrowClick} />
+      <FaChevronRight className="arrow right" onClick={handleRightArrowClick} />
     </div>
   );
 };

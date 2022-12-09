@@ -3,7 +3,6 @@ import { ThemeContext } from '../providers/ThemeProvider'
 
 const useTheme = () => {
 	const value = useContext(ThemeContext)
-
 	return value
 }
 
