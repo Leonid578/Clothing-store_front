@@ -1,9 +1,10 @@
-import React from 'react'
+import { useCallback } from "react";
 import { useState, useEffect, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.style.css";
 
-const PAGE_WIDTH = 900;
+const PAGE_WIDTH = 1920;
+const TIMER_OFFSET = 5000;
 
 export const Carousel = ({ children }) => {
   const [pages, setPages] = useState([]);
@@ -15,14 +16,25 @@ export const Carousel = ({ children }) => {
       return Math.min(newOffset, 0);
     });
   };
-
-  const handleRightArrowClick = () => {
+  const handleRightArrowClick = useCallback(() => {
     setOffset((currentOffset) => {
+      const lastIndex = pages.length - 1;
       const newOffset = currentOffset - PAGE_WIDTH;
-      const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
-      return Math.max(newOffset, maxOffset);
+      const maxOffset = -(PAGE_WIDTH * lastIndex);
+      if (offset === maxOffset) {
+        setOffset(0);
+      }
+      return newOffset;
+      // return Math.max(newOffset, maxOffset);
     });
-  };
+  }, [offset, pages.length]);
+
+  useEffect(() => {
+    let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
+    return () => {
+      clearInterval(timerId);
+    };
+  }, [handleRightArrowClick]);
 
   useEffect(() => {
     setPages(
@@ -30,8 +42,10 @@ export const Carousel = ({ children }) => {
         return cloneElement(child, {
           style: {
             height: "100%",
-            minWidth: `${PAGE_WIDTH}px`,
-            maxWidth: `${PAGE_WIDTH}px`,
+            // minWidth: `${PAGE_WIDTH}px`,
+            // maxWidth: `${PAGE_WIDTH}px`,
+            minWidth: `1920px`,
+            maxWidth: `1920px`,
           },
         });
       })
@@ -40,7 +54,7 @@ export const Carousel = ({ children }) => {
 
   return (
     <div className="main-container">
-      <FaChevronLeft className="arrow" onClick={handleLeftArrowClick} />
+      <FaChevronLeft className="arrow left" onClick={handleLeftArrowClick} />
       <div className="window">
         <div
           className="all-pages-container"
@@ -49,7 +63,7 @@ export const Carousel = ({ children }) => {
           {pages}
         </div>
       </div>
-      <FaChevronRight className="arrow" onClick={handleRightArrowClick} />
+      <FaChevronRight className="arrow right" onClick={handleRightArrowClick} />
     </div>
   );
 };

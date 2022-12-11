@@ -1,23 +1,29 @@
 import styled from "styled-components";
-import zelenii from "../../images/png/zelenii-fon.png";
-// import { NavLink } from "react-router-dom";
 
 export const Headerr = styled.header`
   border-bottom: 1px ffffff solid;
   height: 60px;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
-  background-color: #ffffff;
   position: sticky;
   z-index: 1000;
   top: 0px;
+
+ 
 `;
 
 export const LogInContainer = styled.div`
   display: flex;
-  padding-right: 20px;
-  padding-left: 20px;
+  height: 60px;
+  width: 80%;
+  margin: 0 auto 0 auto;
 
-  background-image: url(${zelenii});
+  @media screen and (min-width:320px){  
+    
+  }
+
+  @media screen and (min-width:768px){  
+    
+  }
 `;
 
 export const HeaderLogo = styled.a`
@@ -52,7 +58,7 @@ export const ButtonSun = styled.button`
   display: block;
   width: 30px;
   height: 30px;
-  margin: 16px 0 0 45px;
+  margin: 16px 0 0 0;
   background-color: #f5f7fa;
   border: none;
   border-radius: 50%;
@@ -67,11 +73,21 @@ export const ButtonSun = styled.button`
 `;
 
 export const Input = styled.input`
-  width: 200px;
-  height: 28px;
-  margin-right: 15px;
+
   &:hover {
     cursor: text;
+  }
+
+  @media screen and (min-width:320px){  
+    width: 100px;
+    height: 28px;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width:768px){  
+    width: 200px;
+    height: 28px;
+    margin-right: 15px;
   }
 `;
 
@@ -91,7 +107,6 @@ export const DropContainer = styled.div`
   display: flex;
   margin: 5px auto;
   text-align: center;
-
   @media screen and (max-width: 1023px) {
     opacity: 0;
   }
@@ -106,59 +121,57 @@ export const Menu = styled.ul`
 
 export const DropLi = styled.li`
   z-index: 1;
-  // background-color: white;
   width: 120px;
-  // &:hover {
-  //   background-color: #f0f0f0;
-  // }
-`;
-
-export const DropMenu = styled.ul`
-  // background-color: #f1f1f1;
-  background-color: green;
-  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-
-  padding: 19px 0 21px 0;
-  position: absolute;
-  top: 0;
-  font-style: normal;
-  font-weight: normal;
-  transform: translateY(-101%);
-  transition: transform;
-  transition-duration: 1.5s;
-  opacity: 0;
-`;
-
-export const Div = styled.div`
-  width: 200%;
-  height: 400%;
-  // margin-top: 15px;
-  position: relative;
-  overflow: hidden;
 `;
 
 export const MenuLinks = styled.a`
   color: rgba(255, 255, 255, 0.6);
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
-  border-radius: 10px;
-  &:hover {
-    cursor: pointer;
-    color: #fff;
-  }
+`;
+
+export const DropMenu = styled.ul`
+  background-color: green;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 19px 0 21px 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(101%);
+  transition: transform;
+  transition-duration: 1s;
+  // opacity: 0;
+`;
+
+export const Div = styled.div`
+  height: 175px;
+  margin-top: 10px;
+  position: relative;
+  // overflow: hidden;
+`;
+
+export const DivLinks = styled.div`
+  // &:focus ${DropMenu} {
+  //   transform: translateY(0%);
+  //   opacity: 1;
+  // }
+  // &:hover ${DropMenu} {
+  //   transform: translateY(0%);
+  //   opacity: 1;
+  // }
 `;
 
 export const MenuLi = styled.li`
   color: black;
   font-size: 16px;
-  &:focus ${DropMenu} {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  &:hover ${DropMenu} {
-    transform: translateY(0%);
-    opacity: 1;
-  }
+
+  // &:hover ${DropMenu} {
+  //   transform: translateY(0%);
+  //   opacity: 1;
+  // }
+`;
+
+export const ContainerSearch = styled.div`
+  margin: 0 0 0 auto;
+  width: 300px;
+  display: flex;
 `;
