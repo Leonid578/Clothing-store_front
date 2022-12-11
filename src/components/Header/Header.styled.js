@@ -7,8 +7,6 @@ export const Headerr = styled.header`
   position: sticky;
   z-index: 1000;
   top: 0px;
-
- 
 `;
 
 export const LogInContainer = styled.div`
@@ -17,13 +15,11 @@ export const LogInContainer = styled.div`
   width: 80%;
   margin: 0 auto 0 auto;
 
-  @media screen and (min-width:320px){  
-    
-  }
+  // @media screen and (min-width: 320px) {
+  // }
 
-  @media screen and (min-width:768px){  
-    
-  }
+  // @media screen and (min-width: 768px) {
+  // }
 `;
 
 export const HeaderLogo = styled.a`
@@ -73,18 +69,16 @@ export const ButtonSun = styled.button`
 `;
 
 export const Input = styled.input`
-
   &:hover {
     cursor: text;
   }
 
-  @media screen and (min-width:320px){  
+  @media screen and (min-width: 320px) {
     width: 100px;
     height: 28px;
     margin-right: 15px;
   }
-
-  @media screen and (min-width:768px){  
+  @media screen and (min-width: 768px) {
     width: 200px;
     height: 28px;
     margin-right: 15px;
