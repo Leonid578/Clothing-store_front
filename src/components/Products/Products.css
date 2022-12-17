@@ -1,9 +1,6 @@
 .cards__content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+  width:1280px;
+  margin: 0 auto;;
 }
 
 .cards__ul {
@@ -11,17 +8,35 @@
   align-items: center;
   justify-content: center;
   padding: 25px;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
 
 .card {
   border: 3px;
-  width: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background: white;
-  margin-left: 20px;
+  width: 300px;
   height: 500px;
+
+  margin-top: 30px;
+  flex-basis: calc(100% - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin-left: 30px;
+    flex-basis: calc(50% - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    margin-left: 30px;
+    flex-basis: calc(33.333% - 30px);
+  }
 }
 
 .product__img {
