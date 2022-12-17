@@ -13,33 +13,92 @@ import Cat1 from "../../images/jpg/img5.jpg";
 
 const HitsOfSales = () => {
   return (
-    <HitsContainer>
-      <ElementorColumn>
-        <ElementorBackgroundOverlay>
-          <ElementorHeadingTitleLeft>
-            FOTOGRAFIA COMMERCIALE
-          </ElementorHeadingTitleLeft>
-          <ElementorDividerSeparator />
-          <ElementorTextEditor>
-            La fotografia corporate come valorizzazione dell’azienda, delle
-            persone, della filosofia, dei prodotti, dei processi produttivi.
-          </ElementorTextEditor>
-        </ElementorBackgroundOverlay>
-      </ElementorColumn>
+    <>
+      <HitsContainer>
+        <ElementorColumn>
+          <ElementorBackgroundOverlay>
+            <ElementorHeadingTitleLeft>
+              FOTOGRAFIA COMMERCIALE
+            </ElementorHeadingTitleLeft>
+            <ElementorDividerSeparator />
+            <ElementorTextEditor>
+              La fotografia corporate come valorizzazione dell’azienda, delle
+              persone, della filosofia, dei prodotti, dei processi produttivi.
+            </ElementorTextEditor>
+          </ElementorBackgroundOverlay>
+        </ElementorColumn>
 
+        <ElementorColumn>
+          <ElementorElementPopulate>
+            <img
+              src={Cat1}
+              alt="cat1"
+              style={{ height: "100%", width: "100%" }}
+            />
+            <a href="/" style={{width:"100%", height: "100%"}}>
+              <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
+            </a>
+          </ElementorElementPopulate>
+        </ElementorColumn>
+      </HitsContainer>
+
+      <HitsContainer>
       <ElementorColumn>
-        <ElementorElementPopulate>
-          <img
-            src={Cat1}
-            alt="cat1"
-            style={{ height: "100%", width: "100%" }}
-          />
-          <a href="/">
-            <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
-          </a>
-        </ElementorElementPopulate>
-      </ElementorColumn>
-    </HitsContainer>
+          <ElementorElementPopulate>
+            <img
+              src={Cat1}
+              alt="cat1"
+              style={{ height: "100%", width: "100%" }}
+            />
+            <a href="/">
+              <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
+            </a>
+          </ElementorElementPopulate>
+        </ElementorColumn>
+        <ElementorColumn>
+          <ElementorBackgroundOverlay>
+            <ElementorHeadingTitleLeft>
+              FOTOGRAFIA COMMERCIALE
+            </ElementorHeadingTitleLeft>
+            <ElementorDividerSeparator />
+            <ElementorTextEditor>
+              La fotografia corporate come valorizzazione dell’azienda, delle
+              persone, della filosofia, dei prodotti, dei processi produttivi.
+            </ElementorTextEditor>
+          </ElementorBackgroundOverlay>
+        </ElementorColumn>
+
+        
+      </HitsContainer>
+
+      <HitsContainer>
+        <ElementorColumn>
+          <ElementorBackgroundOverlay>
+            <ElementorHeadingTitleLeft>
+              FOTOGRAFIA COMMERCIALE
+            </ElementorHeadingTitleLeft>
+            <ElementorDividerSeparator />
+            <ElementorTextEditor>
+              La fotografia corporate come valorizzazione dell’azienda, delle
+              persone, della filosofia, dei prodotti, dei processi produttivi.
+            </ElementorTextEditor>
+          </ElementorBackgroundOverlay>
+        </ElementorColumn>
+
+        <ElementorColumn>
+          <ElementorElementPopulate>
+            <img
+              src={Cat1}
+              alt="cat1"
+              style={{ height: "100%", width: "100%" }}
+            />
+            <a href="/">
+              <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
+            </a>
+          </ElementorElementPopulate>
+        </ElementorColumn>
+      </HitsContainer>
+    </>
   );
 };
 
