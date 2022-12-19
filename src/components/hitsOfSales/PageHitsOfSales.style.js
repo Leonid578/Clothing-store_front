@@ -1,6 +1,6 @@
 import styled from "styled-components";
 // import img1 from "../../images/jpg/img5.jpg";
-
+// import beauty from "../../images/jpg/013.jpg";
 export const HitsContainer = styled.div`
   // width: 1200px;
   // height: 677px;
@@ -61,12 +61,16 @@ export const ElementorTextEditor = styled.p`
 `;
 
 export const ElementorElementPopulate = styled.div`
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-position: center center;
+
   width: 100%;
   height: 388px;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  z-index: 1111;
+  // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../../images/jpg/img1.jpg");
 `;
 
 export const ElementorHeadingTitleRight = styled.h2`
