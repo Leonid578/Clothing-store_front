@@ -1,6 +1,5 @@
 import styled from "styled-components";
-// import img1 from "../../images/jpg/img5.jpg";
-// import beauty from "../../images/jpg/013.jpg";
+
 export const HitsContainer = styled.div`
   // width: 1200px;
   // height: 677px;
@@ -22,12 +21,10 @@ export const ElementorColumn = styled.div`
   //   animation-name: fadeIn;
   // }
 
-  // padding: 10% 15%;
   background: white;
   position: relative;
   text-align: center;
   width: 50%;
-  // animation-name: fadeIn;
 `;
 
 export const ElementorBackgroundOverlay = styled.div`
@@ -61,16 +58,16 @@ export const ElementorTextEditor = styled.p`
 `;
 
 export const ElementorElementPopulate = styled.div`
-  // background-position: center center;
-
-  width: 100%;
-  height: 388px;
-  z-index: 1111;
-  // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  background-size: cover;
+min-width: 100%;
+  // height: 230px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: url("../../images/jpg/img1.jpg");
+  background-position: center;
+  background-size: cover;
+
+  // width: 100%;
+  height: 388px;
+  // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  // background-position: 50% 50%;
 `;
 
 export const ElementorHeadingTitleRight = styled.h2`
@@ -85,7 +82,3 @@ export const ElementorHeadingTitleRight = styled.h2`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
-
-// export const  = styled.a`
-
-// `;

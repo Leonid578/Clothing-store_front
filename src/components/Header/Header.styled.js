@@ -85,7 +85,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Search = styled.div`
+export const Searchh = styled.div`
   display: flex;
   margin: 14px;
 `;
