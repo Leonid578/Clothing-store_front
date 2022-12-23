@@ -62,14 +62,14 @@ const HeaderMenu = () => {
             />
           )}
         </ButtonSun> */}
-        <form>
+        {/* <form>
           <Searchh>
-            <Input type="text" placeholder="Поиск..." id="searchInput" />
+            <Input type="text" placeholder="Поиск..." id="searchInput" className="search__img" onChange={(event) => setValue(event.target.value)}/>
             <Button type="submit">
               <Magnifier />
             </Button>
           </Searchh>
-        </form>
+        </form> */}
       </ContainerSearch>
     </LogInContainer>
   );

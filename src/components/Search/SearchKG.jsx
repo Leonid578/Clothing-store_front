@@ -1,42 +1,54 @@
-// import React, { Component } from "react";
-// import PropTypes from 'prop-types';
-// import { toast } from 'react-toastify';
-// import { IconContext } from 'react-icons';
-// import { MdSearch } from 'react-icons/md';
-import { Input,Button, Searchh} from '../Header/Header.styled';
+import { get } from "immer/dist/internal"
+import { useState } from "react"
+import { useEffect } from "react"
+import {
+  Button,
+  Input,
+  Searchh,
+  Dddiv,
+} from "../Header/Header.styled";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
+import products from "../Products/ItemProducts.json";
 
-const Searchbar = () => {
-    document.querySelector('#cards__ul').oninput = function() {
-        let val = this.ariaValueMax.trim();
-        let items = document.querySelectorAll('.card');
-        if (val !== '') {
-            items.forEach(function(elem) {
-                if(elem.innerText.search(val) == -1 ) {
-                    elem.classList.add('//style hide');
-                }
-                else{
-                    elem.classList.remove('//style hide')
-                }
-            });
+const [countries, setCountries] = useState([])
+const getCountries = () => {
+  get('products.title')
+  .then ((response) => {
+    setCountries(response.json)
+  })
+}
+
+useEffect(() => {
+  getCountries()
+}, [])
+
+// const [value,setValue] = useState('')
+
+// const filteredCountries = countries.filter(country => {
+//   return country.name.toLowerCase().includes(value.toLocaleLowerCase())
+// })
+
+return (
+  <form>
+  <Searchh>
+    <Input  
+      type="text" 
+      placeholder="Поиск..." 
+      id="searchInput" 
+      className="search__img" 
+      onChange={(event) => setValue(event.target.value)}/>
+      <Dddiv>
+        {
+          products.map((country,index) => {
+            return(
+              <CuntryItem country={country} key={index} />
+            )
+          })
         }
-    }
-    
-
-    // const Search = () => {
-    //     <form>
-    //     <Searchh>
-    //       <Input type="text" placeholder="Поиск..." id="searchInput" />
-    //       <Button type="submit">
-    //         <Magnifier />
-    //       </Button>
-    //     </Searchh>
-    //   </form> 
-    //     }
-};
-
-// Searchbar.propTypes = {
-//     onSubmit: PropTypes.func.isRequired,
-// };
-
-export default Searchbar;
+      </Dddiv>
+    <Button type="submit">
+      <Magnifier />
+    </Button>
+  </Searchh>
+</form>
+)
