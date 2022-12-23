@@ -1,32 +1,31 @@
 import { get } from "immer/dist/internal"
-import { useState } from "react"
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
+import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import {
   Button,
   Input,
   Searchh,
   Dddiv,
 } from "../Header/Header.styled";
-import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import products from "../Products/ItemProducts.json";
 
-const [countries, setCountries] = useState([])
-const getCountries = () => {
+const [products, setProducts] = useState([])
+const getProducts = () => {
   get('products.title')
   .then ((response) => {
-    setCountries(response.json)
+    setProducts(response.json)
   })
 }
 
 useEffect(() => {
-  getCountries()
+  getProducts()
 }, [])
 
-// const [value,setValue] = useState('')
+const [value,setValue] = useState('')
 
-// const filteredCountries = countries.filter(country => {
-//   return country.name.toLowerCase().includes(value.toLocaleLowerCase())
-// })
+const filteredProducts = products.filter(product => {
+  return product.name.toLowerCase().includes(value.toLocaleLowerCase())
+})
 
 return (
   <form>
@@ -39,9 +38,9 @@ return (
       onChange={(event) => setValue(event.target.value)}/>
       <Dddiv>
         {
-          products.map((country,index) => {
+          filteredProducts.map((product,index) => {
             return(
-              <CuntryItem country={country} key={index} />
+              <CuntryItem product={product} key={index} />
             )
           })
         }
