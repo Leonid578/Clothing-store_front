@@ -5,9 +5,9 @@ const ProductsCard = () => {
   return (
     <section className="cards__content">
       <ul className="cards__ul">
-        {products.map((country) => {
+        {products.map((country, index) => {
           return (
-            <li className="card" key={country.id}>
+            <li className="card" key={index}>
               <div className="product__img">
                 <img
                   src={require("../../images/jpg/" + country.img + ".jpg")}
