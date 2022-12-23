@@ -3,18 +3,15 @@ import React from "react";
 import {
   LogInContainer,
   HeaderLogo,
-  Button,
-  Input,
-  Searchh,
   // ButtonSun,
   ContainerSearch,
 } from "./Header.styled";
 import "./Header.style.css";
+import Search from '../Search/SearchKG'
 // import Sun1 from "../../images/png/Sun.png";
 // import Sun2 from "../../images/gif/Sun.gif";
 // import Moon from "../../images/png/moon.png";
 // import useTheme from "../hooks/useTheme";
-import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 
 const HeaderMenu = () => {
   // const [active2, setActive2] = useState(false);
@@ -62,14 +59,15 @@ const HeaderMenu = () => {
             />
           )}
         </ButtonSun> */}
-        <form>
+        {/* <form>
           <Searchh>
-            <Input type="text" placeholder="Поиск..." id="searchInput" />
+            <Input type="text" placeholder="Поиск..." id="searchInput" className="search__img" onChange={(event) => setValue(event.target.value)}/>
             <Button type="submit">
               <Magnifier />
             </Button>
           </Searchh>
-        </form>
+        </form> */}
+        <Search />
       </ContainerSearch>
     </LogInContainer>
   );

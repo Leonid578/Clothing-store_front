@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+export const Dddiv = styled.div`
+`;
+
 export const Headerr = styled.header`
   border-bottom: 1px ffffff solid;
   height: 60px;
