@@ -13,7 +13,7 @@ export const Headerr = styled.header`
 `;
 
 export const LogInContainer = styled.div`
-  display: flex;
+  // display: flex;
   height: 60px;
   width: 80%;
   margin: 0 auto 0 auto;
@@ -39,8 +39,8 @@ export const HeaderLogo = styled.a`
   padding-bottom: 14px;
 `;
 
-export const Button = styled.button`
-  display: block;
+export const Button = styled.span`
+  display: inline-block;
   background-color: #f5f7fa;
   border: none;
   border-radius: 50%;

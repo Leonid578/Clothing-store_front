@@ -32,7 +32,6 @@ export const ElementorBackgroundOverlay = styled.div`
 `;
 
 export const ElementorHeadingTitleLeft = styled.h2`
-  // max-width: 410px;
   color: #7a7a7a;
   font-family: "Poiret One", Sans-serif;
   font-size: 40px;
@@ -58,19 +57,27 @@ export const ElementorTextEditor = styled.p`
 `;
 
 export const ElementorElementPopulate = styled.div`
-min-width: 100%;
-  // height: 230px;
+  min-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  // width: 100%;
   height: 388px;
-  // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  // background-position: 50% 50%;
 `;
 
 export const ElementorHeadingTitleRight = styled.h2`
+  color: #fff;
+  font-family: "Poiret One", Sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const section = styled.div`
   color: #fff;
   font-family: "Poiret One", Sans-serif;
   font-size: 70px;

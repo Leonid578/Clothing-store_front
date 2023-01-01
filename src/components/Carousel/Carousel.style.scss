@@ -6,7 +6,7 @@
 }
 
 .main-container {
-  height: 100vh ;
+  height: 106vh ;
   display: flex;
   align-items: center;
   margin: -60px auto -60px auto;
@@ -17,14 +17,14 @@
   width: 100%;
   overflow: hidden;
   margin-top: -121px;
-  /* background-repeat: no-repeat;
-    background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(48, 43, 42, 0.25)),
-    to(rgba(48, 43, 42, 0))
-  ); */
+  //  background-repeat: no-repeat;
+  //   background: -webkit-gradient(
+  //   linear,
+  //   left top,
+  //   right top,
+  //   from(rgba(48, 43, 42, 0.25)),
+  //   to(rgba(48, 43, 42, 0))
+  // ); 
 }
 
 .all-pages-container {
@@ -74,3 +74,5 @@
   background-image: url("../../images/jpg/img2.jpg");
   background-size: cover;
 }
+
+

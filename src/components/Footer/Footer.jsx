@@ -1,12 +1,14 @@
 import { Footerr, Container } from "./Footer.styled";
-import FooterMenu from "./FooterMenu";
+// import FooterMenu from "./FooterMenu";
+import FooterItem from './FooterItem'
 
 const Footer = () => {
   return (
     <>
       <Footerr>
         <Container>
-          <FooterMenu />
+          {/* <FooterMenu /> */}
+          <FooterItem />
         </Container>
       </Footerr>
     </>

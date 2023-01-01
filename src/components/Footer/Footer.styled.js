@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Footerr = styled.footer`
-  padding-top: 150px;
-  padding-bottom: 100px;
+
+  padding: 20px 20px;
   background-image: linear-gradient(90deg, #8748cf, #27cc8d);
 
   // box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
@@ -11,8 +11,11 @@ export const Footerr = styled.footer`
 `;
 
 export const Container = styled.div`
+    // display: flex;
+  text-align: center;
+  justify-content: center;
   width: 80%;
-  padding: 20px;
+  // padding: 20px;
   margin: 0 auto 0 auto;
 `;
 
@@ -69,7 +72,7 @@ export const FooterItem = styled.ul`
 
 export const FooterLi = styled.li`
   // background: tomato;
-  display: flex;
+  // display: flex;
 
   @media screen and (min-width: 320px) {
     // width: 70px;

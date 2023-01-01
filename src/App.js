@@ -4,12 +4,14 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Carousel } from "./components/Carousel/Carousel";
-import "./components/Carousel/Carousel.style.css";
+// import SimpleSlider from './components/Carousel/Carousel'
+import "./components/Carousel/Carousel.style.scss";
 import Layout from "./components/Theme/Layout";
 import { ThemeProvider } from "./components/providers/ThemeProvider";
 
 import PageHitsOfSales from "./components/hitsOfSales/PageHitsOfSales";
-import Products from "./components/Products/Products";
+// import Products from "./components/Products/Products";
+import Search from './components/Search/SearchKG'
 const App = () => {
   return (
     <>
@@ -22,16 +24,18 @@ const App = () => {
                 path="/Home"
                 element={
                   <>
+                  {/* <SimpleSlider /> */}
                     <Carousel>
                       <div className="Img1"></div>
                       <div className="Img2"></div>
                       <div className="Img3"></div>
                     </Carousel>
+
                     <PageHitsOfSales />
                   </>
                 }
               />
-              {/* <Route path="/buy" element={<Products />}></Route> */}
+              <Route path="/buy" element={<Search />}></Route>
 
               <Route path="*" element={<Navigate to="/Home" />} />
             </Routes>

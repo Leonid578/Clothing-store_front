@@ -7,7 +7,7 @@ import {
   ContainerSearch,
 } from "./Header.styled";
 import "./Header.style.css";
-import Search from '../Search/SearchKG'
+// import Search from '../Search/SearchKG'
 // import Sun1 from "../../images/png/Sun.png";
 // import Sun2 from "../../images/gif/Sun.gif";
 // import Moon from "../../images/png/moon.png";
@@ -67,7 +67,7 @@ const HeaderMenu = () => {
             </Button>
           </Searchh>
         </form> */}
-        <Search />
+        {/* <Search /> */}
       </ContainerSearch>
     </LogInContainer>
   );

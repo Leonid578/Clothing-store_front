@@ -84,6 +84,9 @@ const HitsOfSales = () => {
           </a>
         </ElementorColumn>
       </HitsContainer>
+
+
+      
     </>
   );
 };

@@ -1,8 +1,7 @@
 import {
-  FooterLogo,
+//   FooterLogo,
   LogInContainer,
-  FooterItem,
-  FooterLi,
+//   FooterLi,
   FooterLink,
   FooterTitle,
   FooterButton,
@@ -10,34 +9,37 @@ import {
   FooterLiImg,
   BottomFooter,
   BottomFooterText,
-} from "./Footer.styled";
+  ItemLi,
+  List,
+  Separator,
+  ItemLii
+} from "./FooterItem.style";
 
 import facebook from "../../images/svg/facebook.svg";
 import youtube from "../../images/svg/youtube.svg";
-// import vk from "../../images/svg/vk.svg";
 
-const FooterMenu = () => {
+const FooterItem = () => {
   return (
-    <LogInContainer>
-      <FooterLogo>LOGO</FooterLogo>
+    <>
+      <LogInContainer>
+        {/* <FooterLogo>LOGO</FooterLogo> */}
 
-      <FooterItem>
-        <ul>
-          <FooterLi>
+        <ItemLi>
+          <List>
             <FooterLink>О нас</FooterLink>
-          </FooterLi>
-          <FooterLi>
+          </List>
+          <List>
             <FooterLink>Прайс-листы</FooterLink>
-          </FooterLi>
-          <FooterLi>
+          </List>
+          <List>
             <FooterLink>Фотогалерея</FooterLink>
-          </FooterLi>
-          <FooterLi>
+          </List>
+          <List>
             <FooterLink>Документы</FooterLink>
-          </FooterLi>
-        </ul>
+          </List>
+        </ItemLi>
 
-        <ul>
+        <ItemLii>
           <FooterTitle>Есть вопросы?</FooterTitle>
           <FooterButton>НАПИСАТЬ НАМ</FooterButton>
           <FooterLiImg>
@@ -47,19 +49,17 @@ const FooterMenu = () => {
             <FooterLink>
               <FooterImg src={youtube} alt="youtube" />
             </FooterLink>
-            {/* <FooterLink>
-              <FooterImg src={vk} alt="vk" />
-            </FooterLink> */}
           </FooterLiImg>
-        </ul>
-      </FooterItem>
+        </ItemLii>
+      </LogInContainer>
+      <Separator></Separator>
       <BottomFooter>
         <BottomFooterText>
           © 2022 Назввание.com All Rights Reserved
         </BottomFooterText>
       </BottomFooter>
-    </LogInContainer>
+    </>
   );
 };
 
-export default FooterMenu;
+export default FooterItem;
