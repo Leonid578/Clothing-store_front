@@ -1,24 +1,5 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-// const ItemStyle = css`
-//   position: relative;
-//   display: inline-block;
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//     cursor: default;
-
-//   &.active {
-//     a {
-//       -webkit-transform: scale3d(1.3, 1.3, 1.3);
-//       transform: scale3d(1.3, 1.3, 1.3);
-
-//       &:after {
-//         height: 100%;
-//       }
-//     }
-//   }
-// `;
 
 export const Link = styled(NavLink)`
   top: 0;
@@ -51,9 +32,6 @@ export const Link = styled(NavLink)`
     transition: height 0.3s ease;
   }
 `;
-// export const  = styled.p`
-
-// `;
 
 export const List = styled.li`
   position: relative;

@@ -17,11 +17,8 @@
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
-    "react-slick": "^0.29.0",
     "react-toastify": "^9.1.1",
     "redux": "^4.2.0",
-    "sass": "^1.57.1",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
@@ -51,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

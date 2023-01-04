@@ -4,8 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Carousel } from "./components/Carousel/Carousel";
-// import SimpleSlider from './components/Carousel/Carousel'
-import "./components/Carousel/Carousel.style.scss";
+import "./components/Carousel/Carousel.style.css";
 import Layout from "./components/Theme/Layout";
 import { ThemeProvider } from "./components/providers/ThemeProvider";
 
@@ -24,13 +23,7 @@ const App = () => {
                 path="/Home"
                 element={
                   <>
-                  {/* <SimpleSlider /> */}
-                    <Carousel>
-                      <div className="Img1"></div>
-                      <div className="Img2"></div>
-                      <div className="Img3"></div>
-                    </Carousel>
-
+                    <Carousel/>
                     <PageHitsOfSales />
                   </>
                 }
