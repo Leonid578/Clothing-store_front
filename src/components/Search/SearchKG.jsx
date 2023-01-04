@@ -26,13 +26,12 @@ const Search = () => {
 
   const onTextChanged = (event) => {
     const text = event.target.value.trim(); // удаляем пробелы
-    console.log("sfsf" , text)
+    console.log("sfsf", text);
   };
 
   const onTextСhange = (event) => {
     // const text = event.target.value.trim(); // удаляем пробелы
-    // setValue(text);
-    console.log("text")
+    setValue(event.text);
     // event.preventDefault();
   };
 
@@ -46,10 +45,7 @@ const Search = () => {
           className="search__img"
           onChange={onTextChanged}
         />
-        <Button
-        type="submit"
-           onClick={onTextСhange}
-        >
+        <Button type="submit" onClick={onTextСhange}>
           <Magnifier />
         </Button>
       </Searchh>

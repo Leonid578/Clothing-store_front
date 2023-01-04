@@ -40,7 +40,7 @@ export const HeaderLogo = styled.a`
 `;
 
 export const Button = styled.span`
-  display: inline-block;
+  // display: inline-block;
   background-color: #f5f7fa;
   border: none;
   border-radius: 50%;
