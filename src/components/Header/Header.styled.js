@@ -1,6 +1,18 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-export const Dddiv = styled.div`
+export const StyledLink = styled(NavLink)`
+  width: 28px;
+  height: 27px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #242a37;
+  display: inline-block;
+  padding-top: 19px;
+  padding-bottom: 14px;
 `;
 
 export const Headerr = styled.header`
@@ -40,9 +52,14 @@ export const HeaderLogo = styled.a`
 `;
 
 export const Button = styled.span`
-  // display: inline-block;
+  // display: block;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f5f7fa;
-  border: none;
+  // border: none;
   border-radius: 50%;
   &:hover {
     cursor: pointer;
@@ -90,6 +107,8 @@ export const Input = styled.input`
 
 export const Searchh = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 14px;
 `;
 

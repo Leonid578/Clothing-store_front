@@ -2,9 +2,9 @@ import React from "react";
 // import { useState } from "react";
 import {
   LogInContainer,
-  HeaderLogo,
-  // ButtonSun,
+  // HeaderLogo,
   ContainerSearch,
+  StyledLink,
 } from "./Header.styled";
 import "./Header.style.css";
 // import Search from '../Search/SearchKG'
@@ -12,6 +12,10 @@ import "./Header.style.css";
 // import Sun2 from "../../images/gif/Sun.gif";
 // import Moon from "../../images/png/moon.png";
 // import useTheme from "../hooks/useTheme";
+
+const scrollTop = () => {
+  window.scrollTo(0, 0);
+};
 
 const HeaderMenu = () => {
   // const [active2, setActive2] = useState(false);
@@ -29,8 +33,10 @@ const HeaderMenu = () => {
 
   return (
     <LogInContainer>
-      <HeaderLogo>LOGO</HeaderLogo>
-
+      <StyledLink to="/" onClick={scrollTop}>
+        LOGO
+      </StyledLink>
+      {/* <HeaderLogo>LOGO</HeaderLogo> */}
       <ContainerSearch>
         {/* <ButtonSun
           onMouseEnter={handleMouseEnter}

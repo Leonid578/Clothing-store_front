@@ -1,4 +1,13 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
+export const StyledLink = styled(NavLink)`
+  color: black;
+  margin: 0 10px;
+  &.active {
+    color: orange;
+  }
+`;
 
 export const ItemLi = styled.ul`
   display: flex;
@@ -7,7 +16,6 @@ export const ItemLi = styled.ul`
 `;
 
 export const ItemLii = styled.ul`
-  //   display: flex;
   align-items: center;
   margin: 15px 30px 15px auto;
 `;
@@ -40,9 +48,7 @@ export const FooterTitle = styled.h3`
 export const FooterButton = styled.button`
   padding: 10px 24px;
   color: #fff;
-  //   background-image: linear-gradient(90deg, #13e780, #03daf2);
-//   background-color: blue;
-background-image: linear-gradient(30deg, #8748cf, #27cc8d);
+  background-image: linear-gradient(30deg, #8748cf, #27cc8d);
   border-radius: 20px;
   box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
   text-transform: uppercase;
@@ -75,8 +81,6 @@ export const BottomFooter = styled.div`
 `;
 
 export const BottomFooterText = styled.p`
-  // margin-top: 50px;
-  //   margin: 50px auto auto 0;
   font-size: 18px;
   color: #fff;
   text-align: center;
@@ -84,15 +88,14 @@ export const BottomFooterText = styled.p`
 `;
 
 export const FooterLogo = styled.a`
-  display: block;
+  // display: block;
+  // position: relative;
   align-items: center;
-  // max-width: 180px;
   max-width: 50px;
   margin: 0 auto 50px;
   color: #fff;
 
   @media screen and (max-width: 480px) {
-    // max-width: 216px;
     max-width: 50px;
     margin-bottom: 30px;
   }
@@ -118,22 +121,8 @@ export const LogInContainer = styled.div`
   }
 `;
 
-// export const FooterLi = styled.li`
-//   @media screen and (min-width: 320px) {
-//     margin: 0 10px 10px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     margin: 0 10px 10px;
-//     padding: 5px;
-//   }
-// `;
-
 export const Separator = styled.div`
   width: 100%;
   height: 1px;
   background-color: #000;
 `;
-
-// export const  = styled.`
-// `;

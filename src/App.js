@@ -10,7 +10,8 @@ import { ThemeProvider } from "./components/providers/ThemeProvider";
 
 import PageHitsOfSales from "./components/hitsOfSales/PageHitsOfSales";
 // import Products from "./components/Products/Products";
-import Search from './components/Search/SearchKG'
+import Search from "./components/Search/SearchKG";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 const App = () => {
   return (
     <>
@@ -20,16 +21,16 @@ const App = () => {
           <Layout>
             <Routes>
               <Route
-                path="/Home"
+                path="/"
                 element={
                   <>
-                    <Carousel/>
+                    <Carousel />
                     <PageHitsOfSales />
                   </>
                 }
               />
               <Route path="/buy" element={<Search />}></Route>
-
+              <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
               <Route path="*" element={<Navigate to="/Home" />} />
             </Routes>
             <Footer />

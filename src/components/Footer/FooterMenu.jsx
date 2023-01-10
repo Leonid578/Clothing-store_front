@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+import styled from 'styled-components'
 import {
   FooterLogo,
   LogInContainer,
@@ -14,7 +16,15 @@ import {
 
 import facebook from "../../images/svg/facebook.svg";
 import youtube from "../../images/svg/youtube.svg";
-// import vk from "../../images/svg/vk.svg";
+import vk from "../../images/svg/vk.svg";
+
+const StyledLink = styled(NavLink)`
+  color: black;
+
+  &.active {
+    color: orange;
+  }
+`;
 
 const FooterMenu = () => {
   return (
@@ -47,13 +57,14 @@ const FooterMenu = () => {
             <FooterLink>
               <FooterImg src={youtube} alt="youtube" />
             </FooterLink>
-            {/* <FooterLink>
+            <FooterLink>
               <FooterImg src={vk} alt="vk" />
-            </FooterLink> */}
+            </FooterLink>
           </FooterLiImg>
         </ul>
       </FooterItem>
       <BottomFooter>
+        <StyledLink to="/privacyPolicy">Политика конфиденциальности</StyledLink>
         <BottomFooterText>
           © 2022 Назввание.com All Rights Reserved
         </BottomFooterText>
