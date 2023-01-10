@@ -1,105 +1,105 @@
 [
     {
         "id" : 1,
-        "price" : 100,
         "title" : "ATBbag",
+        "volume" : "100мл",
         "link" : "http://localhost:3000/Home",
         "img" : "img00"
     },
     {
         "id" : 2,
-        "price" : 200,
+        "volume" : "100мл",
         "title" : "ATBEcoBag",
         "link" : "http://localhost:3000/Home",
         "img" : "img001"
     },
     {
         "id" : 3,
-        "price" : 300,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
     },
     {
         "id" : 4,
-        "price" : 400,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
     },
     {
         "id" : 1,
-        "price" : 100,
+        "volume" : "100мл",
         "title" : "ATBbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img00"
     },
     {
         "id" : 2,
-        "price" : 200,
+        "volume" : "100мл",
         "title" : "ATBEcoBag",
         "link" : "http://localhost:3000/Home",
         "img" : "img001"
     },
     {
         "id" : 3,
-        "price" : 300,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
     },
     {
         "id" : 4,
-        "price" : 400,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
     },
     {
         "id" : 1,
-        "price" : 100,
+        "volume" : "100мл",
         "title" : "ATBbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img00"
     },
     {
         "id" : 2,
-        "price" : 200,
+        "volume" : "100мл",
         "title" : "ATBEcoBag",
         "link" : "http://localhost:3000/Home",
         "img" : "img001"
     },
     {
         "id" : 3,
-        "price" : 300,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
     },
     {
         "id" : 4,
-        "price" : 400,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
     },
     {
         "id" : 1,
-        "price" : 100,
+        "volume" : "100мл",
         "title" : "ATBbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img00"
     },
     {
         "id" : 2,
-        "price" : 200,
+        "volume" : "100мл",
         "title" : "ATBEcoBag",
         "link" : "http://localhost:3000/Home",
         "img" : "img001"
     },
     {
         "id" : 3,
-        "price" : 300,
+        "volume" : "100мл",
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"

@@ -1,4 +1,24 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
+
+export const StyledLink = styled(NavLink)``;
+
+export const Button = styled.button`
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: #f5f7fa;
+  }
+  &.active {
+    background-color: #f5f7fa;
+  }
+`;
 
 export const SearchbarContainer = styled.header`
   top: 0;
@@ -16,8 +36,7 @@ export const SearchbarContainer = styled.header`
   color: #fff;
   background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 `;
 
 export const SearchForm = styled.form`
@@ -44,7 +63,7 @@ export const SearchFormBtn = styled.button`
   }
 `;
 
-export const SearchFormBtnLabel = styled.span`  
+export const SearchFormBtnLabel = styled.span`
   position: absolute;
   width: 1px;
   height: 1px;
