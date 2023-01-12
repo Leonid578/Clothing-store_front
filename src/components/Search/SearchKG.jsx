@@ -1,11 +1,18 @@
 // import { get } from "immer/dist/internal";
 import { useState, useEffect } from "react";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
-import { Button, Input, Searchh, StyledLink } from "../Header/Header.styled";
+import {
+  Button,
+  Input,
+  Searchh,
+  StyledLink,
+  FillSpace,
+} from "../Header/Header.styled";
 import productsJson from "../Products/ItemProducts.json";
 import "../Products/Products.css";
 
 const Search = () => {
+  const [change, setChanch] = useState(false);
   const [products, setProducts] = useState([]);
   const [value, setValue] = useState("");
   // const getProducts = () => {
@@ -25,34 +32,34 @@ const Search = () => {
   });
 
   const onTextChanged = (event) => {
-    const text = event.target.value.trim(); // удаляем пробелы
+    const text = event.target.value.trim();
+
     setValue(text);
-    // console.log("onTextChanged");
   };
 
   const onTextСhange = (event) => {
-    // const text = event.target.value.trim(); // удаляем пробелы
+    // const text = event.target.value.trim();
     // setValue(event.text);
     console.log(event);
     // event.preventDefault();
   };
 
-  return (
-    <form>
-      <Searchh>
-        <Input
-          type="text"
-          placeholder="Поиск..."
-          // id="searchInput"
-          // className="search__img"
-          onChange={onTextChanged}
-        />
-        <StyledLink to="/buy" onClick={onTextСhange}>
-          <Button>
-            <Magnifier />
-          </Button>
-        </StyledLink>
-      </Searchh>
+  if (value !== "") {
+    setChanch(true);
+  }
+
+  let Div;
+
+  if (change === false) {
+    Div = (
+      <section>
+        <FillSpace>
+          <h1>ЧТО Ищешь?</h1>
+        </FillSpace>
+      </section>
+    );
+  } else {
+    Div = (
       <section className="cards__content">
         <ul className="cards__ul">
           {filteredProducts.map((country, index) => {
@@ -82,6 +89,21 @@ const Search = () => {
           })}
         </ul>
       </section>
+    );
+  }
+
+  return (
+    <form>
+      <Searchh>
+        <Input type="text" placeholder="Поиск..." onChange={onTextChanged} />
+        <StyledLink to="/buy" onClick={onTextСhange}>
+          <Button>
+            <Magnifier />
+          </Button>
+        </StyledLink>
+      </Searchh>
+
+      {Div}
     </form>
   );
 };

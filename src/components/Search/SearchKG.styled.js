@@ -24,7 +24,7 @@ export const SearchbarContainer = styled.header`
   top: 0;
   left: 0;
   position: sticky;
-  z-index: 1100;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,3 +89,5 @@ export const SearchFormInput = styled.input`
     font-size: 18px;
   }
 `;
+
+

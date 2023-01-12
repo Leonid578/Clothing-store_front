@@ -9,23 +9,50 @@ export const StyledLink = styled(NavLink)`
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  color: #242a37;
+  color: #fff;
+  opacity: 0.5;
   display: inline-block;
   padding-top: 19px;
   padding-bottom: 14px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+`;
+
+export const StyledButton = styled(NavLink)`
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 1100px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f5f7fa;
+  }
+  &.active {
+    background-color: #f5f7fa;
+  }
 `;
 
 export const Headerr = styled.header`
-  border-bottom: 1px ffffff solid;
+  // border-bottom: 1px ffffff solid;
   height: 60px;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
   position: sticky;
-  z-index: 1000;
+  z-index: 100;
   top: 0px;
 `;
 
 export const LogInContainer = styled.div`
-  // display: flex;
+  display: flex;
   height: 60px;
   width: 80%;
   margin: 0 auto 0 auto;
@@ -37,30 +64,34 @@ export const LogInContainer = styled.div`
   // }
 `;
 
-export const HeaderLogo = styled.a`
-  width: 28px;
-  height: 27px;
-  font-family: "Abril Fatface";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  color: #242a37;
-  display: inline-block;
-  padding-top: 19px;
-  padding-bottom: 14px;
-`;
+// export const HeaderLogo = styled.a`
+//   width: 28px;
+//   height: 27px;
+//   font-family: "Abril Fatface";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 27px;
+//   color: #242a37;
+//   display: inline-block;
+//   padding-top: 19px;
+//   padding-bottom: 14px;
+// `;
 
 export const Button = styled.span`
-  // display: block;
   height: 25px;
   width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f5f7fa;
-  // border: none;
   border-radius: 50%;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 1230px;
+  top: 0;
+  left: 0;
+
   &:hover {
     cursor: pointer;
     background-color: #f5f7fa;
@@ -190,4 +221,10 @@ export const ContainerSearch = styled.div`
   margin: 0 0 0 auto;
   width: 300px;
   display: flex;
+`;
+
+export const FillSpace = styled.div`
+  display: block;
+  height: 100vh;
+  width: 100%;
 `;
