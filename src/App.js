@@ -31,7 +31,7 @@ const App = () => {
               />
               <Route path="/buy" element={<Search />}></Route>
               <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-              <Route path="*" element={<Navigate to="/Home" />} />
+              <Route path="*" element={<Navigate to="/" />} />
             </Routes>
             <Footer />
           </Layout>

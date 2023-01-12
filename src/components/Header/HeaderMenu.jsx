@@ -2,12 +2,12 @@ import React from "react";
 // import { useState } from "react";
 import {
   LogInContainer,
-  // HeaderLogo,
-  ContainerSearch,
+  // ContainerSearch,
   StyledLink,
+  StyledButton,
 } from "./Header.styled";
 import "./Header.style.css";
-// import Search from '../Search/SearchKG'
+import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 // import Sun1 from "../../images/png/Sun.png";
 // import Sun2 from "../../images/gif/Sun.gif";
 // import Moon from "../../images/png/moon.png";
@@ -36,9 +36,11 @@ const HeaderMenu = () => {
       <StyledLink to="/" onClick={scrollTop}>
         LOGO
       </StyledLink>
-      {/* <HeaderLogo>LOGO</HeaderLogo> */}
-      <ContainerSearch>
-        {/* <ButtonSun
+      <StyledButton to="/buy" onClick={scrollTop}>
+        <Magnifier />
+      </StyledButton>
+      {/* <ContainerSearch> */}
+      {/* <ButtonSun
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           onClick={change}
@@ -65,7 +67,7 @@ const HeaderMenu = () => {
             />
           )}
         </ButtonSun> */}
-        {/* <form>
+      {/* <form>
           <Searchh>
             <Input type="text" placeholder="Поиск..." id="searchInput" className="search__img" onChange={(event) => setValue(event.target.value)}/>
             <Button type="submit">
@@ -73,8 +75,7 @@ const HeaderMenu = () => {
             </Button>
           </Searchh>
         </form> */}
-        {/* <Search /> */}
-      </ContainerSearch>
+      {/* </ContainerSearch> */}
     </LogInContainer>
   );
 };
