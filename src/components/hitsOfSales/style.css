@@ -9,3 +9,24 @@
 .img3{
     background-image: url(../../images/jpg/012.jpg);
 }
+
+.img1:hover{
+    transform: scale(1.1);
+    transition: transform 0.75s;
+  }
+  .img2:hover{
+    transform: scale(1.1);
+    transition: transform 0.75s;
+  }
+  .img3:hover{
+    transform: scale(1.1);
+    transition: transform 0.75s;
+  }
+
+.white{
+    background-color: #fff;
+}
+
+.light{
+    background-color: antiquewhite;
+}

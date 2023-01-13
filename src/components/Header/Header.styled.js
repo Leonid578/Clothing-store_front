@@ -31,7 +31,7 @@ export const StyledButton = styled(NavLink)`
   border-radius: 50%;
   position: absolute;
   margin-top: 18px;
-  margin-left: 1100px;
+  margin-left: calc(80% - 30px);
 
   &:hover {
     cursor: pointer;
@@ -57,8 +57,8 @@ export const LogInContainer = styled.div`
   width: 80%;
   margin: 0 auto 0 auto;
 
-  // @media screen and (min-width: 320px) {
-  // }
+  @media screen and (min-width: 320px) {
+  }
 
   // @media screen and (min-width: 768px) {
   // }
