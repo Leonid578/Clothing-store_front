@@ -4,10 +4,10 @@ import {
   LogInContainer,
   // ContainerSearch,
   StyledLink,
-  StyledButton,
+  // StyledButton,
 } from "./Header.styled";
 import "./Header.style.css";
-import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
+// import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 // import Sun1 from "../../images/png/Sun.png";
 // import Sun2 from "../../images/gif/Sun.gif";
 // import Moon from "../../images/png/moon.png";
@@ -36,9 +36,9 @@ const HeaderMenu = () => {
       <StyledLink to="/" onClick={scrollTop}>
         LOGO
       </StyledLink>
-      <StyledButton to="/buy" onClick={scrollTop}>
+      {/* <StyledButton to="/buy" onClick={scrollTop}>
         <Magnifier />
-      </StyledButton>
+      </StyledButton> */}
       {/* <ContainerSearch> */}
       {/* <ButtonSun
           onMouseEnter={handleMouseEnter}

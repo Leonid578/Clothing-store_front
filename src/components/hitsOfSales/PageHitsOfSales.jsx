@@ -14,7 +14,7 @@ const HitsOfSales = () => {
   return (
     <>
       <HitsContainer>
-        <ElementorColumn>
+        <ElementorColumn className="white">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
               FOTOGRAFIA COMMERCIALE
@@ -28,27 +28,23 @@ const HitsOfSales = () => {
         </ElementorColumn>
 
         <ElementorColumn>
-          <a
-            href="/"
-            // style={{ width: "100%", height: "100%" }}
-          >
+          <a href="/">
             <ElementorElementPopulate className="img1">
               <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
-            </ElementorElementPopulate>{" "}
+            </ElementorElementPopulate>
           </a>
         </ElementorColumn>
       </HitsContainer>
 
       <HitsContainer>
         <ElementorColumn>
-          {" "}
           <a href="/">
             <ElementorElementPopulate className="img2">
               <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
-            </ElementorElementPopulate>{" "}
+            </ElementorElementPopulate>
           </a>
         </ElementorColumn>
-        <ElementorColumn>
+        <ElementorColumn className="light">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
               FOTOGRAFIA COMMERCIALE
@@ -63,7 +59,7 @@ const HitsOfSales = () => {
       </HitsContainer>
 
       <HitsContainer>
-        <ElementorColumn>
+        <ElementorColumn className="white">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
               FOTOGRAFIA COMMERCIALE
@@ -84,9 +80,6 @@ const HitsOfSales = () => {
           </a>
         </ElementorColumn>
       </HitsContainer>
-
-
-      
     </>
   );
 };

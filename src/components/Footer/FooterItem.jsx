@@ -12,18 +12,17 @@ import {
   List,
   Separator,
   ItemLii,
-  StyledLink
+  StyledLink,
+  Div,
 } from "./FooterItem.style";
 
 import facebook from "../../images/svg/facebook.svg";
 import youtube from "../../images/svg/youtube.svg";
 import vk from "../../images/svg/vk.svg";
 
-
-
-const scrollTop = () =>{
+const scrollTop = () => {
   window.scrollTo(0, 0);
-}
+};
 
 const FooterItem = () => {
   return (
@@ -47,8 +46,10 @@ const FooterItem = () => {
         </ItemLi>
 
         <ItemLii>
-          <FooterTitle>Есть вопросы?</FooterTitle>
-          <FooterButton>НАПИСАТЬ НАМ</FooterButton>
+          <Div>
+            <FooterTitle>Есть вопросы?</FooterTitle>
+            <FooterButton>НАПИСАТЬ НАМ</FooterButton>
+          </Div>
           <FooterLiImg>
             <FooterLink>
               <FooterImg src={facebook} alt="facebook" />
@@ -64,7 +65,9 @@ const FooterItem = () => {
       </LogInContainer>
       <Separator></Separator>
       <BottomFooter>
-      <StyledLink to="/privacyPolicy" onClick={scrollTop}>Политика конфиденциальности</StyledLink>
+        <StyledLink to="/privacyPolicy" onClick={scrollTop}>
+          Политика конфиденциальности
+        </StyledLink>
         <BottomFooterText>
           © 2022 Назввание.com All Rights Reserved
         </BottomFooterText>
