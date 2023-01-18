@@ -12,7 +12,11 @@ import PageHitsOfSales from "./components/hitsOfSales/PageHitsOfSales";
 // import Products from "./components/Products/Products";
 import Search from "./components/Search/SearchKG";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+
+// import { useSearchParams } from "react-router-dom";
 const App = () => {
+ 
+
   return (
     <>
       <Header />
