@@ -29,19 +29,16 @@ const Search = () => {
   const filteredProducts = products.filter((product) => {
     return product.title.toLowerCase().includes(value.toLowerCase());
   });
+
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
+
   const onTextChanged = (event) => {
     const text = event.target.value.trim();
-
     setValue(text);
   };
 
-  const handleAnswerChange = (event) => {
-    if (value !== "") {
-    }
-  };
   return (
     <Container>
       <Leftarroww to="/" onClick={scrollTop}>
@@ -53,36 +50,37 @@ const Search = () => {
           type="text"
           placeholder="Поиск..."
           onChange={onTextChanged}
-          onKeyPress={handleAnswerChange}
+          // onKeyPress={handleAnswerChange}
         />
       </Searchh>
-      <section className="cards__content">
+      <section className="cards__content" id="section">
         <ul className="cards__ul">
-          {filteredProducts.map((country, index) => {
-            return (
-              <li className="card" key={index}>
-                <div className="product__img">
-                  <img
-                    src={require("../../images/jpg/" + country.img + ".jpg")}
-                    alt="country.img"
-                    width={300}
-                    height={350}
-                  />
-                </div>
-                <div className="card__inf">
-                  <div className="product__name">
-                    <span> {country.volume}</span>
+          {value !== "" &&
+            filteredProducts.map((country, index) => {
+              return (
+                <li className="card" key={index}>
+                  <div className="product__img">
+                    <img
+                      src={require("../../images/jpg/" + country.img + ".jpg")}
+                      alt="country.img"
+                      width={300}
+                      height={350}
+                    />
                   </div>
-                  <div className="product__cost">
-                    <p>{country.title}</p>
+                  <div className="card__inf">
+                    <div className="product__name">
+                      <span> {country.volume}</span>
+                    </div>
+                    <div className="product__cost">
+                      <p>{country.title}</p>
+                    </div>
+                    <div className="product__btn">
+                      <button className="btn__go">Перейти</button>
+                    </div>
                   </div>
-                  <div className="product__btn">
-                    <button className="btn__go">Перейти</button>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+                </li>
+              );
+            })}
         </ul>
       </section>
     </Container>
