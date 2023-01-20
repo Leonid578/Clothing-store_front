@@ -80,21 +80,112 @@
   opacity: 1;
 }
 
-.images1 {
-  height: 100%;
-}
 @media screen and (min-width: 575px) {
-  .images1,.images2,.images3,.images4 {
+  .images1 {
     width: 800px;
+    height: 100%;
+    background-image: url(../../images/jpg/014-little.jpg);
+    background-repeat: no-repeat;
   }
 }
+
 @media (min-width: 1024px) and (max-width: 1400px) {
-  .images1,.images2,.images3,.images4 {
+  .images1 {
     width: 1400px;
+    height: 100%;
+    background-image: url(../../images/jpg/014-middle.jpg);
+    background-repeat: no-repeat;
   }
 }
+
 @media screen and (min-width: 1400px) {
-  .images1,.images2,.images3,.images4 {
+  .images1 {
     width: 1920px;
+    height: 100%;
+    background-image: url(../../images/jpg/014-big.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media screen and (min-width: 575px) {
+  .images2 {
+    width: 800px;
+    height: 100%;
+    background-image: url(../../images/jpg/015-little.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .images2 {
+    width: 1400px;
+    height: 100%;
+    background-image: url(../../images/jpg/015-middle.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .images2 {
+    width: 1920px;
+    height: 100%;
+    background-image: url(../../images/jpg/015-big.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media screen and (min-width: 575px) {
+  .images3 {
+    width: 800px;
+    height: 100%;
+    background-image: url(../../images/jpg/016-little.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .images3 {
+    width: 1400px;
+    height: 100%;
+    background-image: url(../../images/jpg/016-middle.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .images3 {
+    width: 1920px;
+    height: 100%;
+    background-image: url(../../images/jpg/016-big.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .images4 {
+    width: 800px;
+    height: 100%;
+    background-image: url(../../images/jpg/017-little.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .images4 {
+    width: 1400px;
+    height: 100%;
+    background-image: url(../../images/jpg/017-middle.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .images4 {
+    width: 1920px;
+    height: 100%;
+    background-image: url(../../images/jpg/017-big.jpg);
+    background-repeat: no-repeat;
   }
 }

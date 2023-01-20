@@ -76,22 +76,23 @@ export const Carousel = () => {
           className="all-pages-container"
           style={{ transform: `translateX(${offset}px)` }}
         >
-          <img
-            alt={owl}
+          <div><img
+            alt="owl"
             className="images1"
-          />
-          <img
-            alt={lion}
+          /></div>
+          <div><img
+            alt="lion"
             className="images2"
-          />
-          <img
-            alt={lion}
-            className="images3"
-          />
-          <img
-            alt={lion}
+          /></div>
+          <div>
+            <img
+              alt="lion"
+              className="images3"
+            /></div>
+          <div><img
+            alt="lion"
             className="images4"
-          />
+          /></div>
 
           {/* {itemsHeroes.map((itemsHero, index) => {
             return (
