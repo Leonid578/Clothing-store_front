@@ -1,15 +1,23 @@
 // import { get } from "immer/dist/internal";
 import { useState, useEffect } from "react";
 import {
+  UlCard,
   Input,
   Searchh,
   Leftarroww,
   LeftarrowwText,
   Container,
-} from "../Header/Header.styled";
+  InformationCard,
+  Card,
+  BtnCard,
+  ProductCard,
+  NameCard,
+  BtnGo,
+  Svg,
+} from "./Search.styled";
 import { ReactComponent as Leftarrow } from "../../images/svg/leftarrowsign.svg";
 import productsJson from "../Products/ItemProducts.json";
-import "../Products/Products.css";
+// import "../Products/Products.css";
 
 const Search = () => {
   const [products, setProducts] = useState([]);
@@ -42,7 +50,9 @@ const Search = () => {
   return (
     <Container>
       <Leftarroww to="/" onClick={scrollTop}>
-        <Leftarrow width={22} height={22} />
+        <Svg>
+          <Leftarrow/>
+        </Svg>
         <LeftarrowwText>Назад</LeftarrowwText>
       </Leftarroww>
       <Searchh>
@@ -50,39 +60,38 @@ const Search = () => {
           type="text"
           placeholder="Поиск..."
           onChange={onTextChanged}
-          // onKeyPress={handleAnswerChange}
+        // onKeyPress={handleAnswerChange}
         />
       </Searchh>
-      <section className="cards__content" id="section">
-        <ul className="cards__ul">
-          {value !== "" &&
-            filteredProducts.map((country, index) => {
-              return (
-                <li className="card" key={index}>
-                  <div className="product__img">
-                    <img
-                      src={require("../../images/jpg/" + country.img + ".jpg")}
-                      alt="country.img"
-                      width={300}
-                      height={350}
-                    />
-                  </div>
-                  <div className="card__inf">
-                    <div className="product__name">
-                      <span> {country.volume}</span>
-                    </div>
-                    <div className="product__cost">
-                      <p>{country.title}</p>
-                    </div>
-                    <div className="product__btn">
-                      <button className="btn__go">Перейти</button>
-                    </div>
-                  </div>
-                </li>
-              );
-            })}
-        </ul>
-      </section>
+      {/* <section className="cards__content" id="section"> */}
+      <UlCard>
+        {value !== "" &&
+          filteredProducts.map((country, index) => {
+            return (
+              <Card key={index}>
+                <div>
+                  <img
+                    src={require("../../images/jpg/" + country.img + ".jpg")}
+                    alt="country.img"
+                    width={300}
+                    height={350}
+                  />
+                </div>
+                <InformationCard>
+                  <NameCard>
+                    <span> {country.volume}</span>
+                  </NameCard>
+                  <ProductCard>
+                    <p>{country.title}</p>
+                  </ProductCard>
+                  <BtnCard>
+                    <BtnGo>Перейти</BtnGo>
+                  </BtnCard>
+                </InformationCard>
+              </Card>
+            );
+          })}
+      </UlCard>
     </Container>
   );
 };
