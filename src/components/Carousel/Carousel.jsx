@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useState, useEffect } from "react";
 import itemsHeroes from "./itemsHeroes.json";
-import "./Carousel.style.css";
+// import "./Carousel.style.css";
 
 export const Carousel = () => {
   const [dots, setDots] = useState(0);
@@ -76,7 +76,24 @@ export const Carousel = () => {
           className="all-pages-container"
           style={{ transform: `translateX(${offset}px)` }}
         >
-          {itemsHeroes.map((itemsHero, index) => {
+          <img
+            alt={owl}
+            className="images1"
+          />
+          <img
+            alt={lion}
+            className="images2"
+          />
+          <img
+            alt={lion}
+            className="images3"
+          />
+          <img
+            alt={lion}
+            className="images4"
+          />
+
+          {/* {itemsHeroes.map((itemsHero, index) => {
             return (
               <div key={itemsHero.id}>
                 <img
@@ -88,7 +105,7 @@ export const Carousel = () => {
                 />
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
       <ul className="dots">

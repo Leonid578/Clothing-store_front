@@ -48,7 +48,7 @@
   margin-left: 98%;
 }
 
-.dots{
+.dots {
   width: 100%;
   position: absolute;
   bottom: 5%;
@@ -68,7 +68,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.dots li:hover{
+.dots li:hover {
   opacity: 0.7;
 }
 
@@ -78,4 +78,23 @@
 
 .dots .active:hover {
   opacity: 1;
+}
+
+.images1 {
+  height: 100%;
+}
+@media screen and (min-width: 575px) {
+  .images1,.images2,.images3,.images4 {
+    width: 800px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .images1,.images2,.images3,.images4 {
+    width: 1400px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .images1,.images2,.images3,.images4 {
+    width: 1920px;
+  }
 }
