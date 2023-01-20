@@ -6,14 +6,11 @@ import {
   StyledLink,
   StyledButton,
 } from "./Header.styled";
-import "./Header.style.css";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 // import Sun1 from "../../images/png/Sun.png";
 // import Sun2 from "../../images/gif/Sun.gif";
 // import Moon from "../../images/png/moon.png";
 // import useTheme from "../hooks/useTheme";
-
-
 
 const scrollTop = () => {
   window.scrollTo(0, 0);

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Footerr = styled.footer`
-  height: 250px;
+  // height: 250px;
   padding: 20px 20px;
   // background-image: linear-gradient(90deg, #8748cf, #27cc8d);
 
