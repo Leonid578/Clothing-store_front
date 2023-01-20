@@ -1,6 +1,31 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+export const Container = styled.div`
+  background-color: #e9eaee;
+  min-height: calc(100vh - 200px)
+`;
+
+export const Leftarroww = styled(NavLink)`
+  display: flex;
+  height: 22px;
+  width: 80px;
+  padding: 5px;
+  position: absolute;
+  margin: 2px 0px 0 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  &:hover {
+    cursor: pointer;
+    background-color: #00fb00;
+  }
+`;
+
+export const LeftarrowwText = styled.p`
+  color: black;
+  margin: 0 0 0 8px;
+`;
+
 export const StyledLink = styled(NavLink)`
   width: 28px;
   height: 27px;
@@ -14,7 +39,6 @@ export const StyledLink = styled(NavLink)`
   display: inline-block;
   padding-top: 19px;
   padding-bottom: 14px;
-
   &:hover {
     cursor: pointer;
     opacity: 1;
@@ -91,7 +115,6 @@ export const Button = styled.span`
   margin-left: 1230px;
   top: 0;
   left: 0;
-
   &:hover {
     cursor: pointer;
     background-color: #f5f7fa;
@@ -140,7 +163,7 @@ export const Searchh = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 14px;
+  // margin-top: 14px;
 `;
 
 export const BackgroundChange = styled.button`

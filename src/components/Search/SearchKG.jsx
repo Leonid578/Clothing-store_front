@@ -1,18 +1,17 @@
 // import { get } from "immer/dist/internal";
 import { useState, useEffect } from "react";
-import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import {
-  Button,
   Input,
   Searchh,
-  StyledLink,
-  FillSpace,
+  Leftarroww,
+  LeftarrowwText,
+  Container,
 } from "../Header/Header.styled";
+import { ReactComponent as Leftarrow } from "../../images/svg/leftarrowsign.svg";
 import productsJson from "../Products/ItemProducts.json";
 import "../Products/Products.css";
 
 const Search = () => {
-  const [change, setChanch] = useState(false);
   const [products, setProducts] = useState([]);
   const [value, setValue] = useState("");
   // const getProducts = () => {
@@ -31,80 +30,60 @@ const Search = () => {
     return product.title.toLowerCase().includes(value.toLowerCase());
   });
 
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const onTextChanged = (event) => {
     const text = event.target.value.trim();
-
     setValue(text);
   };
 
-  const onTextСhange = (event) => {
-    // const text = event.target.value.trim();
-    // setValue(event.text);
-    console.log(event);
-    // event.preventDefault();
-  };
-
-  if (value !== "") {
-    setChanch(true);
-  }
-
-  let Div;
-
-  if (change === false) {
-    Div = (
-      <section>
-        <FillSpace>
-          <h1>ЧТО Ищешь?</h1>
-        </FillSpace>
-      </section>
-    );
-  } else {
-    Div = (
-      <section className="cards__content">
+  return (
+    <Container>
+      <Leftarroww to="/" onClick={scrollTop}>
+        <Leftarrow width={22} height={22} />
+        <LeftarrowwText>Назад</LeftarrowwText>
+      </Leftarroww>
+      <Searchh>
+        <Input
+          type="text"
+          placeholder="Поиск..."
+          onChange={onTextChanged}
+          // onKeyPress={handleAnswerChange}
+        />
+      </Searchh>
+      <section className="cards__content" id="section">
         <ul className="cards__ul">
-          {filteredProducts.map((country, index) => {
-            return (
-              <li className="card" key={index}>
-                <div className="product__img">
-                  <img
-                    src={require("../../images/jpg/" + country.img + ".jpg")}
-                    alt="country.img"
-                    width={300}
-                    height={350}
-                  />
-                </div>
-                <div className="card__inf">
-                  <div className="product__name">
-                    <span> {country.volume} </span>
+          {value !== "" &&
+            filteredProducts.map((country, index) => {
+              return (
+                <li className="card" key={index}>
+                  <div className="product__img">
+                    <img
+                      src={require("../../images/jpg/" + country.img + ".jpg")}
+                      alt="country.img"
+                      width={300}
+                      height={350}
+                    />
                   </div>
-                  <div className="product__cost">
-                    <p>{country.title}</p>
+                  <div className="card__inf">
+                    <div className="product__name">
+                      <span> {country.volume}</span>
+                    </div>
+                    <div className="product__cost">
+                      <p>{country.title}</p>
+                    </div>
+                    <div className="product__btn">
+                      <button className="btn__go">Перейти</button>
+                    </div>
                   </div>
-                  <div className="product__btn">
-                    <button className="btn__go">Перейти</button>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+                </li>
+              );
+            })}
         </ul>
       </section>
-    );
-  }
-
-  return (
-    <form>
-      <Searchh>
-        <Input type="text" placeholder="Поиск..." onChange={onTextChanged} />
-        <StyledLink to="/buy" onClick={onTextСhange}>
-          <Button>
-            <Magnifier />
-          </Button>
-        </StyledLink>
-      </Searchh>
-
-      {Div}
-    </form>
+    </Container>
   );
 };
 

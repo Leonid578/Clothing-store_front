@@ -7,7 +7,6 @@ const Footer = () => {
     <>
       <Footerr>
         <Container>
-          {/* <FooterMenu /> */}
           <FooterItem />
         </Container>
       </Footerr>
