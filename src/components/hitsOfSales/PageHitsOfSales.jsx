@@ -1,6 +1,7 @@
 import {
   HitsContainer,
   ElementorColumn,
+  ElementorColumn2,
   ElementorHeadingTitleLeft,
   ElementorDividerSeparator,
   ElementorTextEditor,
@@ -27,23 +28,23 @@ const HitsOfSales = () => {
           </ElementorBackgroundOverlay>
         </ElementorColumn>
 
-        <ElementorColumn>
+        <ElementorColumn2>
           <a href="/">
             <ElementorElementPopulate className="img1">
               <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
             </ElementorElementPopulate>
           </a>
-        </ElementorColumn>
+        </ElementorColumn2>
       </HitsContainer>
 
       <HitsContainer>
-        <ElementorColumn>
+        <ElementorColumn2>
           <a href="/">
             <ElementorElementPopulate className="img2">
               <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
             </ElementorElementPopulate>
           </a>
-        </ElementorColumn>
+        </ElementorColumn2>
         <ElementorColumn className="light">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
@@ -72,13 +73,13 @@ const HitsOfSales = () => {
           </ElementorBackgroundOverlay>
         </ElementorColumn>
 
-        <ElementorColumn>
+        <ElementorColumn2>
           <a href="/">
             <ElementorElementPopulate className="img3">
               <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
             </ElementorElementPopulate>
           </a>
-        </ElementorColumn>
+        </ElementorColumn2>
       </HitsContainer>
     </>
   );

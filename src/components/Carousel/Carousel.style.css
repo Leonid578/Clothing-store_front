@@ -84,17 +84,21 @@
   .images1 {
     width: 800px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/014-little.jpg);
-    background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .images1 {
     width: 1400px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/014-middle.jpg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -102,8 +106,10 @@
   .images1 {
     width: 1920px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/014-big.jpg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -112,17 +118,21 @@
   .images2 {
     width: 800px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/015-little.jpg);
-    background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1399px) {
   .images2 {
     width: 1400px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/015-middle.jpg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -130,8 +140,10 @@
   .images2 {
     width: 1920px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/015-big.jpg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -140,17 +152,21 @@
   .images3 {
     width: 800px;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../../images/jpg/016-little.jpg);
-    background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1399px) {
   .images3 {
     width: 1400px;
     height: 100%;
-    background-image: url(../../images/jpg/016-middle.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/jpg/016-middle.jpg);
   }
 }
 
@@ -158,8 +174,10 @@
   .images3 {
     width: 1920px;
     height: 100%;
-    background-image: url(../../images/jpg/016-big.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/jpg/016-big.jpg);
   }
 }
 
@@ -167,17 +185,21 @@
   .images4 {
     width: 800px;
     height: 100%;
-    background-image: url(../../images/jpg/017-little.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/jpg/017-little.jpg);
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1399px) {
   .images4 {
     width: 1400px;
     height: 100%;
-    background-image: url(../../images/jpg/017-middle.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/jpg/017-middle.jpg);
   }
 }
 
@@ -185,7 +207,9 @@
   .images4 {
     width: 1920px;
     height: 100%;
-    background-image: url(../../images/jpg/017-big.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/jpg/017-big.jpg);
   }
 }
