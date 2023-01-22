@@ -10,7 +10,7 @@
     background-image: url(../../images/jpg/012-min.jpg);
 }
 
-.img1:hover{
+/* .img1:hover{
     transform: scale(1.1);
     transition: transform 0.75s;
   }
@@ -21,7 +21,7 @@
   .img3:hover{
     transform: scale(1.1);
     transition: transform 0.75s;
-  }
+  } */
 
 .white{
     background-color: #fff;

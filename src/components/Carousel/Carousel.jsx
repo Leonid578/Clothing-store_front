@@ -6,8 +6,11 @@ import itemsHeroes from "./itemsHeroes.json";
 export const Carousel = () => {
   const [dots, setDots] = useState(0);
   const [offset, setOffset] = useState(0);
-  const PAGE_WIDTH = 1920;
+  // const PAGE_WIDTH = 1920;
+  let PAGE_WIDTH = 1920;
   const TIMER_OFFSET = 5000;
+
+  // console.log(PAGE_WIDTH)
 
   const AddActive = () => {
     const foo = document.querySelectorAll("li");
@@ -15,6 +18,9 @@ export const Carousel = () => {
       foo[i].classList.remove("active");
     }
   };
+
+
+
 
   const handleRightArrowClick = useCallback(() => {
     setOffset((currentOffset) => {
@@ -64,6 +70,9 @@ export const Carousel = () => {
     const foo = document.querySelectorAll("li");
     foo[dots].classList.add("active");
     let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
+    //  PAGE_WIDTH =  ;
+    //  window.innerWidth = WidthPage;
+    //  console.log(WidthPage)
     return () => {
       clearInterval(timerId);
     };
@@ -76,23 +85,30 @@ export const Carousel = () => {
           className="all-pages-container"
           style={{ transform: `translateX(${offset}px)` }}
         >
-          <div><img
-            alt="owl"
-            className="images1"
-          /></div>
-          <div><img
-            alt="lion"
-            className="images2"
-          /></div>
+          <div>
+            <img
+              alt="owl"
+              className="images1"
+            />
+          </div>
+          <div>
+            <img
+              alt="lion"
+              className="images2"
+            />
+          </div>
           <div>
             <img
               alt="lion"
               className="images3"
-            /></div>
-          <div><img
-            alt="lion"
-            className="images4"
-          /></div>
+            />
+          </div>
+          <div>
+            <img
+              alt="lion"
+              className="images4"
+            />
+          </div>
 
           {/* {itemsHeroes.map((itemsHero, index) => {
             return (
