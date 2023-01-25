@@ -15,6 +15,7 @@
 .window {
   height: 100%;
   width: 100%;
+  height: 100vh;
   overflow: hidden;
   margin-top: -121px;
   background-repeat: no-repeat;
@@ -22,6 +23,8 @@
 
 .all-pages-container {
   height: 100%;
+  width: 100%;
+  height: 100vh;
   display: flex;
   transition: translate;
   transition-property: transform;
@@ -50,6 +53,7 @@
 
 .dots {
   width: 100%;
+  height: 100vh;
   position: absolute;
   bottom: 5%;
   display: flex;
@@ -80,44 +84,46 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 575px) {
+.fotoDiv {
+  /* display: block; */
+  width: 100vw;
+  height: calc(100vh + 60px);
+  /* display: flex; */
+}
+
+@media screen and (max-width: 575px) {
   .images1 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-image: url(../../images/jpg/014-little.jpg);
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
   .images1 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../../images/jpg/014.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .images1 {
     background-image: url(../../images/jpg/014-middle.jpg);
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1401px) {
   .images1 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/014-big.jpg);
   }
 }
 
-
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .images2 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+  height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,33 +131,28 @@
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  .images1 {
+    background-image: url(../../images/jpg/015.jpg);
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1399px) {
   .images2 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/015-middle.jpg);
   }
 }
 
 @media screen and (min-width: 1400px) {
   .images2 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/015-big.jpg);
   }
 }
 
-
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .images3 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+  height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -159,32 +160,28 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  .images1 {
+    background-image: url(../../images/jpg/016.jpg);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
   .images3 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/016-middle.jpg);
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1401px) {
   .images3 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/016-big.jpg);
   }
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .images4 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+  height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -192,24 +189,20 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  .images1 {
+    background-image: url(../../images/jpg/017.jpg);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
   .images4 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/017-middle.jpg);
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1401px) {
   .images4 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/017-big.jpg);
   }
 }

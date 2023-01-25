@@ -19,9 +19,6 @@ export const Carousel = () => {
     }
   };
 
-
-
-
   const handleRightArrowClick = useCallback(() => {
     setOffset((currentOffset) => {
       const lastIndex = itemsHeroes.length - 1;
@@ -36,7 +33,7 @@ export const Carousel = () => {
       }
       return newOffset;
     });
-  }, [dots, offset]);
+  }, [PAGE_WIDTH, dots, offset]);
 
   const handleFirstClick = (e) => {
     AddActive();
@@ -66,17 +63,17 @@ export const Carousel = () => {
     return setOffset(-5760);
   };
 
-  useEffect(() => {
-    const foo = document.querySelectorAll("li");
-    foo[dots].classList.add("active");
-    let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
-    //  PAGE_WIDTH =  ;
-    //  window.innerWidth = WidthPage;
-    //  console.log(WidthPage)
-    return () => {
-      clearInterval(timerId);
-    };
-  }, [dots, handleRightArrowClick]);
+  // useEffect(() => {
+  //   const foo = document.querySelectorAll("li");
+  //   foo[dots].classList.add("active");
+  //   let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
+  //   //  PAGE_WIDTH =  ;
+  //   //  window.innerWidth = WidthPage;
+  //   //  console.log(WidthPage)
+  //   return () => {
+  //     clearInterval(timerId);
+  //   };
+  // }, [dots, handleRightArrowClick]);
 
   return (
     <div className="main-container">
@@ -85,25 +82,25 @@ export const Carousel = () => {
           className="all-pages-container"
           style={{ transform: `translateX(${offset}px)` }}
         >
-          <div>
+          <div className="fotoDiv">
             <img
               alt="owl"
               className="images1"
             />
           </div>
-          <div>
+          <div className="fotoDiv">
             <img
               alt="lion"
               className="images2"
             />
           </div>
-          <div>
+          <div className="fotoDiv">
             <img
               alt="lion"
               className="images3"
             />
           </div>
-          <div>
+          <div className="fotoDiv">
             <img
               alt="lion"
               className="images4"
