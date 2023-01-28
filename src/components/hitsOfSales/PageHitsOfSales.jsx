@@ -1,4 +1,5 @@
 import {
+  Container,
   HitsContainer,
   ElementorColumn,
   ElementorColumn2,
@@ -13,7 +14,7 @@ import "./style.css";
 
 const HitsOfSales = () => {
   return (
-    <>
+    <Container>
       <HitsContainer>
         <ElementorColumn className="white">
           <ElementorBackgroundOverlay>
@@ -81,7 +82,7 @@ const HitsOfSales = () => {
           </a>
         </ElementorColumn2>
       </HitsContainer>
-    </>
+    </Container>
   );
 };
 

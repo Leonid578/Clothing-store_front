@@ -6,11 +6,7 @@ import "./Carousel.style.css";
 export const Carousel = () => {
   const [dots, setDots] = useState(0);
   const [offset, setOffset] = useState(0);
-  // const PAGE_WIDTH = 1920;
-  // let PAGE_WIDTH = 1920;
   const TIMER_OFFSET = 5000;
-  // let WidthPage = window.innerWidth;
-  // console.log(WidthPage)
 
   const AddActive = () => {
     const foo = document.querySelectorAll("li");
@@ -23,7 +19,7 @@ export const Carousel = () => {
     setOffset((currentOffset) => {
       const lastIndex = itemsHeroes.length - 1;
       // const newOffset = currentOffset - PAGE_WIDTH;
-      // const newOffset = (offset + 100)
+      const newOffset = offset - 100;
       // const maxOffset = -(PAGE_WIDTH * lastIndex);
       const maxOffset = -(lastIndex * 100);
       AddActive();
@@ -32,9 +28,9 @@ export const Carousel = () => {
         setDots(0);
       } else {
         setDots(dots + 1);
-        setOffset(offset + 100);
+        setOffset(offset - 100);
       }
-      // return newOffset;
+      return newOffset;
     });
   }, [dots, offset]);
 
@@ -90,20 +86,6 @@ export const Carousel = () => {
           <article className="fotoDiv b images2"></article>
           <article className="fotoDiv c images3"></article>
           <article className="fotoDiv d images4"></article>
-
-          {/* {itemsHeroes.map((itemsHero, index) => {
-            return (
-              <div key={itemsHero.id}>
-                <img
-                  src={require("../../images/jpg/" + itemsHero.img + ".jpg")}
-                  alt={itemsHero.img}
-                  width={PAGE_WIDTH}
-                  height={"100%"}
-                  className="images"
-                />
-              </div>
-            );
-          })} */}
         </div>
       </div>
       <ul className="dots">

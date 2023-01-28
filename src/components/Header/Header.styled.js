@@ -27,8 +27,6 @@ export const LeftarrowwText = styled.p`
 `;
 
 export const StyledLink = styled(NavLink)`
-  // width: 28px;
-  // height: 27px;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
@@ -46,8 +44,6 @@ export const StyledLink = styled(NavLink)`
 `;
 
 export const StyledButton = styled(NavLink)`
-  // height: 25px;
-  // width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,13 +63,14 @@ export const StyledButton = styled(NavLink)`
 `;
 
 export const Headerr = styled.header`
-  // border-bottom: 1px ffffff solid;
+  border-bottom: 1px ffffff solid;
   height: 60px;
   display: block;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
   position: sticky;
   z-index: 100;
   top: 0px;
+  background: white;
 `;
 
 export const LogInContainer = styled.div`

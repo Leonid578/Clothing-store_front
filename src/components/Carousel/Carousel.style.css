@@ -6,26 +6,22 @@
 }
 
 .main-container {
-  /* height: 106vh; */
   height: 100vh;
   display: flex;
   align-items: center;
-  /* margin: -60px auto -60px auto; */
+  margin: -60px 0 0 0;
 }
 
 .window {
   height: 100%;
   width: 100%;
-  /* height: 100vh; */
   overflow: hidden;
-  /* margin-top: -121px; */
   background-repeat: no-repeat;
 }
 
 .all-pages-container {
   height: 100%;
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   transition: translate;
   transition-property: transform;
@@ -54,9 +50,9 @@
 
 .dots {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: absolute;
-  bottom: 5%;
+  top: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,14 +127,13 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .images1 {
-    width: 100%;
     background-image: url(../../images/jpg/014-middle.jpg);
   }
 }
 
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1400px) {
   .images1 {
     background-image: url(../../images/jpg/014-big.jpg);
   }
@@ -161,7 +156,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .images2 {
     background-image: url(../../images/jpg/015-middle.jpg);
   }
@@ -190,13 +185,13 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .images3 {
     background-image: url(../../images/jpg/016-middle.jpg);
   }
 }
 
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1400px) {
   .images3 {
     background-image: url(../../images/jpg/016-big.jpg);
   }
@@ -219,13 +214,13 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
   .images4 {
     background-image: url(../../images/jpg/017-middle.jpg);
   }
 }
 
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1400px) {
   .images4 {
     background-image: url(../../images/jpg/017-big.jpg);
   }
