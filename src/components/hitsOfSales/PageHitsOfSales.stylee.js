@@ -2,18 +2,29 @@ import styled from "styled-components";
 
 export const HitsContainer = styled.div`
   height: 388px;
-  width: 100%;
+  // width: 100%;
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      margin: 3%;
+    }
+    margin: 0 3% 3%;
+  }
+`;
+
+export const Container = styled.div`
+  background-color: white;
 `;
 
 export const ElementorColumn = styled.div`
   position: relative;
   text-align: center;
   @media screen and (min-width: 320px) {
-    display:none;
+    display: none;
   }
-   @media screen and (min-width: 768px) {
-    display:block;
+  @media screen and (min-width: 768px) {
+    display: block;
     width: 50%;
   }
 `;
@@ -25,7 +36,7 @@ export const ElementorColumn2 = styled.div`
   @media screen and (min-width: 320px) {
     width: 100%;
   }
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 50%;
   }
 `;
@@ -82,7 +93,7 @@ export const ElementorElementPopulate = styled.div`
   background-size: cover;
   height: 388px;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
     transition: transform 0.75s;
   }

@@ -1,16 +1,12 @@
 import { useCallback } from "react";
 import { useState, useEffect } from "react";
 import itemsHeroes from "./itemsHeroes.json";
-// import "./Carousel.style.css";
+import "./Carousel.style.css";
 
 export const Carousel = () => {
   const [dots, setDots] = useState(0);
   const [offset, setOffset] = useState(0);
-  // const PAGE_WIDTH = 1920;
-  let PAGE_WIDTH = 1920;
   const TIMER_OFFSET = 5000;
-
-  // console.log(PAGE_WIDTH)
 
   const AddActive = () => {
     const foo = document.querySelectorAll("li");
@@ -19,20 +15,20 @@ export const Carousel = () => {
     }
   };
 
-
-
-
   const handleRightArrowClick = useCallback(() => {
     setOffset((currentOffset) => {
       const lastIndex = itemsHeroes.length - 1;
-      const newOffset = currentOffset - PAGE_WIDTH;
-      const maxOffset = -(PAGE_WIDTH * lastIndex);
+      // const newOffset = currentOffset - PAGE_WIDTH;
+      const newOffset = offset - 100;
+      // const maxOffset = -(PAGE_WIDTH * lastIndex);
+      const maxOffset = -(lastIndex * 100);
       AddActive();
       if (offset === maxOffset) {
         setOffset(0);
         setDots(0);
       } else {
         setDots(dots + 1);
+        setOffset(offset - 100);
       }
       return newOffset;
     });
@@ -49,30 +45,31 @@ export const Carousel = () => {
     AddActive();
     e.currentTarget.classList.add("active");
     setDots(1);
-    return setOffset(-1920);
+    // return setOffset(-1920);
+    return setOffset(-100);
   };
 
   const handleThirdClick = (e) => {
     AddActive();
     e.currentTarget.classList.add("active");
     setDots(2);
-    return setOffset(-3840);
+    // return setOffset(-3840);
+    return setOffset(-200);
   };
 
   const handleFourthClick = (e) => {
     AddActive();
     e.currentTarget.classList.add("active");
     setDots(3);
-    return setOffset(-5760);
+    // return setOffset(-5760);
+    return setOffset(-300);
   };
 
   useEffect(() => {
     const foo = document.querySelectorAll("li");
     foo[dots].classList.add("active");
     let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
-    //  PAGE_WIDTH =  ;
-    //  window.innerWidth = WidthPage;
-    //  console.log(WidthPage)
+
     return () => {
       clearInterval(timerId);
     };
@@ -83,46 +80,12 @@ export const Carousel = () => {
       <div className="window">
         <div
           className="all-pages-container"
-          style={{ transform: `translateX(${offset}px)` }}
+          style={{ transform: `translateX(${offset}%)` }}
         >
-          <div>
-            <img
-              alt="owl"
-              className="images1"
-            />
-          </div>
-          <div>
-            <img
-              alt="lion"
-              className="images2"
-            />
-          </div>
-          <div>
-            <img
-              alt="lion"
-              className="images3"
-            />
-          </div>
-          <div>
-            <img
-              alt="lion"
-              className="images4"
-            />
-          </div>
-
-          {/* {itemsHeroes.map((itemsHero, index) => {
-            return (
-              <div key={itemsHero.id}>
-                <img
-                  src={require("../../images/jpg/" + itemsHero.img + ".jpg")}
-                  alt={itemsHero.img}
-                  width={PAGE_WIDTH}
-                  height={"100%"}
-                  className="images"
-                />
-              </div>
-            );
-          })} */}
+          <article className="fotoDiv a images1"></article>
+          <article className="fotoDiv b images2"></article>
+          <article className="fotoDiv c images3"></article>
+          <article className="fotoDiv d images4"></article>
         </div>
       </div>
       <ul className="dots">

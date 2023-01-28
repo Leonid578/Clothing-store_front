@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
   background-color: #e9eaee;
-  min-height: calc(100vh - 200px)
+  min-height: calc(100vh - 200px);
 `;
 
 export const Leftarroww = styled(NavLink)`
@@ -27,8 +27,6 @@ export const LeftarrowwText = styled.p`
 `;
 
 export const StyledLink = styled(NavLink)`
-  width: 28px;
-  height: 27px;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
@@ -46,8 +44,6 @@ export const StyledLink = styled(NavLink)`
 `;
 
 export const StyledButton = styled(NavLink)`
-  height: 25px;
-  width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,25 +63,22 @@ export const StyledButton = styled(NavLink)`
 `;
 
 export const Headerr = styled.header`
-  // border-bottom: 1px ffffff solid;
+  border-bottom: 1px ffffff solid;
   height: 60px;
+  display: block;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
   position: sticky;
   z-index: 100;
   top: 0px;
+  background: white;
 `;
 
 export const LogInContainer = styled.div`
   display: flex;
-  height: 60px;
+  // height: 60px;
+  // height: 100%;
   width: 80%;
   margin: 0 auto 0 auto;
-
-  @media screen and (min-width: 320px) {
-  }
-
-  // @media screen and (min-width: 768px) {
-  // }
 `;
 
 // export const HeaderLogo = styled.a`

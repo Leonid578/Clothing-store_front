@@ -6,22 +6,22 @@
 }
 
 .main-container {
-  height: 106vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  margin: -60px auto -60px auto;
+  margin: -60px 0 0 0;
 }
 
 .window {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin-top: -121px;
   background-repeat: no-repeat;
 }
 
 .all-pages-container {
   height: 100%;
+  width: 100%;
   display: flex;
   transition: translate;
   transition-property: transform;
@@ -50,8 +50,9 @@
 
 .dots {
   width: 100%;
+  /* height: 100vh; */
   position: absolute;
-  bottom: 5%;
+  top: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,44 +81,68 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 575px) {
+.fotoDiv {
+  background: #eee;
+  height: calc(100vh + 60px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
+.a {
+  position: absolute;
+  left: 0%;
+}
+
+.b {
+  position: absolute;
+  left: 100%;
+}
+
+.c {
+  position: absolute;
+  left: 200%;
+}
+
+.d {
+  position: absolute;
+  left: 300%;
+}
+
+@media screen and (max-width: 575px) {
   .images1 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-image: url(../../images/jpg/014-little.jpg);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  .images1 {
+    background-image: url(../../images/jpg/014.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .images1 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/014-middle.jpg);
   }
 }
 
 @media screen and (min-width: 1400px) {
   .images1 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/014-big.jpg);
   }
 }
 
-
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .images2 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,33 +150,28 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
   .images2 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../../images/jpg/015.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .images2 {
     background-image: url(../../images/jpg/015-middle.jpg);
   }
 }
 
 @media screen and (min-width: 1400px) {
   .images2 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/015-big.jpg);
   }
 }
 
-
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .images3 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -159,32 +179,28 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
   .images3 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../../images/jpg/016.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .images3 {
     background-image: url(../../images/jpg/016-middle.jpg);
   }
 }
 
 @media screen and (min-width: 1400px) {
   .images3 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/016-big.jpg);
   }
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .images4 {
-    width: 800px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -192,24 +208,20 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
   .images4 {
-    width: 1400px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../../images/jpg/017.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .images4 {
     background-image: url(../../images/jpg/017-middle.jpg);
   }
 }
 
 @media screen and (min-width: 1400px) {
   .images4 {
-    width: 1920px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-image: url(../../images/jpg/017-big.jpg);
   }
 }
