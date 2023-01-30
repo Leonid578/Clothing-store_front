@@ -18,9 +18,7 @@ export const Carousel = () => {
   const handleRightArrowClick = useCallback(() => {
     setOffset((currentOffset) => {
       const lastIndex = itemsHeroes.length - 1;
-      // const newOffset = currentOffset - PAGE_WIDTH;
       const newOffset = offset - 100;
-      // const maxOffset = -(PAGE_WIDTH * lastIndex);
       const maxOffset = -(lastIndex * 100);
       AddActive();
       if (offset === maxOffset) {
@@ -45,7 +43,6 @@ export const Carousel = () => {
     AddActive();
     e.currentTarget.classList.add("active");
     setDots(1);
-    // return setOffset(-1920);
     return setOffset(-100);
   };
 
@@ -53,7 +50,6 @@ export const Carousel = () => {
     AddActive();
     e.currentTarget.classList.add("active");
     setDots(2);
-    // return setOffset(-3840);
     return setOffset(-200);
   };
 
@@ -61,7 +57,6 @@ export const Carousel = () => {
     AddActive();
     e.currentTarget.classList.add("active");
     setDots(3);
-    // return setOffset(-5760);
     return setOffset(-300);
   };
 
@@ -97,16 +92,3 @@ export const Carousel = () => {
     </div>
   );
 };
-
-// const handleLeftArrowClick = () => {
-//   setOffset((currentOffset) => {
-//     const newOffset = currentOffset + PAGE_WIDTH;
-//     return Math.min(newOffset, 0);
-//   });
-// };
-
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-//  {/* <FaChevronLeft className="arrow left" onClick={handleLeftArrowClick} /> */}
-//  {/* <FaChevronRight className="arrow right" onClick={handleRightArrowClick} /> */}
-
-// return Math.max(newOffset, maxOffset);

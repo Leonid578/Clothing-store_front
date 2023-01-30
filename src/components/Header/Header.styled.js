@@ -26,13 +26,14 @@ export const LeftarrowwText = styled.p`
   margin: 0 0 0 8px;
 `;
 
-export const StyledLink = styled(NavLink)`
+export const StyledLinkLogo = styled(NavLink)`
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
   color: #fff;
+  color:#212121;
   opacity: 0.5;
   display: inline-block;
   padding-top: 19px;
@@ -75,8 +76,6 @@ export const Headerr = styled.header`
 
 export const LogInContainer = styled.div`
   display: flex;
-  // height: 60px;
-  // height: 100%;
   width: 80%;
   margin: 0 auto 0 auto;
 `;
@@ -202,14 +201,12 @@ export const DropMenu = styled.ul`
   transform: translateY(101%);
   transition: transform;
   transition-duration: 1s;
-  // opacity: 0;
 `;
 
 export const Div = styled.div`
   height: 175px;
   margin-top: 10px;
   position: relative;
-  // overflow: hidden;
 `;
 
 export const DivLinks = styled.div`
@@ -226,11 +223,6 @@ export const DivLinks = styled.div`
 export const MenuLi = styled.li`
   color: black;
   font-size: 16px;
-
-  // &:hover ${DropMenu} {
-  //   transform: translateY(0%);
-  //   opacity: 1;
-  // }
 `;
 
 export const ContainerSearch = styled.div`

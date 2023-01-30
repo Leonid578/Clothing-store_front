@@ -1,44 +1,32 @@
 import styled from "styled-components";
 
 export const Footerr = styled.footer`
-  // height: 250px;
   padding: 20px 20px;
-  // background-image: linear-gradient(90deg, #8748cf, #27cc8d);
-
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
-  // position: relative;
   background-color: antiquewhite;
 `;
 
 export const Container = styled.div`
-  // display: flex;
   text-align: center;
   justify-content: center;
   width: 80%;
-  // padding: 20px;
   margin: 0 auto 0 auto;
 `;
 
 export const FooterLogo = styled.a`
   display: block;
   align-items: center;
-  // max-width: 180px;
   max-width: 50px;
   margin: 0 auto 50px;
   color: #fff;
 
   @media screen and (max-width: 480px) {
-    // max-width: 216px;
     max-width: 50px;
     margin-bottom: 30px;
   }
 `;
 
 export const LogInContainer = styled.div`
-  // min-height: 300px;
-  // display: flex;
-  // background-color: #212121;
-
   @media screen and (min-width: 576px) {
     max-width: 540px;
   }
@@ -71,16 +59,12 @@ export const FooterItem = styled.ul`
 `;
 
 export const FooterLi = styled.li`
-  // background: tomato;
-  // display: flex;
 
   @media screen and (min-width: 320px) {
-    // width: 70px;
     margin: 0 10px 10px;
   }
 
   @media screen and (min-width: 768px) {
-    // width: 150px;
     margin: 0 10px 10px;
     padding: 5px;
   }
@@ -107,10 +91,6 @@ export const FooterTitle = styled.h3`
   font-weight: 500;
   color: #fff;
   margin-bottom: 20px;
-
-  // color: #000;
-  // height: 14px;
-  // margin: 0 0 20px 0;
 `;
 
 export const FooterButton = styled.button`
@@ -146,7 +126,6 @@ export const BottomFooter = styled.div`
 `;
 
 export const BottomFooterText = styled.p`
-  // margin-top: 50px;
   margin: 50px auto auto 0;
   font-size: 18px;
   color: #fff;

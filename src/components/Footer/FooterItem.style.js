@@ -9,7 +9,7 @@ export const StyledLink = styled(NavLink)`
     color: orange;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     margin-right: 10px;
   }
 `;
@@ -98,8 +98,9 @@ export const BottomFooter = styled.div`
   justify-content: center;
   font-size: 18px;
   font-weight: 300;
+  margin: 10px 0;
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
   @media screen and (min-width: 1024px) {
@@ -115,8 +116,6 @@ export const BottomFooterText = styled.p`
 `;
 
 export const FooterLogo = styled.a`
-  // display: block;
-  // position: relative;
   align-items: center;
   max-width: 50px;
   margin: 0 auto 50px;
@@ -157,10 +156,8 @@ export const Separator = styled.div`
 export const Div = styled.div`
   align-items: center;
   justify-content: center;
-  // height: 40px;
 
   @media screen and (min-width: 320) {
-    // display: block;
     min-width: 1000px;
     max-width: 1400px;
   }
