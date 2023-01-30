@@ -113,6 +113,10 @@ export const BottomFooterText = styled.p`
   color: #000;
   text-align: center;
   font-weight: 300;
+
+   @media screen and (max-width: 575px) {
+     font-size: 16px;
+  }
 `;
 
 export const FooterLogo = styled.a`

@@ -7,9 +7,7 @@ import { Carousel } from "./components/Carousel/Carousel";
 import "./components/Carousel/Carousel.style.css";
 import Layout from "./components/Theme/Layout";
 import { ThemeProvider } from "./components/providers/ThemeProvider";
-
 import PageHitsOfSales from "./components/hitsOfSales/PageHitsOfSales";
-// import Products from "./components/Products/Products";
 import Search from "./components/Search/Search";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 
