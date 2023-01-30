@@ -1,5 +1,4 @@
 import {
-  // FooterLogo,
   LogInContainer,
   FooterLink,
   FooterTitle,
@@ -28,8 +27,6 @@ const FooterItem = () => {
   return (
     <>
       <LogInContainer>
-        {/* <FooterLogo>LOGO</FooterLogo> */}
-
         <ItemLi>
           <List>
             <FooterLink>О нас</FooterLink>

@@ -17,7 +17,6 @@ import {
 } from "./Search.styled";
 import { ReactComponent as Leftarrow } from "../../images/svg/leftarrowsign.svg";
 import productsJson from "../Products/ItemProducts.json";
-// import "../Products/Products.css";
 
 const Search = () => {
   const [products, setProducts] = useState([]);
@@ -60,10 +59,8 @@ const Search = () => {
           type="text"
           placeholder="Поиск..."
           onChange={onTextChanged}
-        // onKeyPress={handleAnswerChange}
         />
       </Searchh>
-      {/* <section className="cards__content" id="section"> */}
       <UlCard>
         {value !== "" &&
           filteredProducts.map((country, index) => {

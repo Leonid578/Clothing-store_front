@@ -1,8 +1,9 @@
 :root {
-	--accent-dark: #3ca654;
-	--accent-light: #4b66eb;
-	--bg-dark: #060606;
-	--bg-light: #e9eaee;
+  --accent-dark: #3ca654;
+  --accent-light: #4b66eb;
+  --bg-dark: #060606;
+  /* --bg-light: #e9eaee; */
+  --bg-light: #fff;
 }
 
 body {
@@ -21,14 +22,14 @@ code {
 }
 
 .layout {
-	background-color: var(--bg-light);
-	color: #222;
-	height: 100%;
+  background-color: var(--bg-light);
+  color: #222;
+  height: 100%;
 }
 
 .layout.dark {
-	background-color: var(--bg-dark);
-	color: #fff;
+  background-color: var(--bg-dark);
+  color: #fff;
 }
 
 .list {
@@ -50,7 +51,7 @@ p {
   margin-bottom: 0;
 }
 
-li { 
+li {
   list-style: none;
 }
 
@@ -58,9 +59,10 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-a:hover{
-    color: #fff;
-  }
+
+a:hover {
+  color: #fff;
+}
 
 ul,
 ol {
@@ -75,6 +77,4 @@ img {
   display: block;
 }
 
-.container{
-  
-}
+.container {}

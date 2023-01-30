@@ -1,5 +1,4 @@
 import products from "./ItemProducts.json";
-// import "../Products/Products.css";
 
 const ProductsCard = () => {
   return (

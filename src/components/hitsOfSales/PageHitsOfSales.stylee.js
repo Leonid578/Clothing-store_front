@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HitsContainer = styled.div`
   height: 388px;
-  // width: 100%;
   display: flex;
 
   @media screen and (max-width: 767px) {
@@ -43,13 +42,6 @@ export const ElementorColumn2 = styled.div`
 
 export const ElementorBackgroundOverlay = styled.div`
   padding: 10% 15%;
-
-  // @media screen and (min-width: 320px) {
-  //   display:0;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 50%;
-  // }
 `;
 
 export const ElementorHeadingTitleLeft = styled.h2`

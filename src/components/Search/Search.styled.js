@@ -2,20 +2,20 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-margin-top: 20px;
+  padding-top: 20px;
   background-color: #e9eaee;
   min-height: calc(100vh - 200px)
 `;
 
 export const UlCard = styled.ul`
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 25px;
-flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  flex-wrap: wrap;
 
-@media screen and (min-width: 576px) {
-   margin-left: -15px;
+  @media screen and (min-width: 576px) {
+    margin-left: -15px;
   }
 `;
 
@@ -51,7 +51,6 @@ export const Leftarroww = styled(NavLink)`
 display: flex;
 align-items: center;
 justify-content: center;
-//   height: 20px;
   width: 65px;
   padding: 5px;
   position: absolute;
@@ -74,11 +73,9 @@ justify-content: center;
 export const Svg = styled.div`
 @media screen and (min-width: 320px) {
    width:18px;
-//    hight:18px;
   }
 @media screen and (min-width: 576px) {
    width:22px;
-//    hight:22px;
   }
 `;
 
@@ -111,9 +108,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 background: white;
-// width: 300px;
 height: 450px;
-
 margin-top: 30px;
 flex-basis: calc(100% - 15px);
 
@@ -157,19 +152,3 @@ height: 30px;
 color: aliceblue;
 background-color: red;
 `;
-
-
-
-// export const HeaderLogo = styled.a`
-//   width: 28px;
-//   height: 27px;
-//   font-family: "Abril Fatface";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 27px;
-//   color: #242a37;
-//   display: inline-block;
-//   padding-top: 19px;
-//   padding-bottom: 14px;
-// `;
