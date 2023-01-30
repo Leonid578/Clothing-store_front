@@ -6,24 +6,6 @@ import {
 } from "./Header.styled";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 
-const scrollTop = () => {
-  window.scrollTo(0, 0);
-};
-const HeaderMenu = () => {
-  return (
-    <LogInContainer>
-      <StyledLinkLogo to="/" onClick={scrollTop}>
-        LOGO
-      </StyledLinkLogo>
-      <StyledButton to="/buy" onClick={scrollTop}>
-        <Magnifier />
-      </StyledButton>
-    </LogInContainer>
-  );
-};
-export default HeaderMenu;
-
-
 // const [active2, setActive2] = useState(false);
 // const [active, setActive] = useState(true);
 // const { isDark, setIsDark } = useTheme();
@@ -37,7 +19,11 @@ export default HeaderMenu;
 //   setActive2(!active2);
 // };
 
-{/* <ButtonSun
+const scrollTop = () => {
+  window.scrollTo(0, 0);
+};
+const HeaderMenu = () => {
+  /* <ButtonSun
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           onClick={change}
@@ -63,12 +49,28 @@ export default HeaderMenu;
               onClick={() => setIsDark(!isDark)}
             />
           )}
-        </ButtonSun> */}
-{/* <form>
-          <Searchh>
-            <Input type="text" placeholder="Поиск..." id="searchInput" className="search__img" onChange={(event) => setValue(event.target.value)}/>
-            <Button type="submit">
-              <Magnifier />
-            </Button>
-          </Searchh>
-        </form> */}
+        </ButtonSun> */
+  /* <form>
+            <Searchh>
+              <Input type="text" placeholder="Поиск..." id="searchInput" className="search__img" onChange={(event) => setValue(event.target.value)}/>
+              <Button type="submit">
+                <Magnifier />
+              </Button>
+            </Searchh>
+          </form> */
+  return (
+    <LogInContainer>
+      <StyledLinkLogo to="/" onClick={scrollTop}>
+        LOGO
+      </StyledLinkLogo>
+      <StyledButton to="/buy" onClick={scrollTop}>
+        <Magnifier />
+      </StyledButton>
+    </LogInContainer>
+  );
+};
+export default HeaderMenu;
+
+
+
+
