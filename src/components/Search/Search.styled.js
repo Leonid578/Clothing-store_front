@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const Container = styled.div`
   padding-top: 20px;
   background-color: #e9eaee;
-  min-height: calc(100vh - 200px)
+  min-height: calc(100vh - 80px)
 `;
 
 export const UlCard = styled.ul`
