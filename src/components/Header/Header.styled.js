@@ -66,12 +66,15 @@ export const StyledButton = styled(NavLink)`
 export const Headerr = styled.header`
   border-bottom: 1px ffffff solid;
   height: 60px;
+  width:100%;
   display: block;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
-  position: sticky;
+  position: fixed;
   z-index: 100;
-  top: 0px;
+  top: 0;
+  left:0;
   background: white;
+  transition: transform .1s linear;
 `;
 
 export const LogInContainer = styled.div`
