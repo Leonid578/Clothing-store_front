@@ -1,9 +1,5 @@
 import * as React from "react";
-import {
-  LogInContainer,
-  StyledLinkLogo,
-  StyledButton,
-} from "./Header.styled";
+import { LogInContainer, StyledLinkLogo, StyledButton } from "./Header.styled";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 
 // const [active2, setActive2] = useState(false);
@@ -22,8 +18,30 @@ import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 const scrollTop = () => {
   window.scrollTo(0, 0);
 };
-const HeaderMenu = () => {
 
+let lastScroll = 0;
+const defaultOffset = 200;
+const header = document.querySelector(".header");
+
+const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+const containHide = () => header.classList.contains("hide");
+
+window.addEventListener("scroll", () => {
+  if (
+    scrollPosition() > lastScroll &&
+    !containHide 
+    && scrollPosition() > defaultOffset
+  ) {
+    header.classList.add("hide");
+    console.log("down");
+  } else if (scrollPosition() < lastScroll && !containHide) {
+    header.classList.remove("hide");
+    console.log("up");
+  }
+  lastScroll = scrollPosition();
+});
+
+const HeaderMenu = () => {
   // <ButtonSun
   //         onMouseEnter={handleMouseEnter}
   //         onMouseLeave={handleMouseLeave}
@@ -50,7 +68,7 @@ const HeaderMenu = () => {
   //             onClick={() => setIsDark(!isDark)}
   //           />
   //         )}
-  //       </ButtonSun> 
+  //       </ButtonSun>
   //  <form>
   //           <Searchh>
   //             <Input type="text" placeholder="Поиск..." id="searchInput" className="search__img" onChange={(event) => setValue(event.target.value)}/>
@@ -58,10 +76,10 @@ const HeaderMenu = () => {
   //               <Magnifier />
   //             </Button>
   //           </Searchh>
-  //         </form> 
+  //         </form>
 
   return (
-    <LogInContainer>
+    <LogInContainer className="header">
       <StyledLinkLogo to="/" onClick={scrollTop}>
         LOGO
       </StyledLinkLogo>
@@ -72,7 +90,3 @@ const HeaderMenu = () => {
   );
 };
 export default HeaderMenu;
-
-
-
-
