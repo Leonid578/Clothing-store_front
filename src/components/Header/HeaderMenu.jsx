@@ -1,5 +1,14 @@
 import * as React from "react";
-import { LogInContainer, StyledLinkLogo, StyledButton } from "./Header.styled";
+import {
+  LogInContainer,
+  StyledLinkLogo,
+  StyledButton,
+  Container,
+  SwitchLanguage,
+  TopHeader,
+  SwitchTheme,
+  Tell,
+} from "./Header.styled";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import Flags from "../Flags/flag";
 
@@ -80,11 +89,16 @@ const HeaderMenu = () => {
   //         </form>
 
   return (
-    <>
-      <div>
-        <div>сменить язык</div>
-        <div>сменить тему</div>
-      </div>
+    <Container>
+      <TopHeader>
+        <>
+          <Tell>+380686082451</Tell>
+        </>
+        <>
+          <SwitchLanguage>сменить язык</SwitchLanguage>
+          <SwitchTheme>сменить тему</SwitchTheme>
+        </>
+      </TopHeader>
       <LogInContainer>
         <StyledLinkLogo to="/" onClick={scrollTop}>
           LOGO
@@ -94,7 +108,7 @@ const HeaderMenu = () => {
         </StyledButton>
         <Flags />
       </LogInContainer>
-    </>
+    </Container>
   );
 };
 export default HeaderMenu;

@@ -1,12 +1,47 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-// export const Container = styled.div`
-//   background-color: #e9eaee;
-//   min-height: calc(100vh - 200px);
-// `;
+export const Container = styled.div`
+  border-bottom: 1px ffffff solid;
+  height: 92px;
+  width: 100%;
+  display: block;
+  box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: white;
+  transition: transform 0.1s linear;
+`;
+
+export const SwitchLanguage = styled.div`
+  margin: 0 8px 0 8px;
+  opacity: 0.5;
+`;
+
+export const SwitchTheme = styled.div`
+  margin: 0 8px 0 8px;
+  opacity: 0.5;
+`;
+
+export const TopHeader = styled.div`
+  margin: 0 auto 0 auto;
+  // justify-content: space-between;
+  border-bottom: 1px ffffff solid;
+  height: 32px;
+  width: 80%;
+  display: flex;
+  box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
+`;
+
+export const Tell = styled.div`
+  padding: 3px 0;
+  opacity: 0.5;
+`;
 
 export const StyledLinkLogo = styled(NavLink)`
+  // margin-top: 32px;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
@@ -43,24 +78,10 @@ export const StyledButton = styled(NavLink)`
   }
 `;
 
-export const Headerr = styled.header`
-  border-bottom: 1px ffffff solid;
-  height: 60px;
-  width:100%;
-  display: block;
-  box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left:0;
-  background: white;
-  transition: transform .1s linear;
-`;
-
 export const LogInContainer = styled.div`
   display: flex;
   width: 80%;
-  margin: 0 auto 0 auto;
+  margin: 0px auto 0 auto;
 `;
 
 export const Button = styled.span`
