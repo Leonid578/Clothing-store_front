@@ -4,7 +4,11 @@ import { NavLink } from "react-router-dom";
 export const Container = styled.div`
   padding-top: 20px;
   background-color: #e9eaee;
-  min-height: calc(100vh - 80px)
+  min-height: calc(100vh - 332px);
+
+  @media screen and (max-width: 575px) {
+    min-height: calc(100vh - 483px);
+  }
 `;
 
 export const UlCard = styled.ul`
@@ -20,12 +24,12 @@ export const UlCard = styled.ul`
 `;
 
 export const LiCard = styled.li`
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 25px;
-flex-wrap: wrap;
-margin-left: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  flex-wrap: wrap;
+  margin-left: -30px;
 `;
 
 export const Input = styled.input`
@@ -48,9 +52,9 @@ export const Searchh = styled.div`
 `;
 
 export const Leftarroww = styled(NavLink)`
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 65px;
   padding: 5px;
   position: absolute;
@@ -71,11 +75,11 @@ justify-content: center;
 `;
 
 export const Svg = styled.div`
-@media screen and (min-width: 320px) {
-   width:18px;
+  @media screen and (min-width: 320px) {
+    width: 18px;
   }
-@media screen and (min-width: 576px) {
-   width:22px;
+  @media screen and (min-width: 576px) {
+    width: 22px;
   }
 `;
 
@@ -96,23 +100,23 @@ export const ImgCard = styled.img`
 `;
 
 export const InformationCard = styled.div`
-width: 250px;
-display: flex;
-align-items: center;
-flex-direction: column;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const Card = styled.div`
-border: 3px;
-display: flex;
-align-items: center;
-flex-direction: column;
-background: white;
-height: 450px;
-margin-top: 30px;
-flex-basis: calc(100% - 15px);
+  border: 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  height: 450px;
+  margin-top: 30px;
+  flex-basis: calc(100% - 15px);
 
-@media screen and (min-width: 576px) {
+  @media screen and (min-width: 576px) {
     margin-left: 15px;
     flex-basis: calc(50% - 15px);
   }
@@ -127,11 +131,11 @@ flex-basis: calc(100% - 15px);
 `;
 
 export const ProductCard = styled.div`
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
 `;
 
 export const NameCard = styled.div`
@@ -140,15 +144,15 @@ export const NameCard = styled.div`
 `;
 
 export const BtnCard = styled.div`
-width: 100%;
-margin-bottom: 10px;
-cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
 `;
 
 export const BtnGo = styled.button`
-border: 0px;
-width: 100%;
-height: 30px;
-color: aliceblue;
-background-color: red;
+  border: 0px;
+  width: 100%;
+  height: 30px;
+  color: aliceblue;
+  background-color: red;
 `;

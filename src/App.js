@@ -10,13 +10,11 @@ import { ThemeProvider } from "./components/providers/ThemeProvider";
 import PageHitsOfSales from "./components/hitsOfSales/PageHitsOfSales";
 import Search from "./components/Search/Search";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
-
-// import { useSearchParams } from "react-router-dom";
 const App = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<h1>Loading....</h1>}>
+      <Suspense fallback={<h1>Loading...</h1>}>
         <ThemeProvider>
           <Layout>
             <Routes>

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { LogInContainer, StyledLinkLogo, StyledButton } from "./Header.styled";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
+import Flags from "../Flags/flag";
 
 // const [active2, setActive2] = useState(false);
 // const [active, setActive] = useState(true);
@@ -18,6 +19,7 @@ import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 const scrollTop = () => {
   window.scrollTo(0, 0);
 };
+<<<<<<< Updated upstream
 
 let lastScroll = 0;
 const defaultOffset = 200;
@@ -41,6 +43,8 @@ window.addEventListener("scroll", () => {
   lastScroll = scrollPosition();
 });
 
+=======
+>>>>>>> Stashed changes
 const HeaderMenu = () => {
   // <ButtonSun
   //         onMouseEnter={handleMouseEnter}
@@ -79,6 +83,7 @@ const HeaderMenu = () => {
   //         </form>
 
   return (
+<<<<<<< Updated upstream
     <LogInContainer className="header">
       <StyledLinkLogo to="/" onClick={scrollTop}>
         LOGO
@@ -87,6 +92,23 @@ const HeaderMenu = () => {
         <Magnifier />
       </StyledButton>
     </LogInContainer>
+=======
+    <>
+      <div>
+        <div>сменить язык</div>
+        <div>сменить тему</div>
+      </div>
+      <LogInContainer>
+        <StyledLinkLogo to="/" onClick={scrollTop}>
+          LOGO
+        </StyledLinkLogo>
+        <StyledButton to="/buy" onClick={scrollTop}>
+          <Magnifier />
+        </StyledButton>
+        <Flags />
+      </LogInContainer>
+    </>
+>>>>>>> Stashed changes
   );
 };
 export default HeaderMenu;

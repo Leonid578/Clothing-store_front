@@ -23,7 +23,7 @@ const Flag = () => {
       <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
       <DropdownHeaderDiv>
         <img
-          src="https://flagcdn.com/ua.svg"
+          src="https://flagcdn.com/ru.svg"
           width="16"
           alt="South Africa"
         ></img>{" "}

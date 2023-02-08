@@ -87,7 +87,7 @@ export const FooterImg = styled.img`
 `;
 
 export const FooterLiImg = styled.li`
-text-align: center;
+  text-align: center;
   justify-content: center;
   display: flex;
   margin: 5px 9px 0 0;
@@ -96,26 +96,23 @@ text-align: center;
 export const BottomFooter = styled.div`
   text-align: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   margin: 10px 0;
 
   @media screen and (min-width: 768px) {
     display: flex;
-  }
-  @media screen and (min-width: 1024px) {
     margin: 25px 10px;
   }
 `;
 
 export const BottomFooterText = styled.p`
-  font-size: 18px;
   color: #000;
   text-align: center;
   font-weight: 300;
 
-   @media screen and (max-width: 575px) {
-     font-size: 16px;
+  @media screen and (max-width: 575px) {
+    font-size: 16px;
   }
 `;
 

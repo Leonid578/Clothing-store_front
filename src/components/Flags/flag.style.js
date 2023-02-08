@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderCountryDropdown = styled.div`
-    visibility: hidden;
+  // visibility: hidden;
+  display: none;
   position: absolute;
   top: 32px;
   z-index: 999991;

@@ -1,30 +1,10 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const Container = styled.div`
-  background-color: #e9eaee;
-  min-height: calc(100vh - 200px);
-`;
-
-export const Leftarroww = styled(NavLink)`
-  display: flex;
-  height: 22px;
-  width: 80px;
-  padding: 5px;
-  position: absolute;
-  margin: 2px 0px 0 30px;
-  border-radius: 20px;
-  background-color: #fff;
-  &:hover {
-    cursor: pointer;
-    background-color: #00fb00;
-  }
-`;
-
-export const LeftarrowwText = styled.p`
-  color: black;
-  margin: 0 0 0 8px;
-`;
+// export const Container = styled.div`
+//   background-color: #e9eaee;
+//   min-height: calc(100vh - 200px);
+// `;
 
 export const StyledLinkLogo = styled(NavLink)`
   font-family: "Abril Fatface";
@@ -33,7 +13,7 @@ export const StyledLinkLogo = styled(NavLink)`
   font-size: 20px;
   line-height: 27px;
   color: #fff;
-  color:#212121;
+  color: #212121;
   opacity: 0.5;
   display: inline-block;
   padding-top: 19px;
@@ -82,20 +62,6 @@ export const LogInContainer = styled.div`
   width: 80%;
   margin: 0 auto 0 auto;
 `;
-
-// export const HeaderLogo = styled.a`
-//   width: 28px;
-//   height: 27px;
-//   font-family: "Abril Fatface";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 27px;
-//   color: #242a37;
-//   display: inline-block;
-//   padding-top: 19px;
-//   padding-bottom: 14px;
-// `;
 
 export const Button = styled.span`
   height: 25px;
@@ -158,7 +124,6 @@ export const Searchh = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-top: 14px;
 `;
 
 export const BackgroundChange = styled.button`
