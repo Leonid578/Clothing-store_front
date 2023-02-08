@@ -19,20 +19,20 @@ import Flags from "../Flags/flag";
 const scrollTop = () => {
   window.scrollTo(0, 0);
 };
-<<<<<<< Updated upstream
 
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector(".header");
 
-const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+const scrollPosition = () =>
+  window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains("hide");
 
 window.addEventListener("scroll", () => {
   if (
     scrollPosition() > lastScroll &&
-    !containHide 
-    && scrollPosition() > defaultOffset
+    !containHide &&
+    scrollPosition() > defaultOffset
   ) {
     header.classList.add("hide");
     console.log("down");
@@ -42,9 +42,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = scrollPosition();
 });
-
-=======
->>>>>>> Stashed changes
 const HeaderMenu = () => {
   // <ButtonSun
   //         onMouseEnter={handleMouseEnter}
@@ -83,16 +80,6 @@ const HeaderMenu = () => {
   //         </form>
 
   return (
-<<<<<<< Updated upstream
-    <LogInContainer className="header">
-      <StyledLinkLogo to="/" onClick={scrollTop}>
-        LOGO
-      </StyledLinkLogo>
-      <StyledButton to="/buy" onClick={scrollTop}>
-        <Magnifier />
-      </StyledButton>
-    </LogInContainer>
-=======
     <>
       <div>
         <div>сменить язык</div>
@@ -108,7 +95,6 @@ const HeaderMenu = () => {
         <Flags />
       </LogInContainer>
     </>
->>>>>>> Stashed changes
   );
 };
 export default HeaderMenu;
