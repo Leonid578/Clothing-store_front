@@ -13,6 +13,10 @@ export const Container = styled.div`
   z-index: 100;
   background: white;
   transition: transform 0.1s linear;
+
+  @media screen and (max-width: 1023px) {
+    height: 60px;
+  }
 `;
 
 export const SwitchLanguage = styled.div`
@@ -27,21 +31,32 @@ export const SwitchTheme = styled.div`
 
 export const TopHeader = styled.div`
   margin: 0 auto 0 auto;
-  // justify-content: space-between;
+  justify-content: space-between;
   border-bottom: 1px ffffff solid;
   height: 32px;
   width: 80%;
   display: flex;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
 
-export const Tell = styled.div`
+export const Tell = styled.a`
   padding: 3px 0;
   opacity: 0.5;
+
+  &:hover{
+    color: #212121;
+  }
 `;
 
+// export const Delimiter = styled.span`
+
+// `;
+
 export const StyledLinkLogo = styled(NavLink)`
-  // margin-top: 32px;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;

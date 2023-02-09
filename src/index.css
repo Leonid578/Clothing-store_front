@@ -17,6 +17,12 @@ body {
   background-color: #f6f7fb;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    padding-top: 92px;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

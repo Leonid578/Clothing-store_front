@@ -1,3 +1,15 @@
-.hide{
-    transform: translateY(-60px);
+.hide {
+  transform: translateY(-60px);
+}
+
+.delimiter {
+  opacity: 0.3;
+  margin: 0 16px 0 16px;
+}
+
+.row_line {
+  display: flex;
+  color: #413d58;
+  justify-content: center;
+  align-items: center;
 }
