@@ -1,5 +1,6 @@
 .hide {
-  transform: translateY(-60px);
+  transform: translateY(-32px);
+  /* margin-top: -32px; */
 }
 
 .delimiter {
