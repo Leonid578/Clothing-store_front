@@ -1,5 +1,4 @@
-// import * as React from "react";
-import { useEffect } from "react";
+// import { useState, useEffect } from "react";
 import {
   LogInContainer,
   StyledLinkLogo,
@@ -32,41 +31,40 @@ const HeaderMenu = () => {
     window.scrollTo(0, 0);
   };
 
-  // header.className = header.className === 'header' ? 'inactive' : 'active';
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").style.top = "0";
+    } else {
+      document.getElementById("header").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
 
-  let lastScroll = 0;
-  const defaultOffset = 200;
 
-  // const header = document.getElementsByClassName("header");
+  // const [hidenHeder, setHidenHeder] = useState(0);
+  // const [hidenHeder2, setHidenHeder2] = useState(true);
 
   // useEffect(() => {
-  //   const header = document.getElementById("headerr");
-  //   header.className.add("hide");
-  // }, []);
+  //   let lastScroll = 0;
+  //   const defaultOffset = 200;
 
-  const scrollPosition = () =>
-    window.pageYOffset || document.documentElement.scrollTop;
-  // header.className = header.className === 'header' ? 'hide' : '';
+  //   const scrollPosition = () =>
+  //     window.pageYOffset || document.documentElement.scrollTop;
 
-  // console.log(containHide);
-
-  window.addEventListener("scroll", () => {
-    if (
-      scrollPosition() > lastScroll
-      //  && !containHide
-      // && scrollPosition() > defaultOffset
-    ) {
-      // header.className.add("hide");
-      console.log("down");
-    } else if (
-      scrollPosition() < lastScroll
-      // && !containHide
-    ) {
-      // header.className.remove("hide");
-      console.log("up");
-    }
-    lastScroll = scrollPosition();
-  });
+  //   window.addEventListener("scroll", () => {
+  //     if (scrollPosition() > hidenHeder && scrollPosition() > defaultOffset) {
+  //       setHidenHeder2(false);
+  //       console.log("down :", hidenHeder);
+  //     } else if (scrollPosition() < hidenHeder) {
+  //       setHidenHeder2(true);
+  //       console.log("up :", hidenHeder);
+  //     }
+  //     lastScroll = scrollPosition();
+  //     setHidenHeder(lastScroll);
+  //   });
+  // }, [hidenHeder]);
 
   // <ButtonSun
   //         onMouseEnter={handleMouseEnter}
@@ -106,16 +104,19 @@ const HeaderMenu = () => {
 
   return (
     <Container>
-      <TopHeader id="headerr" className="header">
-        <span className="row_line">
-          <Tell>+380686082451</Tell>
-          <span className="delimiter">|</span>
-        </span>
-        <span className="row_line">
-          <SwitchLanguage>сменить язык</SwitchLanguage>
-          <SwitchTheme>сменить тему</SwitchTheme>
-        </span>
-      </TopHeader>
+      {/* {hidenHeder2 &&( */}
+        <TopHeader className="header">
+          <span className="row_line">
+            <Tell>+380686082451</Tell>
+            <span className="delimiter">|</span>
+          </span>
+          <span className="row_line">
+            <SwitchLanguage>сменить язык</SwitchLanguage>
+            <SwitchTheme>сменить тему</SwitchTheme>
+          </span>
+        </TopHeader>
+      {/* )} */}
+
       <LogInContainer>
         <StyledLinkLogo to="/" onClick={scrollTop}>
           LOGO
