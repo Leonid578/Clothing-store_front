@@ -37,6 +37,7 @@ export const TopHeader = styled.div`
   width: 80%;
   display: flex;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
+  transition: top 0.3s;
 
   @media screen and (max-width: 1023px) {
     display: none;
@@ -47,7 +48,7 @@ export const Tell = styled.a`
   padding: 3px 0;
   opacity: 0.5;
 
-  &:hover{
+  &:hover {
     color: #212121;
   }
 `;
