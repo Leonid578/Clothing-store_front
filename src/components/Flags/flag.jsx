@@ -4,31 +4,48 @@ import {
   DropdownHeaderSpan,
   DropdownHeaderText,
   DropdownHeaderDiv,
+  SingleSection,
+  I,
+  RowLine,
+  ArrowSelection,
 } from "./flag.style";
-// import flags from './flags.json'
 
 const Flag = () => {
   return (
     <HeaderCountryDropdown>
-      <DropdownHeaderSpan>Доставка в </DropdownHeaderSpan>
-      <DropdownHeaderDiv>
+      <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
+      <SingleSection>
+        <DropdownHeaderDiv>
+          <RowLine>
+            <img
+              src="https://flagcdn.com/ru.svg"
+              width="18"
+              alt="South Africa"
+            ></img>
+            <DropdownHeaderText>Russian</DropdownHeaderText>
+          </RowLine>
+          <ArrowSelection>
+            <I />
+          </ArrowSelection>
+        </DropdownHeaderDiv>
+      </SingleSection>
+
+      {/* <DropdownHeaderDiv>
         <img
           src="https://flagcdn.com/ua.svg"
-          width="16"
+          width="18"
           alt="South Africa"
         ></img>
         <DropdownHeaderText>Ukraine</DropdownHeaderText>
       </DropdownHeaderDiv>
-
-      <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
       <DropdownHeaderDiv>
         <img
-          src="https://flagcdn.com/ru.svg"
-          width="16"
+          src="https://flagcdn.com/us.svg"
+          width="18"
           alt="South Africa"
-        ></img>{" "}
-        <DropdownHeaderText>Ukraine</DropdownHeaderText>
-      </DropdownHeaderDiv>
+        ></img>
+        <DropdownHeaderText>English</DropdownHeaderText>
+      </DropdownHeaderDiv> */}
     </HeaderCountryDropdown>
   );
 };

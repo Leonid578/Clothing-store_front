@@ -241,3 +241,17 @@ export const FillSpace = styled.div`
   height: 100vh;
   width: 100%;
 `;
+
+export const I = styled.i`
+  font-size: 24px;
+  opacity: 0.5;
+
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0 0 3px 3px;
+  cursor: pointer;
+`;
