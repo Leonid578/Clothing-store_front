@@ -10,27 +10,32 @@ import {
   ArrowSelection,
 } from "./flag.style";
 
-const Flag = () => {
+const Flag = ({ flagActive }) => {
+const LanguageSelection = () => {
+  
+}
+  
   return (
-    <HeaderCountryDropdown>
-      <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
-      <SingleSection>
-        <DropdownHeaderDiv>
-          <RowLine>
-            <img
-              src="https://flagcdn.com/ru.svg"
-              width="18"
-              alt="South Africa"
-            ></img>
-            <DropdownHeaderText>Russian</DropdownHeaderText>
-          </RowLine>
-          <ArrowSelection>
-            <I />
-          </ArrowSelection>
-        </DropdownHeaderDiv>
-      </SingleSection>
+    flagActive && (
+      <HeaderCountryDropdown>
+        <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
+        <SingleSection>
+          <DropdownHeaderDiv>
+            <RowLine>
+              <img
+                src="https://flagcdn.com/ru.svg"
+                width="18"
+                alt="South Africa"
+              ></img>
+              <DropdownHeaderText>Russian</DropdownHeaderText>
+            </RowLine>
+            <ArrowSelection onClick={LanguageSelection}>
+              <I />
+            </ArrowSelection>
+          </DropdownHeaderDiv>
+        </SingleSection>
 
-      {/* <DropdownHeaderDiv>
+        {/* <DropdownHeaderDiv>
         <img
           src="https://flagcdn.com/ua.svg"
           width="18"
@@ -46,7 +51,8 @@ const Flag = () => {
         ></img>
         <DropdownHeaderText>English</DropdownHeaderText>
       </DropdownHeaderDiv> */}
-    </HeaderCountryDropdown>
+      </HeaderCountryDropdown>
+    )
   );
 };
 

@@ -28,7 +28,7 @@ import "./Header.style.css";
 // };
 
 const HeaderMenu = () => {
-  const [flagActive, setFlagActive] = useState("fsfs");
+  const [flagActive, setFlagActive] = useState(false);
   const flagChange = () => {
     setFlagActive(!flagActive);
   };
@@ -120,7 +120,7 @@ const HeaderMenu = () => {
         <span className="row_line">
           <SwitchLanguage>сменить тему</SwitchLanguage>
           <SwitchTheme>
-            сменить язык <I />
+            сменить язык <I onClick={flagChange} />
           </SwitchTheme>
         </span>
       </TopHeader>
@@ -132,7 +132,7 @@ const HeaderMenu = () => {
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />
         </StyledButton>
-        <Flag flagActive/>
+        <Flag flagActive={flagActive} />
       </LogInContainer>
     </Container>
   );
