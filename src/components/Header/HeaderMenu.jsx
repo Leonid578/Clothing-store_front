@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   LogInContainer,
   StyledLinkLogo,
@@ -8,9 +8,10 @@ import {
   TopHeader,
   SwitchTheme,
   Tell,
+  I,
 } from "./Header.styled";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
-import Flags from "../Flags/flag";
+import Flag from "../Flags/flag";
 import "./Header.style.css";
 
 // const [active2, setActive2] = useState(false);
@@ -27,21 +28,28 @@ import "./Header.style.css";
 // };
 
 const HeaderMenu = () => {
+  const [flagActive, setFlagActive] = useState(false);
+  const flagChange = () => {
+    setFlagActive(!flagActive);
+  };
+
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
 
-  const prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    const currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("header").style.top = "0";
-    } else {
-      document.getElementById("header").style.top = "-32px";
-    }
-    // eslint-disable-next-line no-const-assign
-    prevScrollpos = currentScrollPos;
-  };
+  // const prevScrollpos = window.pageYOffset;
+  // window.onscroll = function () {
+  //   const currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     console.log("0");
+  //     document.getElementById("header").style.top = "0";
+  //   } else {
+  //     console.log("-32");
+  //     document.getElementById("header").style.top = "-32px";
+  //   }
+  //   // eslint-disable-next-line no-const-assign
+  //   prevScrollpos = currentScrollPos;
+  // };
 
   // const [hidenHeder, setHidenHeder] = useState(0);
   // const [hidenHeder2, setHidenHeder2] = useState(true);
@@ -103,67 +111,30 @@ const HeaderMenu = () => {
   //         </form>
 
   return (
-    // <Container>
-    //     <TopHeader className="header">
-    //       <span className="row_line">
-    //         <Tell>+380686082451</Tell>
-    //         <span className="delimiter">|</span>
-    //       </span>
-    //       <span className="row_line">
-    //         <SwitchLanguage>сменить язык</SwitchLanguage>
-    //         <SwitchTheme>сменить тему</SwitchTheme>
-    //       </span>
-    //     </TopHeader>
+    <Container>
+      <TopHeader className="header">
+        <span className="row_line">
+          <Tell>+380686082451</Tell>
+          <span className="delimiter">|</span>
+        </span>
+        <span className="row_line">
+          <SwitchLanguage>сменить тему</SwitchLanguage>
+          <SwitchTheme>
+            сменить язык <I onClick={flagChange} />
+          </SwitchTheme>
+        </span>
+      </TopHeader>
 
-    //   <LogInContainer>
-    //     <StyledLinkLogo to="/" onClick={scrollTop}>
-    //       LOGO
-    //     </StyledLinkLogo>
-    //     <StyledButton to="/buy" onClick={scrollTop}>
-    //       <Magnifier />
-    //     </StyledButton>
-    //     <Flags />
-    //   </LogInContainer>
-    // </Container>
-
-    <>
-      <div id="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div
-      //  style="padding:15px 15px 2500px;font-size:30px;margin-top:30px;"
-       >
-        <p>
-          <b>
-            This example demonstrates how to hide a navbar when the user starts
-            to scroll the page.
-          </b>
-        </p>
-        <p>Scroll down this frame to see the effect!</p>
-        <p>Scroll up to show the navbar.</p>
-        <p>
-          Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </>
+      <LogInContainer>
+        <StyledLinkLogo to="/" onClick={scrollTop}>
+          LOGO
+        </StyledLinkLogo>
+        <StyledButton to="/buy" onClick={scrollTop}>
+          <Magnifier />
+        </StyledButton>
+        <Flag flagActive={flagActive} />
+      </LogInContainer>
+    </Container>
   );
 };
 export default HeaderMenu;
