@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   HeaderCountryDropdown,
   DropdownHeaderSpan,
@@ -11,15 +12,38 @@ import {
 } from "./flag.style";
 
 const Flag = ({ flagActive }) => {
-const LanguageSelection = () => {
-  
-}
-  
+  const [resultCheck, setResultCheck] = useState(false);
+  // const showButton = document.querySelector(".pop-up__open");
+  // showButton.setAttribute("aria-expanded", false);
+
+  // showButton.addEventListener("click", () => {
+  //   const ariaExpanded = showButton.getAttribute("aria-expanded");
+  //   if (ariaExpanded === "true") {
+  //     showButton.setAttribute("aria-expanded", false);
+  //   } else {
+  //     showButton.setAttribute("aria-expanded", true);
+  //   }
+  // });
+
+  const handleClick = (event) => {
+    // event.currentTarget.setAttribute("aria-expanded", false);
+    console.log(event.currentTarget.getAttribute("aria-expanded"));
+
+    const ariaExpanded = event.currentTarget.getAttribute("aria-expanded");
+    if (ariaExpanded === "true") {
+      event.currentTarget.setAttribute("aria-expanded", false);
+      setResultCheck(false);
+    } else {
+      event.currentTarget.setAttribute("aria-expanded", true);
+      setResultCheck(true);
+    }
+  };
+
   return (
     flagActive && (
       <HeaderCountryDropdown>
         <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
-        <SingleSection>
+        <SingleSection onClick={handleClick}>
           <DropdownHeaderDiv>
             <RowLine>
               <img
@@ -29,7 +53,9 @@ const LanguageSelection = () => {
               ></img>
               <DropdownHeaderText>Russian</DropdownHeaderText>
             </RowLine>
-            <ArrowSelection onClick={LanguageSelection}>
+            <ArrowSelection 
+            // resultCheck = true ? aria-expanded="false" : aria-expanded="true"
+             >
               <I />
             </ArrowSelection>
           </DropdownHeaderDiv>

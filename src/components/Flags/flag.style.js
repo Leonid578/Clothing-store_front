@@ -50,7 +50,6 @@ export const DropdownHeaderDiv = styled.span`
   height: auto;
   align-items: center;
   height: 100%;
- 
 `;
 
 export const SingleSection = styled.span`
@@ -72,14 +71,12 @@ export const SingleSection = styled.span`
 export const I = styled.b`
   border-color: #888 transparent transparent transparent;
   border-style: solid;
-  border-width: 5px 4px 0 4px;
-  height: 0;
-  left: 50%;
   margin-left: -4px;
   margin-top: -2px;
   position: absolute;
   top: 50%;
-  width: 0;
+  left: 50%;
+  border-width: 5px 4px 0 4px;
 `;
 
 export const ArrowSelection = styled.span`
@@ -88,10 +85,19 @@ export const ArrowSelection = styled.span`
   top: 8px;
   right: 8px;
   position: absolute;
+
+  // &[aria-expanded="true"] ${I} {
+  //   border-width: 0 4px 5px 4px;
+  //   top: 0;
+  //   left: 0;
+  // }
+
+  // &[aria-expanded="false"] ${I} {
+  //   border-width: 5px 4px 0 4px;
+  // }
 `;
 
 export const RowLine = styled.div`
-  // width: 277px;
   height: 100%;
   display: flex;
   flex-direction: row;
