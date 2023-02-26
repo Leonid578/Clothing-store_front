@@ -52,6 +52,17 @@ export const DropdownHeaderDiv = styled.span`
   height: 100%;
 `;
 
+export const I = styled.b`
+  border-color: #413d58 transparent transparent transparent;
+  border-width: 5px 4px 0 4px;
+  border-style: solid;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+`;
+
 export const SingleSection = styled.span`
   box-sizing: border-box;
   cursor: pointer;
@@ -66,17 +77,15 @@ export const SingleSection = styled.span`
   padding-right: 28px !important;
   justify-content: space-between;
   position: relative;
-`;
 
-export const I = styled.b`
-  border-color: #888 transparent transparent transparent;
-  border-style: solid;
-  margin-left: -4px;
-  margin-top: -2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-width: 5px 4px 0 4px;
+  &[aria-expanded="true"] ${I} {
+    border-width: 0 4px 5px 4px;
+    border-color: transparent transparent #413d58 !important;
+  }
+
+  &[aria-expanded="false"] ${I} {
+    border-width: 5px 4px 0 4px;
+  }
 `;
 
 export const ArrowSelection = styled.span`
@@ -85,16 +94,6 @@ export const ArrowSelection = styled.span`
   top: 8px;
   right: 8px;
   position: absolute;
-
-  // &[aria-expanded="true"] ${I} {
-  //   border-width: 0 4px 5px 4px;
-  //   top: 0;
-  //   left: 0;
-  // }
-
-  // &[aria-expanded="false"] ${I} {
-  //   border-width: 5px 4px 0 4px;
-  // }
 `;
 
 export const RowLine = styled.div`
@@ -106,4 +105,30 @@ export const RowLine = styled.div`
   box-sizing: border-box;
   height: auto;
   align-items: center;
+`;
+
+export const Ul = styled.ul`
+  margin-top: -1px;
+  display: none;
+  max-height: 200px;
+  // overflow-y: auto;
+  border: 1px solid rgba(240, 240, 240, 1);
+`;
+
+export const Li = styled.li`
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 0;
+  display: block;
+  height: 40px;
+  width: 280px;
+  color: #444;
+  padding-left: 14px !important;
+  padding-right: 28px !important;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: #fa5f55 !important;
+    color: #fff !important;
+  }
 `;
