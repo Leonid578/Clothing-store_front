@@ -251,7 +251,6 @@ export const I = styled.i`
   display: inline-block;
   padding: 3px;
   transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
   margin: 0 0 3px 3px;
   cursor: pointer;
 `;

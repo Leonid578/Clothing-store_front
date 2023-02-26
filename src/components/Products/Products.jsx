@@ -10,7 +10,7 @@ const ProductsCard = () => {
               <div className="product__img">
                 <img
                   src={require("../../images/jpg/" + country.img + ".jpg")}
-                  alt="country.img"
+                  alt={country.img}
                   width={300}
                   height={350}
                 />
