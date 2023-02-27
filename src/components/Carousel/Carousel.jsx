@@ -1,9 +1,10 @@
 import { useCallback } from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import itemsHeroes from "./itemsHeroes.json";
 import "./Carousel.style.css";
 
 export const Carousel = () => {
+  const ref = useRef(null);
   const [dots, setDots] = useState(0);
   const [offset, setOffset] = useState(0);
   const TIMER_OFFSET = 5000;
@@ -61,8 +62,24 @@ export const Carousel = () => {
   };
 
   useEffect(() => {
+    const element1 = ref1.current;
+    const element2 = ref2.current;
+    const element3 = ref3.current;
+    const element4 = ref4.current;
+
     const foo = document.querySelectorAll("li");
     foo[dots].classList.add("active");
+
+    if (dots === 1) {
+      element1.classList.add("active");
+    } else if (dots === 2) {
+      element2.classList.add("active");
+    } else if (dots === 3) {
+      element3.classList.add("active");
+    } else if (dots === 4) {
+      element4.classList.add("active");
+    }
+
     let timerId = setTimeout(handleRightArrowClick, TIMER_OFFSET);
 
     return () => {
@@ -84,10 +101,10 @@ export const Carousel = () => {
         </div>
       </div>
       <ul className="dots">
-        <li onClick={handleFirstClick} />
-        <li onClick={handleSecondClick} />
-        <li onClick={handleThirdClick} />
-        <li onClick={handleFourthClick} />
+        <li ref={ref1} onClick={handleFirstClick} />
+        <li ref={ref2} onClick={handleSecondClick} />
+        <li ref={ref3} onClick={handleThirdClick} />
+        <li ref={ref4} onClick={handleFourthClick} />
       </ul>
     </div>
   );

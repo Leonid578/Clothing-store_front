@@ -22,11 +22,15 @@ export const Container = styled.div`
 export const SwitchLanguage = styled.div`
   margin: 0 8px 0 8px;
   opacity: 0.5;
+  cursor:pointer;
+  user-select:none;
 `;
 
 export const SwitchTheme = styled.div`
   margin: 0 8px 0 8px;
   opacity: 0.5;
+  cursor:pointer;
+  user-select:none;
 `;
 
 export const TopHeader = styled.div`
@@ -69,6 +73,7 @@ export const StyledLinkLogo = styled(NavLink)`
   display: inline-block;
   padding-top: 19px;
   padding-bottom: 14px;
+  user-select:none;
   &:hover {
     cursor: pointer;
     opacity: 1;

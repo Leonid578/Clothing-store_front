@@ -6,7 +6,7 @@ const ProductsCard = () => {
       <ul className="cards__ul">
         {products.map((country, index) => {
           return (
-            <li className="card" key={index}>
+            <li className="card" id={country.id} key={index}>
               <div className="product__img">
                 <img
                   src={require("../../images/jpg/" + country.img + ".jpg")}

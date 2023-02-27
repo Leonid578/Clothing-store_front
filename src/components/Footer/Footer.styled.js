@@ -4,6 +4,7 @@ export const Footerr = styled.footer`
   padding: 20px 20px;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
   background-color: antiquewhite;
+  user-select:none;
 `;
 
 export const Container = styled.div`

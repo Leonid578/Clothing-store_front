@@ -119,8 +119,8 @@ const HeaderMenu = () => {
         </span>
         <span className="row_line">
           <SwitchLanguage>сменить тему</SwitchLanguage>
-          <SwitchTheme>
-            сменить язык <I onClick={flagChange} />
+          <SwitchTheme onClick={flagChange}>
+            сменить язык <I  />
           </SwitchTheme>
         </span>
       </TopHeader>
