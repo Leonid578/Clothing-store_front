@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   HeaderCountryDropdown,
   DropdownHeaderSpan,
@@ -15,11 +15,9 @@ import {
 
 const Flag = ({ flagActive }) => {
   const [resultCheck, setResultCheck] = useState(false);
-  const [language, setLanguage] = useState([
-    { src: "ua", language: "Ukraine" },
+  const [languages, setLanguages] = useState([
+    { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
-
-  console.log(language);
 
   const handleClick = (event) => {
     const ariaExpanded = event.currentTarget.getAttribute("aria-expanded");
@@ -33,75 +31,89 @@ const Flag = ({ flagActive }) => {
   };
 
   const changeFlagUa = () => {
-    setLanguage([
-      { src: "https://flagcdn.com/ua.svg" },
-      { language: "Ukraine" },
-    ]);
+    setLanguages([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
+    setResultCheck(false);
   };
   const changeFlagRu = () => {
-    setLanguage([
-      { src: "https://flagcdn.com/ru.svg" },
-      { language: "Russian" },
-    ]);
+    setLanguages([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
+    setResultCheck(false);
   };
   const changeFlagEs = () => {
-    setLanguage([
-      { src: "https://flagcdn.com/us.svg" },
-      { language: "English" },
-    ]);
+    setLanguages([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
+    setResultCheck(false);
   };
 
+  const languagess = languages[0].language;
   return (
     flagActive && (
       <HeaderCountryDropdown>
         <DropdownHeaderSpan>Язык сайта</DropdownHeaderSpan>
         <SingleSection onClick={handleClick}>
           <DropdownHeaderDiv>
-            <RowLine>
-              <img
-                src={"https://flagcdn.com/" + language.src + ".svg"}
-                alt={language.language}
-                width="18"
-              ></img>
-              <DropdownHeaderText>{language.language}</DropdownHeaderText>
-            </RowLine>
+            {languages.map((language, index) => {
+              return (
+                <RowLine key={index}>
+                  <img
+                    src={language.src}
+                    alt={language.language}
+                    width="18"
+                  ></img>
+                  <DropdownHeaderText>{language.language}</DropdownHeaderText>
+                </RowLine>
+              );
+            })}
             <ArrowSelection>
               <I />
             </ArrowSelection>
           </DropdownHeaderDiv>
+          <Ul style={{ display: resultCheck ? "block" : "none" }}>
+            <Li
+              onClick={changeFlagUa}
+              style={{
+                backgroundColor: languagess === "Ukraine" ? "#f4f4f4" : "#fff",
+              }}
+            >
+              <DropdownHeaderDiv>
+                <img
+                  src="https://flagcdn.com/ua.svg"
+                  width="18"
+                  alt="Ukraine"
+                ></img>
+                <DropdownHeaderText>Ukraine</DropdownHeaderText>
+              </DropdownHeaderDiv>
+            </Li>
+            <Li
+              onClick={changeFlagEs}
+              style={{
+                backgroundColor: languagess === "English" ? "#f4f4f4" : "#fff",
+              }}
+            >
+              <DropdownHeaderDiv>
+                <img
+                  src="https://flagcdn.com/us.svg"
+                  width="18"
+                  alt="English"
+                ></img>
+                <DropdownHeaderText>English</DropdownHeaderText>
+              </DropdownHeaderDiv>
+            </Li>
+            <Li
+              onClick={changeFlagRu}
+              style={{
+                backgroundColor: languagess === "Russian" ? "#f4f4f4" : "#fff",
+              }}
+            >
+              <DropdownHeaderDiv>
+                <img
+                  src="https://flagcdn.com/ru.svg"
+                  width="18"
+                  alt="Russian"
+                ></img>
+                <DropdownHeaderText>Russian</DropdownHeaderText>
+              </DropdownHeaderDiv>
+            </Li>
+          </Ul>
         </SingleSection>
-        <Ul style={{ display: resultCheck ? "block" : "none" }}>
-          <Li onClick={changeFlagUa}>
-            <DropdownHeaderDiv>
-              <img
-                src="https://flagcdn.com/ua.svg"
-                width="18"
-                alt="Ukraine"
-              ></img>
-              <DropdownHeaderText>Ukraine</DropdownHeaderText>
-            </DropdownHeaderDiv>
-          </Li>
-          <Li onClick={changeFlagEs}>
-            <DropdownHeaderDiv>
-              <img
-                src="https://flagcdn.com/us.svg"
-                width="18"
-                alt="English"
-              ></img>
-              <DropdownHeaderText>English</DropdownHeaderText>
-            </DropdownHeaderDiv>
-          </Li>
-          <Li onClick={changeFlagRu}>
-            <DropdownHeaderDiv>
-              <img
-                src="https://flagcdn.com/ru.svg"
-                width="18"
-                alt="Russian"
-              ></img>
-              <DropdownHeaderText>Russian</DropdownHeaderText>
-            </DropdownHeaderDiv>
-          </Li>
-        </Ul>
       </HeaderCountryDropdown>
     )
   );

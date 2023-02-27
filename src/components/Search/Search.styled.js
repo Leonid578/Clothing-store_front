@@ -91,6 +91,7 @@ export const LeftarrowwText = styled.p`
   color: black;
   margin: 0 0 0 5px;
   font-size: 13px;
+  user-select:none;
 
   @media screen and (min-width: 576px) {
     font-size: 15px;

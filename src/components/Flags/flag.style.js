@@ -12,6 +12,7 @@ export const HeaderCountryDropdown = styled.div`
   animation-duration: 0.1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+  user-select: none;
 `;
 
 export const DropdownHeaderSpan = styled.span`
@@ -113,6 +114,8 @@ export const Ul = styled.ul`
   max-height: 200px;
   // overflow-y: auto;
   border: 1px solid rgba(240, 240, 240, 1);
+  // padding: 0 16px;
+  width: 313px;
 `;
 
 export const Li = styled.li`
@@ -121,10 +124,10 @@ export const Li = styled.li`
   border-radius: 0;
   display: block;
   height: 40px;
-  width: 280px;
+  // width: 280px;
   color: #444;
   padding-left: 14px !important;
-  padding-right: 28px !important;
+  // padding-right: 28px !important;
   justify-content: space-between;
 
   &:hover {
