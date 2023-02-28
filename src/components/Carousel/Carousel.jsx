@@ -4,7 +4,10 @@ import itemsHeroes from "./itemsHeroes.json";
 import "./Carousel.style.css";
 
 export const Carousel = () => {
-  const ref = useRef(null);
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
   const [dots, setDots] = useState(0);
   const [offset, setOffset] = useState(0);
   const TIMER_OFFSET = 5000;
@@ -67,8 +70,8 @@ export const Carousel = () => {
     const element3 = ref3.current;
     const element4 = ref4.current;
 
-    const foo = document.querySelectorAll("li");
-    foo[dots].classList.add("active");
+    // const foo = document.querySelectorAll("li");
+    // foo[dots].classList.add("active");
 
     if (dots === 1) {
       element1.classList.add("active");
