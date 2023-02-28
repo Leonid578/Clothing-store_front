@@ -51,6 +51,7 @@ export const DropdownHeaderDiv = styled.span`
   height: auto;
   align-items: center;
   height: 100%;
+  width: 230px;
 `;
 
 export const I = styled.b`
@@ -77,7 +78,7 @@ export const SingleSection = styled.span`
   padding-left: 14px !important;
   padding-right: 28px !important;
   justify-content: space-between;
-  position: relative;
+  // position: relative;
 
   &[aria-expanded="true"] ${I} {
     border-width: 0 4px 5px 4px;
@@ -92,7 +93,7 @@ export const SingleSection = styled.span`
 export const ArrowSelection = styled.span`
   width: 24px;
   height: 24px;
-  top: 8px;
+  // top: 8px;
   right: 8px;
   position: absolute;
 `;
@@ -109,13 +110,14 @@ export const RowLine = styled.div`
 `;
 
 export const Ul = styled.ul`
-  margin-top: -1px;
+  // margin-top: -1px;
   display: none;
   max-height: 200px;
   // overflow-y: auto;
   border: 1px solid rgba(240, 240, 240, 1);
-  // padding: 0 16px;
-  width: 313px;
+  width: 278px;
+  right: 0%;
+  position: absolute;
 `;
 
 export const Li = styled.li`
@@ -127,11 +129,15 @@ export const Li = styled.li`
   // width: 280px;
   color: #444;
   padding-left: 14px !important;
-  // padding-right: 28px !important;
+  padding-right: 28px !important;
   justify-content: space-between;
 
   &:hover {
     background-color: #fa5f55 !important;
     color: #fff !important;
   }
+`;
+
+export const Div = styled.div`
+  position: relative;
 `;
