@@ -20,6 +20,8 @@ const Flag = ({ flagActive }) => {
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
 
+  const ThemeContext = React.createContext("light");
+  console.log(ThemeContext);
   const handleClick = (event) => {
     const ariaExpanded = event.currentTarget.getAttribute("aria-expanded");
     if (ariaExpanded === "true") {

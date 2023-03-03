@@ -78,7 +78,6 @@ export const SingleSection = styled.span`
   padding-left: 14px !important;
   padding-right: 28px !important;
   justify-content: space-between;
-  // position: relative;
 
   &[aria-expanded="true"] ${I} {
     border-width: 0 4px 5px 4px;
@@ -93,7 +92,6 @@ export const SingleSection = styled.span`
 export const ArrowSelection = styled.span`
   width: 24px;
   height: 24px;
-  // top: 8px;
   right: 8px;
   position: absolute;
 `;
@@ -110,10 +108,8 @@ export const RowLine = styled.div`
 `;
 
 export const Ul = styled.ul`
-  // margin-top: -1px;
   display: none;
   max-height: 200px;
-  // overflow-y: auto;
   border: 1px solid rgba(240, 240, 240, 1);
   width: 278px;
   right: 0%;
@@ -126,7 +122,6 @@ export const Li = styled.li`
   border-radius: 0;
   display: block;
   height: 40px;
-  // width: 280px;
   color: #444;
   padding-left: 14px !important;
   padding-right: 28px !important;
