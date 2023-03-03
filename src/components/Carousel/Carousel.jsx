@@ -11,15 +11,20 @@ export const Carousel = () => {
   const [dots, setDots] = useState(0);
   const [offset, setOffset] = useState(0);
   const TIMER_OFFSET = 5000;
-
   const AddActive = () => {
     const foo = document.querySelectorAll("li");
     for (let i = 0; i < foo.length; i++) {
       foo[i].classList.remove("active");
     }
   };
-
   const handleRightArrowClick = useCallback(() => {
+    const AddActive = () => {
+      const foo = document.querySelectorAll("li");
+      for (let i = 0; i < foo.length; i++) {
+        foo[i].classList.remove("active");
+      }
+    };
+
     setOffset((currentOffset) => {
       const lastIndex = itemsHeroes.length - 1;
       const newOffset = offset - 100;
@@ -70,16 +75,13 @@ export const Carousel = () => {
     const element3 = ref3.current;
     const element4 = ref4.current;
 
-    // const foo = document.querySelectorAll("li");
-    // foo[dots].classList.add("active");
-
-    if (dots === 1) {
+    if (dots === 0) {
       element1.classList.add("active");
-    } else if (dots === 2) {
+    } else if (dots === 1) {
       element2.classList.add("active");
-    } else if (dots === 3) {
+    } else if (dots === 2) {
       element3.classList.add("active");
-    } else if (dots === 4) {
+    } else if (dots === 3) {
       element4.classList.add("active");
     }
 
