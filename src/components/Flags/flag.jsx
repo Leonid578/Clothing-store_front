@@ -14,14 +14,15 @@ import {
   Div,
 } from "./flag.style";
 
+// export const ThemeContext = React.createContext(languages[0]);
+//  console.log(languages[0]);
+//  console.log(ThemeContext);
+
 const Flag = ({ flagActive }) => {
   const [resultCheck, setResultCheck] = useState(false);
   const [languages, setLanguages] = useState([
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
-
-  const ThemeContext = React.createContext("light");
-  console.log(ThemeContext);
   const handleClick = (event) => {
     const ariaExpanded = event.currentTarget.getAttribute("aria-expanded");
     if (ariaExpanded === "true") {
