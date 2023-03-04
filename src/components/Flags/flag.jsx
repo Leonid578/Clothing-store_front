@@ -1,5 +1,5 @@
-import React from "react";
 import { useState } from "react";
+
 import {
   HeaderCountryDropdown,
   DropdownHeaderSpan,
@@ -13,10 +13,6 @@ import {
   Li,
   Div,
 } from "./flag.style";
-
-// export const ThemeContext = React.createContext(languages[0]);
-//  console.log(languages[0]);
-//  console.log(ThemeContext);
 
 const Flag = ({ flagActive }) => {
   const [resultCheck, setResultCheck] = useState(false);

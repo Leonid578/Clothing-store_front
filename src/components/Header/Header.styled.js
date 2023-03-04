@@ -19,28 +19,31 @@ export const Container = styled.div`
   }
 `;
 
-export const SwitchLanguage = styled.div`
-  margin: 0 8px 0 8px;
+export const SwitchThemeText = styled.div`
+  margin: 0 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  text-align: left;
+  color: #36424c;
+  user-select: none;
   opacity: 0.5;
-  cursor:pointer;
-  user-select:none;
 `;
 
 export const SwitchTheme = styled.div`
   margin: 0 8px 0 8px;
-  opacity: 0.5;
-  cursor:pointer;
-  user-select:none;
+  cursor: pointer;
+  user-select: none;
 `;
 
 export const TopHeader = styled.div`
   margin: 0 auto 0 auto;
   justify-content: space-between;
-  border-bottom: 1px ffffff solid;
   height: 32px;
   width: 80%;
   display: flex;
-  box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
+  box-shadow: 0px 1px 0px rgba(9, 30, 63, 0.1);
   transition: top 0.3s;
 
   @media screen and (max-width: 1023px) {
@@ -57,10 +60,6 @@ export const Tell = styled.a`
   }
 `;
 
-// export const Delimiter = styled.span`
-
-// `;
-
 export const StyledLinkLogo = styled(NavLink)`
   font-family: "Abril Fatface";
   font-style: normal;
@@ -73,7 +72,7 @@ export const StyledLinkLogo = styled(NavLink)`
   display: inline-block;
   padding-top: 19px;
   padding-bottom: 14px;
-  user-select:none;
+  user-select: none;
   &:hover {
     cursor: pointer;
     opacity: 1;
@@ -249,7 +248,7 @@ export const FillSpace = styled.div`
 
 export const I = styled.i`
   font-size: 24px;
-  opacity: 0.5;
+  opacity: 0.3;
 
   border: solid black;
   border-width: 0 2px 2px 0;

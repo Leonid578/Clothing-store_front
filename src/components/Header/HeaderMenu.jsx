@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import CartContext from "../../CartContext";
 import {
   LogInContainer,
   StyledLinkLogo,
   StyledButton,
   Container,
-  SwitchLanguage,
   TopHeader,
   SwitchTheme,
   Tell,
   I,
+  SwitchThemeText,
 } from "./Header.styled";
+
+import { RowLine } from "../Flags/flag.style";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import Flag from "../Flags/flag";
 import "./Header.style.css";
@@ -28,6 +31,8 @@ import "./Header.style.css";
 // };
 
 const HeaderMenu = () => {
+  const { items } = useContext(CartContext);
+
   const [flagActive, setFlagActive] = useState(false);
   const flagChange = () => {
     setFlagActive(!flagActive);
@@ -117,12 +122,22 @@ const HeaderMenu = () => {
           <Tell>+380686082451</Tell>
           <span className="delimiter">|</span>
         </span>
-        <span className="row_line">
-          <SwitchLanguage>сменить тему</SwitchLanguage>
-          <SwitchTheme onClick={flagChange}>
-            сменить язык <I  />
-          </SwitchTheme>
-        </span>
+        <SwitchTheme className="row_line" onClick={flagChange}>
+          {/* <SwitchLanguage>сменить тему</SwitchLanguage> */}
+          {items.map((language, index) => {
+            return (
+              <RowLine key={index}>
+                <img
+                  src={language.src}
+                  alt={language.language}
+                  width="18"
+                ></img>
+                <SwitchThemeText>{language.language}</SwitchThemeText>
+              </RowLine>
+            );
+          })}
+          <I />
+        </SwitchTheme>
       </TopHeader>
 
       <LogInContainer>

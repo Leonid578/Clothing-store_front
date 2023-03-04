@@ -10,6 +10,8 @@ import { ThemeProvider } from "./components/providers/ThemeProvider";
 import PageHitsOfSales from "./components/hitsOfSales/PageHitsOfSales";
 import Search from "./components/Search/Search";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+
+
 const App = () => {
   return (
     <>

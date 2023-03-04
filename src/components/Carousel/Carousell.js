@@ -55,11 +55,9 @@ export const List = styled.li`
 `;
 
 export const Item = styled.ul`
-  // position: relative;
   display: block;
   margin: 0;
   padding: 0;
-  // cursor: default;
 `;
 
 export const Cell = styled.div`
