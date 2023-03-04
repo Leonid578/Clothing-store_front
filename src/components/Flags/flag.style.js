@@ -105,6 +105,8 @@ export const RowLine = styled.div`
   box-sizing: border-box;
   height: auto;
   align-items: center;
+
+  margin: 0 8px 0 8px;
 `;
 
 export const Ul = styled.ul`
