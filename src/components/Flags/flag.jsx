@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import CartContext from "../../CartContext";
 import {
   HeaderCountryDropdown,
   DropdownHeaderSpan,
@@ -15,6 +15,7 @@ import {
 } from "./flag.style";
 
 const Flag = ({ flagActive }) => {
+  const { addToFlag } = useContext(CartContext);
   const [resultCheck, setResultCheck] = useState(false);
   const [languages, setLanguages] = useState([
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
@@ -33,14 +34,17 @@ const Flag = ({ flagActive }) => {
   const changeFlagUa = () => {
     setLanguages([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
     setResultCheck(false);
+    addToFlag([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
   };
   const changeFlagRu = () => {
     setLanguages([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
     setResultCheck(false);
+    addToFlag([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
   };
   const changeFlagEs = () => {
     setLanguages([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     setResultCheck(false);
+    addToFlag([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
   };
 
   const languagess = languages[0].language;

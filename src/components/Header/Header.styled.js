@@ -10,7 +10,7 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 50;
   background: white;
   transition: transform 0.1s linear;
 
@@ -257,4 +257,12 @@ export const I = styled.i`
   transform: rotate(45deg);
   margin: 0 0 3px 3px;
   cursor: pointer;
+`;
+
+export const CloseModal = styled.div`
+  position: fixed; 
+  width: 100%;
+  height: 100vh;
+  // background-color: rgba(0, 0, 0, 0.4);
+  // opacity: 0;
 `;
