@@ -10,6 +10,7 @@ import {
   Tell,
   I,
   SwitchThemeText,
+  CloseModal
 } from "./Header.styled";
 
 import { RowLine } from "../Flags/flag.style";
@@ -117,6 +118,8 @@ const HeaderMenu = () => {
 
   return (
     <Container>
+      {flagActive && <CloseModal onClick={flagChange}/>}
+      
       <TopHeader className="header">
         <span className="row_line">
           <Tell>+380686082451</Tell>

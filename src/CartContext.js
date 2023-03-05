@@ -7,8 +7,8 @@ export function CartProvider({ children }) {
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
 
-  const addToFlag = (name, link) => {
-    setItems((prevState) => [...prevState, { name, link }]);
+  const addToFlag = (item) => {
+    setItems(item);
   };
 
   return (
