@@ -11,20 +11,22 @@ import {
   ElementorBackgroundOverlay,
 } from "./PageHitsOfSales.stylee";
 import "./style.css";
+import { useTranslation } from "react-i18next";
+import "../utils/i18next";
 
 const HitsOfSales = () => {
+  const { t } = useTranslation();
   return (
     <Container>
       <HitsContainer>
         <ElementorColumn className="white">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
-              FOTOGRAFIA COMMERCIALE
+            {t("about.part1")}
             </ElementorHeadingTitleLeft>
             <ElementorDividerSeparator />
             <ElementorTextEditor>
-              La fotografia corporate come valorizzazione dell’azienda, delle
-              persone, della filosofia, dei prodotti, dei processi produttivi.
+            {t("links.Health")}
             </ElementorTextEditor>
           </ElementorBackgroundOverlay>
         </ElementorColumn>
@@ -32,7 +34,9 @@ const HitsOfSales = () => {
         <ElementorColumn2>
           <a href="/">
             <ElementorElementPopulate className="img1">
-              <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
+              <ElementorHeadingTitleRight>
+                {t("links.links_one")}
+              </ElementorHeadingTitleRight>
             </ElementorElementPopulate>
           </a>
         </ElementorColumn2>
@@ -42,19 +46,20 @@ const HitsOfSales = () => {
         <ElementorColumn2>
           <a href="/">
             <ElementorElementPopulate className="img2">
-              <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
+              <ElementorHeadingTitleRight>
+                {t("links.links_two")}
+              </ElementorHeadingTitleRight>
             </ElementorElementPopulate>
           </a>
         </ElementorColumn2>
         <ElementorColumn className="light">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
-              FOTOGRAFIA COMMERCIALE
+            {t("about.part2")}
             </ElementorHeadingTitleLeft>
             <ElementorDividerSeparator />
             <ElementorTextEditor>
-              La fotografia corporate come valorizzazione dell’azienda, delle
-              persone, della filosofia, dei prodotti, dei processi produttivi.
+            {t("links.Beauty")}
             </ElementorTextEditor>
           </ElementorBackgroundOverlay>
         </ElementorColumn>
@@ -64,12 +69,11 @@ const HitsOfSales = () => {
         <ElementorColumn className="white">
           <ElementorBackgroundOverlay>
             <ElementorHeadingTitleLeft>
-              FOTOGRAFIA COMMERCIALE
+            {t("about.part3")}
             </ElementorHeadingTitleLeft>
             <ElementorDividerSeparator />
             <ElementorTextEditor>
-              La fotografia corporate come valorizzazione dell’azienda, delle
-              persone, della filosofia, dei prodotti, dei processi produttivi.
+            {t("links.Nutrition")}
             </ElementorTextEditor>
           </ElementorBackgroundOverlay>
         </ElementorColumn>
@@ -77,7 +81,9 @@ const HitsOfSales = () => {
         <ElementorColumn2>
           <a href="/">
             <ElementorElementPopulate className="img3">
-              <ElementorHeadingTitleRight>corporate</ElementorHeadingTitleRight>
+              <ElementorHeadingTitleRight>
+                {t("links.links_tree")}
+              </ElementorHeadingTitleRight>
             </ElementorElementPopulate>
           </a>
         </ElementorColumn2>

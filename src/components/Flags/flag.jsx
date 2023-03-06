@@ -13,8 +13,11 @@ import {
   Li,
   Div,
 } from "./flag.style";
-
+import { useTranslation } from "react-i18next";
+import "../utils/i18next";
 const Flag = ({ flagActive }) => {
+  const { t, i18n } = useTranslation();
+
   const { addToFlag } = useContext(CartContext);
   const [resultCheck, setResultCheck] = useState(false);
   const [languages, setLanguages] = useState([
@@ -45,6 +48,10 @@ const Flag = ({ flagActive }) => {
     setLanguages([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     setResultCheck(false);
     addToFlag([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
+  };
+
+  const changleLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   };
 
   const languagess = languages[0].language;
@@ -79,7 +86,7 @@ const Flag = ({ flagActive }) => {
                     languagess === "Ukraine" ? "#f4f4f4" : "#fff",
                 }}
               >
-                <DropdownHeaderDiv>
+                <DropdownHeaderDiv onClick={() => changleLanguage("ua")}>
                   <img
                     src="https://flagcdn.com/ua.svg"
                     width="18"
@@ -95,7 +102,7 @@ const Flag = ({ flagActive }) => {
                     languagess === "English" ? "#f4f4f4" : "#fff",
                 }}
               >
-                <DropdownHeaderDiv>
+                <DropdownHeaderDiv onClick={() => changleLanguage("eng")}>
                   <img
                     src="https://flagcdn.com/us.svg"
                     width="18"
@@ -111,7 +118,7 @@ const Flag = ({ flagActive }) => {
                     languagess === "Russian" ? "#f4f4f4" : "#fff",
                 }}
               >
-                <DropdownHeaderDiv>
+                <DropdownHeaderDiv onClick={() => changleLanguage("ru")}>
                   <img
                     src="https://flagcdn.com/ru.svg"
                     width="18"
