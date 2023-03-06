@@ -16,7 +16,7 @@ import {
 import { useTranslation } from "react-i18next";
 import "../utils/i18next";
 const Flag = ({ flagActive }) => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const { addToFlag } = useContext(CartContext);
   const [resultCheck, setResultCheck] = useState(false);
