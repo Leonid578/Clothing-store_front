@@ -1,0 +1,27 @@
+{
+  "about": {
+    "title": "Coral Club products",
+    "part1": "Chapter 1",
+    "part2": "Chapter 2",
+    "part3": "Chapter 3"
+  },
+  "links": {
+    "links_one": "health",
+    "links_two": "beauty",
+    "links_tree": "nutrition",
+    "Health": "La fotografia corporate come valorizzazione dell’azienda, delle persone, della filosofia, dei prodotti, dei processi produttivi.",
+    "Beauty": "La fotografia corporate come valorizzazione dell’azienda, delle persone, della filosofia, dei prodotti, dei processi produttivi.",
+    "Nutrition": "La fotografia corporate come valorizzazione dell’azienda, delle persone, della filosofia, dei prodotti, dei processi produttivi.",
+    "footer_data": "© {{dateNow}} Назввание.com. All Rights Reserved",
+    "Privacy": "Privacy Policy"
+  },
+  "header": {},
+  "footer": {
+    "links_about": "about Us",
+    "linls_Prace": "прайс-листы",
+    "links_Foto": "price lists",
+    "links_documentation": "documentation",
+    "question": "have questions?",
+    "write": "WRITE TO US"
+  }
+}

@@ -18,6 +18,7 @@ import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import Flag from "../Flags/flag";
 import "./Header.style.css";
 
+
 // const [active2, setActive2] = useState(false);
 // const [active, setActive] = useState(true);
 // const { isDark, setIsDark } = useTheme();
