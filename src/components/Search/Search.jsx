@@ -17,8 +17,11 @@ import {
 } from "./Search.styled";
 import { ReactComponent as Leftarrow } from "../../images/svg/leftarrowsign.svg";
 import productsJson from "../Products/ItemProducts.json";
+import { useTranslation } from "react-i18next";
+import "../utils/i18next";
 
 const Search = () => {
+  const { t } = useTranslation();
   const [products, setProducts] = useState([]);
   const [value, setValue] = useState("");
   // const getProducts = () => {
@@ -52,12 +55,12 @@ const Search = () => {
         <Svg>
           <Leftarrow/>
         </Svg>
-        <LeftarrowwText>Назад</LeftarrowwText>
+        <LeftarrowwText>{t("serch.back")}</LeftarrowwText>
       </Leftarroww>
       <Searchh>
         <Input
           type="text"
-          placeholder="Поиск..."
+          placeholder={t("serch.serch")}
           onChange={onTextChanged}
         />
       </Searchh>

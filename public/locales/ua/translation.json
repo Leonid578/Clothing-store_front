@@ -23,5 +23,6 @@
     "links_documentation": "документи",
     "question": "Є питання?",
     "write": "НАПИСАТИ НАМ"
-  }
+  },
+  "serch": { "serch": "Пошук...", "back": "Назад" }
 }
