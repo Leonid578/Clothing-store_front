@@ -18,10 +18,11 @@
   "header": {},
   "footer": {
     "links_about": "about Us",
-    "linls_Prace": "прайс-листы",
+    "linls_Prace": "price lists",
     "links_Foto": "price lists",
     "links_documentation": "documentation",
     "question": "have questions?",
     "write": "WRITE TO US"
-  }
+  },
+  "serch": { "serch": "Serch...", "back": "Back" }
 }
