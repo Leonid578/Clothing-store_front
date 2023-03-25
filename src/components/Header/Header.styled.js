@@ -79,6 +79,79 @@ export const StyledLinkLogo = styled(NavLink)`
   }
 `;
 
+export const StyledLink1 = styled(NavLink)`
+font-size: 20px;
+line-height: 27px;
+color: #212121;
+display: inline-block;
+padding: 19px 10px 14px;
+user-select: none;
+&:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+`;
+export const StyledLink2 = styled(NavLink)`
+font-size: 20px;
+line-height: 27px;
+color: #212121;
+display: inline-block;
+padding: 19px 10px 14px;
+user-select: none;
+&:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+`;
+export const StyledLink3 = styled(NavLink)`
+font-size: 20px;
+line-height: 27px;
+color: #212121;
+display: inline-block;
+padding: 19px 10px 14px;
+user-select: none;
+&:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+`;
+export const StyledLink4 = styled(NavLink)`
+font-size: 20px;
+line-height: 27px;
+color: #212121;
+display: inline-block;
+padding: 19px 10px 14px;
+user-select: none;
+&:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+`;
+export const StyledLink5 = styled(NavLink)`
+font-size: 20px;
+line-height: 27px;
+color: #212121;
+display: inline-block;
+padding: 19px 10px 14px;
+user-select: none;
+&:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+`;
+export const StyledLink6 = styled(NavLink)`
+font-size: 20px;
+line-height: 27px;
+color: #212121;
+display: inline-block;
+padding: 19px 10px 14px;
+user-select: none;
+&:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+`;
+
 export const StyledButton = styled(NavLink)`
   display: flex;
   align-items: center;

@@ -7,10 +7,26 @@
 
 /* --------------- */
 
-.main-container {
+/* .main-container {
   height: calc(100vh - 92px);
   display: flex;
   align-items: center;
+} */
+
+@media screen and (max-width: 1023px) {
+  .main-container {
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    height: calc(100vh - 92px);
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* ------------------- */

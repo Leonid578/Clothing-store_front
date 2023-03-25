@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import CartContext from "../../CartContext";
 import {
   LogInContainer,
-  StyledLinkLogo,
+  // StyledLinkLogo,
   StyledButton,
   Container,
   TopHeader,
@@ -10,14 +10,19 @@ import {
   Tell,
   I,
   SwitchThemeText,
-  CloseModal
+  CloseModal,
+  StyledLink1,
+  StyledLink2,
+  StyledLink3,
+  StyledLink4,
+  StyledLink5,
+  StyledLink6,
 } from "./Header.styled";
 
 import { RowLine } from "../Flags/flag.style";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import Flag from "../Flags/flag";
 import "./Header.style.css";
-
 
 // const [active2, setActive2] = useState(false);
 // const [active, setActive] = useState(true);
@@ -119,8 +124,8 @@ const HeaderMenu = () => {
 
   return (
     <Container>
-      {flagActive && <CloseModal onClick={flagChange}/>}
-      
+      {flagActive && <CloseModal onClick={flagChange} />}
+
       <TopHeader className="header">
         <span className="row_line">
           <Tell>+380686082451</Tell>
@@ -145,9 +150,27 @@ const HeaderMenu = () => {
       </TopHeader>
 
       <LogInContainer>
-        <StyledLinkLogo to="/" onClick={scrollTop}>
+        {/* <StyledLinkLogo to="/" onClick={scrollTop}>
           LOGO
-        </StyledLinkLogo>
+        </StyledLinkLogo> */}
+        <StyledLink1 to="/" onClick={scrollTop}>
+          ЗДОРОВЬЕ
+        </StyledLink1>
+        <StyledLink2 to="/" onClick={scrollTop}>  
+          ПЕЧЕНЬ
+        </StyledLink2>
+        <StyledLink3 to="/" onClick={scrollTop}>
+          СЕРДЦЕ
+        </StyledLink3>
+        <StyledLink4 to="/" onClick={scrollTop}>
+          КИШЕЧНИК
+        </StyledLink4>
+        <StyledLink5 to="/" onClick={scrollTop}>
+          ЛИМФА
+        </StyledLink5>
+        <StyledLink6 to="/" onClick={scrollTop}>
+          КОЖА
+        </StyledLink6>
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />
         </StyledButton>

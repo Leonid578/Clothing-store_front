@@ -113,7 +113,7 @@ export const Ul = styled.ul`
   display: none;
   max-height: 200px;
   border: 1px solid rgba(240, 240, 240, 1);
-  width: 278px;
+  width: 279px;
   right: 0%;
   position: absolute;
 `;
@@ -139,4 +139,19 @@ export const Div = styled.div`
   position: relative;
 `;
 
-
+export const Save = styled.button`
+  padding: 8px 6px;
+  margin: 32px 0 0 0;
+  cursor: pointer;
+  width: 100%;
+  background-color: #fa5f55;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #fafaff;
+  border:none;
+`;
+// export const TextSave = styled.span`
+//   display: block;
+// `;

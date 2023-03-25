@@ -16,12 +16,13 @@ import {
   Svg,
 } from "./Search.styled";
 import { ReactComponent as Leftarrow } from "../../images/svg/leftarrowsign.svg";
-import productsJson from "../Products/ItemProducts.json";
+// import productsJson from "../Products/ItemProducts.json";
 import { useTranslation } from "react-i18next";
 import "../utils/i18next";
 
 const Search = () => {
   const { t } = useTranslation();
+  const productItem = t("product",{returnObjects:true});
   const [products, setProducts] = useState([]);
   const [value, setValue] = useState("");
   // const getProducts = () => {
@@ -31,7 +32,7 @@ const Search = () => {
   // };
   useEffect(() => {
     const getProducts = () => {
-      setProducts(productsJson);
+      setProducts(productItem);
     };
     getProducts();
   }, []);
