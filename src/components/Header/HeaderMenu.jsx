@@ -48,6 +48,12 @@ const HeaderMenu = () => {
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
+  const [name, setName] = useState(false);
+const handleNameChange = (name) => {
+  setName(name)
+}
+console.log(name)
+  // console.log(flagActive)
 
   // const prevScrollpos = window.pageYOffset;
   // window.onscroll = function () {
@@ -124,7 +130,7 @@ const HeaderMenu = () => {
 
   return (
     <Container>
-      {flagActive && <CloseModal onClick={flagChange} />}
+      {/* {flagActive && <CloseModal onClick={flagChange} />} */}
 
       <TopHeader className="header">
         <span className="row_line">
@@ -154,27 +160,27 @@ const HeaderMenu = () => {
           LOGO
         </StyledLinkLogo> */}
         <StyledLink1 to="/" onClick={scrollTop}>
-          ЗДОРОВЬЕ
+          Здоровье
         </StyledLink1>
-        <StyledLink2 to="/" onClick={scrollTop}>  
-          ПЕЧЕНЬ
+        <StyledLink2 to="/" onClick={scrollTop}>
+          Активные компоненты
         </StyledLink2>
         <StyledLink3 to="/" onClick={scrollTop}>
-          СЕРДЦЕ
+          Программыи наборы
         </StyledLink3>
         <StyledLink4 to="/" onClick={scrollTop}>
-          КИШЕЧНИК
+          Красота
         </StyledLink4>
         <StyledLink5 to="/" onClick={scrollTop}>
-          ЛИМФА
+          Чистота
         </StyledLink5>
         <StyledLink6 to="/" onClick={scrollTop}>
-          КОЖА
+          Особые потребности
         </StyledLink6>
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />
         </StyledButton>
-        <Flag flagActive={flagActive} />
+        <Flag flagActive={flagActive} onChange={handleNameChange}/>
       </LogInContainer>
     </Container>
   );

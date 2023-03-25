@@ -23,6 +23,10 @@ const Flag = ({ flagActive }) => {
   const [languages, setLanguages] = useState([
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
+  // const [flagActivee, setFlagActivee] = useState(flagActive);
+  // const flagChange = () => {
+  //   flagActive(false);
+  // };
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
@@ -56,34 +60,39 @@ const Flag = ({ flagActive }) => {
   };
   const languagess = languages[0].language;
 
+  // const changeFlag = () => {
+  //   // addToFlag(languages);
+  //   flagActive(false);
+  //   // flagChange();
+  // };
   const changeFlagUa = () => {
     setLanguages([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
     setResultCheck(false);
     // addToFlag([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
 
-    // localStorage.setItem(
-    //   "language",
-    //   JSON.stringify([
-    //     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
-    //   ])
-    // );
+    localStorage.setItem(
+      "language",
+      JSON.stringify([
+        { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
+      ])
+    );
   };
   const changeFlagRu = () => {
     setLanguages([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
     setResultCheck(false);
     // addToFlag([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
 
-    // localStorage.setItem(
-    //   "language",
-    //   JSON.stringify([
-    //     { src: "https://flagcdn.com/ru.svg", language: "Russian" },
-    //   ])
-    // );
+    localStorage.setItem(
+      "language",
+      JSON.stringify([
+        { src: "https://flagcdn.com/ru.svg", language: "Russian" },
+      ])
+    );
   };
   const changeFlagEs = () => {
     setLanguages([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     setResultCheck(false);
-    addToFlag([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
+    // addToFlag([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
 
     localStorage.setItem(
       "language",
@@ -92,10 +101,13 @@ const Flag = ({ flagActive }) => {
       ])
     );
   };
-
   const changleLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
+
+  const handleNameChange = (event) => {
+    flagActive(event.target.value)
+  }
 
   return (
     flagActive && (
@@ -172,7 +184,9 @@ const Flag = ({ flagActive }) => {
             </Ul>
           </SingleSection>
         </Div>
-        <Save>Сохранить</Save>
+        <Save 
+        // onClick={changeFlag} 
+        onChange={handleNameChange}>Сохранить</Save>
       </HeaderCountryDropdown>
     )
   );

@@ -80,76 +80,89 @@ export const StyledLinkLogo = styled(NavLink)`
 `;
 
 export const StyledLink1 = styled(NavLink)`
-font-size: 20px;
-line-height: 27px;
-color: #212121;
-display: inline-block;
-padding: 19px 10px 14px;
-user-select: none;
-&:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
+
+  text-transform: uppercase;
+  color: #212121;
+  display: inline-block;
+  padding: 19px 10px 14px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 export const StyledLink2 = styled(NavLink)`
-font-size: 20px;
-line-height: 27px;
-color: #212121;
-display: inline-block;
-padding: 19px 10px 14px;
-user-select: none;
-&:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #212121;
+  display: inline-block;
+  padding: 19px 10px 14px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 export const StyledLink3 = styled(NavLink)`
-font-size: 20px;
-line-height: 27px;
-color: #212121;
-display: inline-block;
-padding: 19px 10px 14px;
-user-select: none;
-&:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #212121;
+  display: inline-block;
+  padding: 19px 10px 14px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 export const StyledLink4 = styled(NavLink)`
-font-size: 20px;
-line-height: 27px;
-color: #212121;
-display: inline-block;
-padding: 19px 10px 14px;
-user-select: none;
-&:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #212121;
+  display: inline-block;
+  padding: 19px 10px 14px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 export const StyledLink5 = styled(NavLink)`
-font-size: 20px;
-line-height: 27px;
-color: #212121;
-display: inline-block;
-padding: 19px 10px 14px;
-user-select: none;
-&:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 27px;
+  color: #212121;
+  display: inline-block;
+  padding: 19px 10px 14px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 export const StyledLink6 = styled(NavLink)`
-font-size: 20px;
-line-height: 27px;
-color: #212121;
-display: inline-block;
-padding: 19px 10px 14px;
-user-select: none;
-&:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #212121;
+  display: inline-block;
+  padding: 19px 10px 14px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 
 export const StyledButton = styled(NavLink)`
@@ -159,7 +172,7 @@ export const StyledButton = styled(NavLink)`
   background-color: #f5f7fa;
   border-radius: 50%;
   position: absolute;
-  margin-top: 18px;
+  margin-top: 17px;
   margin-left: calc(80% - 30px);
 
   &:hover {
@@ -186,7 +199,7 @@ export const Button = styled.span`
   background-color: #f5f7fa;
   border-radius: 50%;
   position: absolute;
-  margin-top: 18px;
+  margin-top: 17px;
   margin-left: 1230px;
   top: 0;
   left: 0;
@@ -333,9 +346,7 @@ export const I = styled.i`
 `;
 
 export const CloseModal = styled.div`
-  position: fixed; 
+  position: fixed;
   width: 100%;
   height: 100vh;
-  // background-color: rgba(0, 0, 0, 0.4);
-  // opacity: 0;
 `;
