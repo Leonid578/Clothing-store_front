@@ -24,5 +24,35 @@
     "question": "have questions?",
     "write": "WRITE TO US"
   },
-  "serch": { "serch": "Serch...", "back": "Back" }
+  "serch": { "serch": "Serch...", "back": "Back" },
+  "product": [
+    {
+      "id": 1,
+      "title": "ATBbag",
+      "volume": "100мл",
+      "link": "http://localhost:3000/Home",
+      "img": "img00"
+    },
+    {
+      "id": 2,
+      "volume": "100мл",
+      "title": "ATBEcoBag",
+      "link": "http://localhost:3000/Home",
+      "img": "img001"
+    },
+    {
+      "id": 3,
+      "volume": "100мл",
+      "title": "BMWbag",
+      "link": "http://localhost:3000/Home",
+      "img": "img002"
+    },
+    {
+      "id": 4,
+      "volume": "100мл",
+      "title": "BMWbag",
+      "link": "http://localhost:3000/Home",
+      "img": "img002"
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import CartContext from "../../CartContext";
 import {
   HeaderCountryDropdown,
@@ -12,17 +12,38 @@ import {
   Ul,
   Li,
   Div,
+  Save,
 } from "./flag.style";
 import { useTranslation } from "react-i18next";
 import "../utils/i18next";
 const Flag = ({ flagActive }) => {
   const { i18n } = useTranslation();
-
   const { addToFlag } = useContext(CartContext);
   const [resultCheck, setResultCheck] = useState(false);
   const [languages, setLanguages] = useState([
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
+
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("language"));
+
+    if (todos[0].language === "English") {
+      setLanguages([
+        { src: "https://flagcdn.com/us.svg", language: "English" },
+      ]);
+    } else if (todos[0].language === "Russian") {
+      setLanguages([
+        { src: "https://flagcdn.com/ru.svg", language: "Russian" },
+      ]);
+    }
+    //  if(todos === null)
+    else {
+      setLanguages([
+        { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
+      ]);
+    }
+  }, []);
+
   const handleClick = (event) => {
     const ariaExpanded = event.currentTarget.getAttribute("aria-expanded");
     if (ariaExpanded === "true") {
@@ -33,28 +54,49 @@ const Flag = ({ flagActive }) => {
       setResultCheck(true);
     }
   };
+  const languagess = languages[0].language;
 
   const changeFlagUa = () => {
     setLanguages([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
     setResultCheck(false);
-    addToFlag([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
+    // addToFlag([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
+
+    // localStorage.setItem(
+    //   "language",
+    //   JSON.stringify([
+    //     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
+    //   ])
+    // );
   };
   const changeFlagRu = () => {
     setLanguages([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
     setResultCheck(false);
-    addToFlag([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
+    // addToFlag([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
+
+    // localStorage.setItem(
+    //   "language",
+    //   JSON.stringify([
+    //     { src: "https://flagcdn.com/ru.svg", language: "Russian" },
+    //   ])
+    // );
   };
   const changeFlagEs = () => {
     setLanguages([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     setResultCheck(false);
     addToFlag([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
+
+    localStorage.setItem(
+      "language",
+      JSON.stringify([
+        { src: "https://flagcdn.com/us.svg", language: "English" },
+      ])
+    );
   };
 
   const changleLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
-  const languagess = languages[0].language;
   return (
     flagActive && (
       <HeaderCountryDropdown>
@@ -130,6 +172,7 @@ const Flag = ({ flagActive }) => {
             </Ul>
           </SingleSection>
         </Div>
+        <Save>Сохранить</Save>
       </HeaderCountryDropdown>
     )
   );
