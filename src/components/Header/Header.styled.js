@@ -80,88 +80,148 @@ export const StyledLinkLogo = styled(NavLink)`
 `;
 
 export const StyledLink1 = styled(NavLink)`
-  font-size: 17px;
   font-weight: 600;
   line-height: 27px;
 
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 10px 14px;
+  padding: 19px 8px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #212121;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+    padding:19px 10px 14px;
   }
 `;
 export const StyledLink2 = styled(NavLink)`
-  font-size: 17px;
   font-weight: 600;
   line-height: 27px;
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 10px 14px;
+  padding: 19px 8px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #212121;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+    padding:19px 10px 14px;
   }
 `;
 export const StyledLink3 = styled(NavLink)`
-  font-size: 17px;
   font-weight: 600;
   line-height: 27px;
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 10px 14px;
+  padding: 19px 8px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #212121;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+    padding:19px 10px 14px;
   }
 `;
 export const StyledLink4 = styled(NavLink)`
-  font-size: 17px;
   font-weight: 600;
   line-height: 27px;
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 10px 14px;
+  padding: 19px 8px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #212121;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+    padding:19px 10px 14px;
   }
 `;
 export const StyledLink5 = styled(NavLink)`
-  font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 27px;
   color: #212121;
   display: inline-block;
-  padding: 19px 10px 14px;
+  padding: 19px 8px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #212121;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+    padding:19px 10px 14px;
   }
 `;
 export const StyledLink6 = styled(NavLink)`
-  font-size: 17px;
   font-weight: 600;
   line-height: 27px;
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 10px 14px;
+  padding: 19px 8px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #212121;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+    padding:19px 10px 14px;
   }
 `;
 

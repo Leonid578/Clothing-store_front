@@ -9,14 +9,11 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
-    // console.log(todos);
     if (todos[0].language === "English") {
       setItems([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     } else if (todos[0].language === "Russian") {
       setItems([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
-    }
-    //  if(todos === null)
-    else {
+    } else {
       setItems([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
     }
   }, []);

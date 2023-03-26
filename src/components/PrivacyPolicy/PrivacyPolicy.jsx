@@ -5,117 +5,54 @@ import {
   TitleText,
   Link,
 } from "./PrivacyPolicy.styled";
+import { useTranslation } from "react-i18next";
+import "../utils/i18next";
 
 const PrivacyPolicy = () => {
+  const { t } = useTranslation();
   return (
     <Container>
-      <HeaderText>Политика конфиденциальности</HeaderText>
-      <Text>
-        Эта политика конфиденциальности была составлена, чтобы лучше обслуживать
-        тех, кто беспокоится тем, как их «личную информацию» (PII) использует в
-        Интернете.
-      </Text>
-      <TitleText>
-        Какую личную информацию мы собираем у людей, посещающих наш сайт?
-      </TitleText>
-      <Text>
-        При обращении к нам через контактную форму на нашем сайте, в зависимости
-        от обстоятельств, вам может быть предложено ввести свое имя, адрес
-        электронной почты, номер телефона или другую информацию, чтобы связаться
-        и помочь вам.
-      </Text>
-      <TitleText>Когда мы собираем информацию?</TitleText>
+      <HeaderText>{t("PrivacyPolicy.TitleAbout")}</HeaderText>
+      <Text>{t("PrivacyPolicy.About")}</Text>
+      <TitleText>{t("PrivacyPolicy.TitlePersonal")}</TitleText>
+      <Text>{t("PrivacyPolicy.Personal")}</Text>
+      <TitleText>{t("PrivacyPolicy.TitleWhenInformation")}</TitleText>
 
       <Text>
-        <strong>Примечание:</strong>{" "}
-        <Link href="https://ua.coral.club/">компания Coral Club</Link>
-        Когда пользователь регистрируется на официальном сайте компании (за это
-        отвечает компания).
+        <strong>{t("PrivacyPolicy.WhenInformation1")}</strong>{" "}
+        <Link href="https://ua.coral.club/">
+          {t("PrivacyPolicy.WhenInformation2")}
+        </Link>
+        {t("PrivacyPolicy.WhenInformation3")}
       </Text>
-      <Text>
-        Мы используем вашу контактную информацию, когда вы становитесь членом
-        клуба. В этом случае контактная информация будет использоваться для
-        связи с вами, если вы согласны с этим.
-      </Text>
-      <Text>имеет свою собственную политику конфиденциальности.</Text>
-      <TitleText>Как мы используем вашу информацию?</TitleText>
-      <Text>
-        Мы можем использовать вашу контактную информацию, когда вы
-        регистрируетесь на официальном Coral Club веб-сайте и становитесь членом
-        клуба:
-      </Text>
-      <TitleText>Как мы защищаем вашу информацию?</TitleText>
-      <Text>
-        Мы не используем сканирование уязвимостей и/или сканирование в
-        соответствии со стандартами PCI.
-      </Text>
-      <Text>
-        Мы предоставляем только статьи и информацию. Мы никогда не просим номера
-        кредитных карт.
-      </Text>
-      <Text>Мы регулярно проводим проверки на вредоносные программы.</Text>
-      <Text>
-        Вся информация которая передается через контактную форму зашифрована с
-        использованием специальных протоколов, например, протокола SSL.
-      </Text>
-      <TitleText>Мы используем файлы «cookies»?</TitleText>
-      <Text>
-        Да. Cookies — это небольшие файлы, которые сайт через веб-браузер
-        сохраняет на жестком диске вашего компьютера, который позволяет сайту
-        или системы провайдера распознавать Ваш браузер и захватывать и
-        запомнить определенную информацию. Например, мы используем файлы cookie,
-        чтобы помочь нам запомнить выбранный вами язык веб-сайта или при
-        заполнении контактной формы. Мы также используем cookies чтобы помочь
-        нам сбора общей информации о трафике сайта и взаимодействия сайта, так
-        что мы можем предложить лучшие впечатления сайта и инструменты в
-        будущем.
-      </Text>
-      <Text>
-        Вся информация которая передается через контактную форму зашифрована с
-        использованием специальных протоколов, например, протокола SSL.
-      </Text>
-      <Text>
-        Вы можете выбрать, чтобы ваш компьютер предупреждал вас каждый раз,
-        когда «cookies» отсылается, или вы можете отключить все cookies. Это
-        можете сделать через настройки браузера. Поскольку браузера немного
-        отличается, то смотрите в меню помощи своего браузера, чтобы узнать
-        правильный способ, чтобы изменить настройки cookies.
-      </Text>
-      <strong>Если пользователи отключают cookies в своем браузере:</strong>
+      <Text>{t("PrivacyPolicy.WhenInformation4")}</Text>
+      <Text>{t("PrivacyPolicy.WhenInformation5")}</Text>
+      <TitleText>{t("PrivacyPolicy.TitleUseInformation")}</TitleText>
+      <Text>{t("PrivacyPolicy.UseInformation")}</Text>
+      <TitleText>{t("PrivacyPolicy.TitleWeProtect")}</TitleText>
+      <Text>{t("PrivacyPolicy.WeProtect1")}</Text>
+      <Text>{t("PrivacyPolicy.WeProtect2")}</Text>
+      <Text>{t("PrivacyPolicy.WeProtect3")}</Text>
+      <Text>{t("PrivacyPolicy.WeProtect4")}</Text>
+      <TitleText>{t("PrivacyPolicy.TitleCookies")}</TitleText>
+      <Text>{t("PrivacyPolicy.Cookies1")}</Text>
+      <Text>{t("PrivacyPolicy.Cookies2")}</Text>
+      <Text>{t("PrivacyPolicy.Cookies3")}</Text>
+      <strong>{t("PrivacyPolicy.TitleDisableCookies")}</strong>
       <br />
+      <Text>{t("PrivacyPolicy.DisableCookies")}</Text>
+      <TitleText>{t("PrivacyPolicy.TitleDisclosure")}</TitleText>
+      <Text>{t("PrivacyPolicy.Disclosure")}</Text>
+      <TitleText> {t("PrivacyPolicy.TitleGoogle")}</TitleText>
+      <Text>{t("PrivacyPolicy.GoogleText1")}</Text>
       <Text>
-        При отключении файлов cookies некоторые функции, которые обеспечивают
-        работу сайта более эффективной, может работать неправильно.
-      </Text>
-      <TitleText>Стороннее раскрытие информации</TitleText>
-      <Text>
-        Мы не продаем, не передаем третьим сторонам вашу личную идентифицируемую
-        информацию.
-      </Text>
-      <TitleText>Google</TitleText>
-      <Text>
-        Мы используем услуги Google Analytics, предоставляемую компанией Google
-        Inc. (“Google”). Google Analytics использует ‘cookies’, чтобы помочь
-        вебсайту проанализировать то, каким образом пользователи используют
-        вебсайт. Информация, создаваемая файлом cookie об использовании Вами
-        вебсайта (включая IP адрес) передается и хранится Google на серверах в
-        Соединенных Штатах. Google будет использовать эту информацию с целью
-        оценки использования Вами вебсайта, составления отчетов об активности
-        вебсайта для операторов вебсайта и предоставления других сервисов,
-        связанных с активностью вебсайта и использованию Интернета.
-      </Text>
-      <Text>
-        Google также может передавать эту информацию третьим сторонам, где этого
-        требует закон, или где такая третья сторона обрабатывает эту информацию
-        от имени Google. Google не будет связывать Ваш IP адрес с любыми
-        данными, которыми владеет Google.
+        {t("PrivacyPolicy.GoogleText2")}
         <Link
           href="https://www.google.com/intl/ru/policies/privacy/"
           rel="noopener"
         >
-          Подробнее можно прочитать здесь
+          {t("PrivacyPolicy.More")}
         </Link>
-        .
       </Text>
     </Container>
   );
