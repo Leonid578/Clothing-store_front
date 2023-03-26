@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 import CartContext from "../../CartContext";
 import {
   LogInContainer,
-  // StyledLinkLogo,
   StyledButton,
   Container,
   TopHeader,
@@ -23,6 +22,8 @@ import { RowLine } from "../Flags/flag.style";
 import { ReactComponent as Magnifier } from "../../images/svg/magnifier.svg";
 import Flag from "../Flags/flag";
 import "./Header.style.css";
+import { useTranslation } from "react-i18next";
+import "../utils/i18next";
 
 // const [active2, setActive2] = useState(false);
 // const [active, setActive] = useState(true);
@@ -48,12 +49,9 @@ const HeaderMenu = () => {
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
-  const [name, setName] = useState(false);
-const handleNameChange = (name) => {
-  setName(name)
-}
-console.log(name)
-  // console.log(flagActive)
+  const handleNameChange = (name) => {
+    setFlagActive(name);
+  };
 
   // const prevScrollpos = window.pageYOffset;
   // window.onscroll = function () {
@@ -127,10 +125,10 @@ console.log(name)
   //             </Button>
   //           </Searchh>
   //         </form>
-
+  const { t } = useTranslation();
   return (
     <Container>
-      {/* {flagActive && <CloseModal onClick={flagChange} />} */}
+      {flagActive && <CloseModal onClick={flagChange} />}
 
       <TopHeader className="header">
         <span className="row_line">
@@ -156,31 +154,28 @@ console.log(name)
       </TopHeader>
 
       <LogInContainer>
-        {/* <StyledLinkLogo to="/" onClick={scrollTop}>
-          LOGO
-        </StyledLinkLogo> */}
         <StyledLink1 to="/" onClick={scrollTop}>
-          Здоровье
+          {t("header.links_product1")}
         </StyledLink1>
         <StyledLink2 to="/" onClick={scrollTop}>
-          Активные компоненты
+          {t("header.links_product2")}
         </StyledLink2>
         <StyledLink3 to="/" onClick={scrollTop}>
-          Программыи наборы
+          {t("header.links_product3")}
         </StyledLink3>
         <StyledLink4 to="/" onClick={scrollTop}>
-          Красота
+          {t("header.links_product4")}
         </StyledLink4>
         <StyledLink5 to="/" onClick={scrollTop}>
-          Чистота
+          {t("header.links_product5")}
         </StyledLink5>
         <StyledLink6 to="/" onClick={scrollTop}>
-          Особые потребности
+          {t("header.links_product6")}
         </StyledLink6>
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />
         </StyledButton>
-        <Flag flagActive={flagActive} onChange={handleNameChange}/>
+        <Flag flagActive={flagActive} onChange={handleNameChange} />
       </LogInContainer>
     </Container>
   );

@@ -16,17 +16,14 @@ import {
 } from "./flag.style";
 import { useTranslation } from "react-i18next";
 import "../utils/i18next";
-const Flag = ({ flagActive }) => {
+const Flag = ({ flagActive, onChange }) => {
   const { i18n } = useTranslation();
   const { addToFlag } = useContext(CartContext);
   const [resultCheck, setResultCheck] = useState(false);
   const [languages, setLanguages] = useState([
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
-  // const [flagActivee, setFlagActivee] = useState(flagActive);
-  // const flagChange = () => {
-  //   flagActive(false);
-  // };
+  const [lang, setLang] = useState("ua");
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
@@ -39,9 +36,7 @@ const Flag = ({ flagActive }) => {
       setLanguages([
         { src: "https://flagcdn.com/ru.svg", language: "Russian" },
       ]);
-    }
-    //  if(todos === null)
-    else {
+    } else {
       setLanguages([
         { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
       ]);
@@ -60,14 +55,14 @@ const Flag = ({ flagActive }) => {
   };
   const languagess = languages[0].language;
 
-  // const changeFlag = () => {
-  //   // addToFlag(languages);
-  //   flagActive(false);
-  //   // flagChange();
-  // };
+  const changeFlag = () => {
+    addToFlag(languages);
+    onChange(false);
+    i18n.changeLanguage(lang);
+  };
   const changeFlagUa = () => {
     setLanguages([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
-    setResultCheck(false);
+    setResultCheck(true);
     // addToFlag([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
 
     localStorage.setItem(
@@ -102,12 +97,8 @@ const Flag = ({ flagActive }) => {
     );
   };
   const changleLanguage = (lang) => {
-    i18n.changeLanguage(lang);
+    setLang(lang);
   };
-
-  const handleNameChange = (event) => {
-    flagActive(event.target.value)
-  }
 
   return (
     flagActive && (
@@ -184,9 +175,7 @@ const Flag = ({ flagActive }) => {
             </Ul>
           </SingleSection>
         </Div>
-        <Save 
-        // onClick={changeFlag} 
-        onChange={handleNameChange}>Сохранить</Save>
+        <Save onClick={changeFlag}>Сохранить</Save>
       </HeaderCountryDropdown>
     )
   );
