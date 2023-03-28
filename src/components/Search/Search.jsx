@@ -35,7 +35,7 @@ const Search = () => {
       setProducts(productItem);
     };
     getProducts();
-  }, []);
+  }, [productItem]);
 
   const filteredProducts = products.filter((product) => {
     return product.title.toLowerCase().includes(value.toLowerCase());
