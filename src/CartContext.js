@@ -9,7 +9,8 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
-    if (todos[0].language === "English") {
+    // console.log(todos) 
+    if (todos[0].language === "null") {
       setItems([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     } else if (todos[0].language === "Russian") {
       setItems([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);

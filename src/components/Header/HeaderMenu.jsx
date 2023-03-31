@@ -16,6 +16,10 @@ import {
   StyledLink4,
   StyledLink5,
   StyledLink6,
+  DivLinks,
+  MenuCatalog,
+  MenuImg,
+  MenuText,
 } from "./Header.styled";
 
 import { RowLine } from "../Flags/flag.style";
@@ -154,24 +158,30 @@ const HeaderMenu = () => {
       </TopHeader>
 
       <LogInContainer>
-        <StyledLink1 to="/" onClick={scrollTop}>
-          {t("header.links_product1")}
-        </StyledLink1>
-        <StyledLink2 to="/" onClick={scrollTop}>
-          {t("header.links_product2")}
-        </StyledLink2>
-        <StyledLink3 to="/" onClick={scrollTop}>
-          {t("header.links_product3")}
-        </StyledLink3>
-        <StyledLink4 to="/" onClick={scrollTop}>
-          {t("header.links_product4")}
-        </StyledLink4>
-        <StyledLink5 to="/" onClick={scrollTop}>
-          {t("header.links_product5")}
-        </StyledLink5>
-        <StyledLink6 to="/" onClick={scrollTop}>
-          {t("header.links_product6")}
-        </StyledLink6>
+        <MenuCatalog>
+          <MenuImg />
+          <MenuText>Каталог</MenuText>
+        </MenuCatalog>
+        <DivLinks>
+          <StyledLink1 to="/product1" onClick={scrollTop}>
+            {t("header.links_product1")}
+          </StyledLink1>
+          <StyledLink2 to="/product2" onClick={scrollTop}>
+            {t("header.links_product2")}
+          </StyledLink2>
+          <StyledLink3 to="/product3" onClick={scrollTop}>
+            {t("header.links_product3")}
+          </StyledLink3>
+          <StyledLink4 to="/product4" onClick={scrollTop}>
+            {t("header.links_product4")}
+          </StyledLink4>
+          <StyledLink5 to="/product5" onClick={scrollTop}>
+            {t("header.links_product5")}
+          </StyledLink5>
+          <StyledLink6 to="/" onClick={scrollTop}>
+            {t("header.links_product6")}
+          </StyledLink6>
+        </DivLinks>
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />
         </StyledButton>

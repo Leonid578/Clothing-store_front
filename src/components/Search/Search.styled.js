@@ -59,7 +59,7 @@ export const Leftarroww = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65px;
+  width: 70px;
   padding: 5px;
   position: absolute;
   margin: 2px 0px 0 20px;
@@ -67,9 +67,9 @@ export const Leftarroww = styled(NavLink)`
   background-color: #fff;
 
   @media screen and (min-width: 576px) {
-    width: 80px;
+    width: 90px;
     margin: 2px 0px 0 30px;
-    height: 22px;
+    height: 24px;
   }
 
   &:hover {
@@ -79,6 +79,7 @@ export const Leftarroww = styled(NavLink)`
 `;
 
 export const Svg = styled.div`
+height: 22px;
   @media screen and (min-width: 320px) {
     width: 18px;
   }
@@ -90,12 +91,12 @@ export const Svg = styled.div`
 export const LeftarrowwText = styled.p`
   color: black;
   margin: 0 0 0 5px;
-  font-size: 13px;
-  user-select:none;
+  font-size: 14px;
+  user-select: none;
 
   @media screen and (min-width: 576px) {
-    font-size: 15px;
-    margin: 0 0 0 8px;
+    font-size: 16px;
+    margin: 0 0 0 6px;
   }
 `;
 

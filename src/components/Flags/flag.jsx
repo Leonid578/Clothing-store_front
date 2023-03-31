@@ -27,7 +27,6 @@ const Flag = ({ flagActive, onChange }) => {
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
-
     if (todos[0].language === "English") {
       setLanguages([
         { src: "https://flagcdn.com/us.svg", language: "English" },
@@ -63,7 +62,6 @@ const Flag = ({ flagActive, onChange }) => {
   const changeFlagUa = () => {
     setLanguages([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
     setResultCheck(true);
-    // addToFlag([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
 
     localStorage.setItem(
       "language",
@@ -75,7 +73,6 @@ const Flag = ({ flagActive, onChange }) => {
   const changeFlagRu = () => {
     setLanguages([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
     setResultCheck(false);
-    // addToFlag([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
 
     localStorage.setItem(
       "language",
@@ -87,7 +84,6 @@ const Flag = ({ flagActive, onChange }) => {
   const changeFlagEs = () => {
     setLanguages([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
     setResultCheck(false);
-    // addToFlag([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
 
     localStorage.setItem(
       "language",

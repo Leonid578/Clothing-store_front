@@ -22,7 +22,6 @@ import "../utils/i18next";
 
 const Search = () => {
   const { t } = useTranslation();
-  const productItem = t("product",{returnObjects:true});
   const [products, setProducts] = useState([]);
   const [value, setValue] = useState("");
   // const getProducts = () => {
@@ -31,11 +30,12 @@ const Search = () => {
   //   });
   // };
   useEffect(() => {
+    const productItem = t("product",{returnObjects:true});
     const getProducts = () => {
       setProducts(productItem);
     };
     getProducts();
-  }, [productItem]);
+  }, []);
 
   const filteredProducts = products.filter((product) => {
     return product.title.toLowerCase().includes(value.toLowerCase());

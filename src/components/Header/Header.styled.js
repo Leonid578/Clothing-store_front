@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import MenuPhoto from "../../images/png/freeIconMenuLight.png";
 
 export const Container = styled.div`
   border-bottom: 1px ffffff solid;
@@ -85,7 +86,7 @@ export const StyledLink1 = styled(NavLink)`
 
   text-transform: uppercase;
   color: #212121;
-  display: inline-block;
+  display: inline3block;
   padding: 19px 8px 14px;
   user-select: none;
   &:hover {
@@ -97,11 +98,11 @@ export const StyledLink1 = styled(NavLink)`
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 17px;
-    padding:19px 10px 14px;
+    padding: 19px 10px 14px;
   }
 `;
 export const StyledLink2 = styled(NavLink)`
@@ -110,7 +111,7 @@ export const StyledLink2 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 8px 14px;
+  padding: 19px 3px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
@@ -121,11 +122,11 @@ export const StyledLink2 = styled(NavLink)`
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 17px;
-    padding:19px 10px 14px;
+    padding: 19px 10px 14px;
   }
 `;
 export const StyledLink3 = styled(NavLink)`
@@ -134,7 +135,7 @@ export const StyledLink3 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 8px 14px;
+  padding: 19px 3px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
@@ -145,11 +146,11 @@ export const StyledLink3 = styled(NavLink)`
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 17px;
-    padding:19px 10px 14px;
+    padding: 19px 10px 14px;
   }
 `;
 export const StyledLink4 = styled(NavLink)`
@@ -158,7 +159,7 @@ export const StyledLink4 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 8px 14px;
+  padding: 19px 3px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
@@ -169,11 +170,11 @@ export const StyledLink4 = styled(NavLink)`
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 17px;
-    padding:19px 10px 14px;
+    padding: 19px 10px 14px;
   }
 `;
 export const StyledLink5 = styled(NavLink)`
@@ -182,7 +183,7 @@ export const StyledLink5 = styled(NavLink)`
   line-height: 27px;
   color: #212121;
   display: inline-block;
-  padding: 19px 8px 14px;
+  padding: 19px 3px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
@@ -193,11 +194,11 @@ export const StyledLink5 = styled(NavLink)`
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 17px;
-    padding:19px 10px 14px;
+    padding: 19px 10px 14px;
   }
 `;
 export const StyledLink6 = styled(NavLink)`
@@ -206,7 +207,7 @@ export const StyledLink6 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 8px 14px;
+  padding: 19px 3px 14px;
   user-select: none;
   &:hover {
     cursor: pointer;
@@ -217,11 +218,11 @@ export const StyledLink6 = styled(NavLink)`
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 17px;
-    padding:19px 10px 14px;
+    padding: 19px 10px 14px;
   }
 `;
 
@@ -232,7 +233,7 @@ export const StyledButton = styled(NavLink)`
   background-color: #f5f7fa;
   border-radius: 50%;
   position: absolute;
-  margin-top: 17px;
+  // margin-top: 17px;
   margin-left: calc(80% - 30px);
 
   &:hover {
@@ -245,9 +246,11 @@ export const StyledButton = styled(NavLink)`
 `;
 
 export const LogInContainer = styled.div`
-  display: flex;
   width: 80%;
   margin: 0px auto 0 auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
 `;
 
 export const Button = styled.span`
@@ -365,14 +368,9 @@ export const Div = styled.div`
 `;
 
 export const DivLinks = styled.div`
-  // &:focus ${DropMenu} {
-  //   transform: translateY(0%);
-  //   opacity: 1;
-  // }
-  // &:hover ${DropMenu} {
-  //   transform: translateY(0%);
-  //   opacity: 1;
-  // }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 export const MenuLi = styled.li`
@@ -409,4 +407,33 @@ export const CloseModal = styled.div`
   position: fixed;
   width: 100%;
   height: 100vh;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+`;
+
+export const MenuCatalog = styled.div`
+  display: flex;
+  border: solid 3px rgba(173, 191, 191, 0.25);
+  padding: 2px 20px 2px 15px;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
+`;
+export const MenuImg = styled.div`
+  width: 24px;
+  height: 24px;
+  background-image: url(${MenuPhoto});
+  margin-right: 7px;
+  background-size: cover;
+`;
+
+export const MenuText = styled.span`
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: left;
+  color: #413d58;
 `;
