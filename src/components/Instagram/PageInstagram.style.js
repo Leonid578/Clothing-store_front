@@ -6,6 +6,12 @@ export const ContainerInstagram = styled.div`
   padding-bottom: 32px;
   text-align: center;
   margin-top: 60px;
+  margin-left: -30px;
+   justify-content: center;
+
+  @media screen and (min-width: 767px) {
+    margin-left: -16px;
+  }
 `;
 
 export const ImageInstagram = styled.img`
@@ -32,7 +38,9 @@ export const UlInstagram = styled.ul`
   flex-wrap: wrap;
   margin: 0 auto 30px auto;
   align-items: center;
-  width: calc(17.5vw * 5 + 16px * 5);
+  justify-content: center;
+  width: 100%;
+  
   @media screen and (max-width: 767px) {
     margin-top: -30px;
   }
@@ -64,23 +72,31 @@ export const DivTitleInstagram = styled.div`
   position: relative;
   text-align: center;
   color: #343840;
+  margin-left: 30px;
+
+    @media screen and (min-width: 767px) {
+      margin-left: 16px;
+  }
 `;
 
 export const TitleInstagram = styled.div`
   font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 44px;
   position: relative;
   top: -22px;
   text-align: center;
   color: #000;
 
-  // @media screen and (max-width: 1023px) {
-  //   font-weight: 500;
-  //   line-height: 45px;
-  // }
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const TagInstagram = styled.div`

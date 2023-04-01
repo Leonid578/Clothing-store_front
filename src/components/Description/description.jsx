@@ -5,7 +5,7 @@ const Description = () => {
     <Container>
       <Title>Інтернет-магазин ...</Title>
       <Text>
-        На сайті Название.com ви можете замовити ... .
+        На сайті Название.com ви можете замовити ...
       </Text>
     </Container>
   );

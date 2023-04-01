@@ -83,6 +83,7 @@ export const StyledLinkLogo = styled(NavLink)`
 export const StyledLink1 = styled(NavLink)`
   font-weight: 600;
   line-height: 27px;
+  margin-left: 30px;
 
   text-transform: uppercase;
   color: #212121;

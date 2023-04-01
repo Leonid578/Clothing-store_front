@@ -46,7 +46,7 @@ const Flag = ({ flagActive, onChange }) => {
       ]);
     }
     };
-    console.log(localStorage.getItem("language"));
+    // console.log(localStorage.getItem("language"));
     localStorage.getItem("language") === null
       ? localStorage.setItem(
           "language",

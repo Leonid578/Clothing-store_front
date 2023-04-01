@@ -18,11 +18,11 @@ export const ItemLi = styled.ul`
   align-items: center;
   margin: 15px;
 
-  @media screen and (min-width: 320px) {
-    display: block;
-  }
+  // @media screen and (min-width: 320px) {
+  //   display: block;
+  // }
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 `;
@@ -37,24 +37,31 @@ export const ItemLii = styled.ul`
     margin: 0 auto 20px auto;
   }
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     margin: 0 30px 0 auto;
   }
 `;
 
 export const List = styled.li`
-  margin-left: 10px;
+  //  @media screen and (min-width: 576px) {
+  //   margin-left: 5px;
+  // }
+  @media screen and (min-width: 1024px) {
+    margin-left: 10px;
+  }
 `;
 
 export const FooterLink = styled.a`
   color: #000;
   display: block;
   padding: 5px;
-
+  font-size: 18px;
   @media screen and (min-width: 320px) {
     padding: 4px;
   }
-
+  // @media screen and (min-width: 575px) {
+  //   font-size: 14px;
+  // }
   @media screen and (min-width: 768px) {
     padding: 6px;
   }
@@ -129,13 +136,13 @@ export const FooterLogo = styled.a`
 `;
 
 export const LogInContainer = styled.div`
-  @media screen and (min-width: 576px) {
-    max-width: 540px;
-    display: flex;
-  }
+  // @media screen and (min-width: 576px) {
+  //   display: flex;
+  // }
 
   @media screen and (min-width: 768px) {
     max-width: 720px;
+    display: flex;
   }
 
   @media screen and (min-width: 992px) {
