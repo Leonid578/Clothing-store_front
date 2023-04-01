@@ -30,10 +30,11 @@ const Search = () => {
   //   });
   // };
   useEffect(() => {
-    const productItem = t("product",{returnObjects:true});
+    // const productItem = t("product", { returnObjects: true });
     const getProducts = () => {
-      setProducts(productItem);
+      setProducts(t("product", { returnObjects: true }));
     };
+    // console.log(productItem)
     getProducts();
   }, [t]);
 
@@ -54,7 +55,7 @@ const Search = () => {
     <Container>
       <Leftarroww to="/" onClick={scrollTop}>
         <Svg>
-          <Leftarrow/>
+          <Leftarrow />
         </Svg>
         <LeftarrowwText>{t("serch.back")}</LeftarrowwText>
       </Leftarroww>
