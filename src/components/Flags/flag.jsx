@@ -24,22 +24,37 @@ const Flag = ({ flagActive, onChange }) => {
     { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
   ]);
   const [lang, setLang] = useState("ua");
-
+  // localStorage.clear();
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
-    if (todos[0].language === "English") {
+    const sort = () => {
+    if (todos === null) {
       setLanguages([
-        { src: "https://flagcdn.com/us.svg", language: "English" },
+        { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
       ]);
     } else if (todos[0].language === "Russian") {
       setLanguages([
         { src: "https://flagcdn.com/ru.svg", language: "Russian" },
+      ]);
+    } else if (todos[0].language === "English") {
+      setLanguages([
+        { src: "https://flagcdn.com/us.svg", language: "English" },
       ]);
     } else {
       setLanguages([
         { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
       ]);
     }
+    };
+    console.log(localStorage.getItem("language"));
+    localStorage.getItem("language") === null
+      ? localStorage.setItem(
+          "language",
+          JSON.stringify([
+            { src: "https://flagcdn.com/ua.svg", language: "Ukraine" },
+          ])
+        )
+      : sort();
   }, []);
 
   const handleClick = (event) => {

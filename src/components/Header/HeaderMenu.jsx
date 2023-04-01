@@ -29,7 +29,6 @@ import "./Header.style.css";
 import { useTranslation } from "react-i18next";
 import "../utils/i18next";
 
-// import { localStorageWrapper } from "../storage";
 // const [active2, setActive2] = useState(false);
 // const [active, setActive] = useState(true);
 // const { isDark, setIsDark } = useTheme();

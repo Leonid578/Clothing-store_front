@@ -29,6 +29,7 @@ const Search = () => {
   //     setProduct(response.json);
   //   });
   // };
+ 
   useEffect(() => {
     // const productItem = t("product", { returnObjects: true });
     const getProducts = () => {

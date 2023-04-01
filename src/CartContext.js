@@ -9,13 +9,18 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("language"));
-    // console.log(todos) 
-    if (todos[0].language === "null") {
-      setItems([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
+    if (todos === null) {
+      setItems([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
+      console.log("null");
     } else if (todos[0].language === "Russian") {
       setItems([{ src: "https://flagcdn.com/ru.svg", language: "Russian" }]);
-    } else {
+      console.log("Russian");
+    } else if (todos[0].language === "English") {
+      setItems([{ src: "https://flagcdn.com/us.svg", language: "English" }]);
+      console.log("English");
+    }  else {
       setItems([{ src: "https://flagcdn.com/ua.svg", language: "Ukraine" }]);
+      console.log("Ukraine");
     }
   }, []);
 
