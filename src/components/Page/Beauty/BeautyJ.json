@@ -54,54 +54,5 @@
         "title" : "BMWbag",
         "link" : "http://localhost:3000/Home",
         "img" : "img002"
-    },
-    {
-        "id" : 1,
-        "volume" : "100мл",
-        "title" : "ATBbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img00"
-    },
-    {
-        "id" : 2,
-        "volume" : "100мл",
-        "title" : "ATBEcoBag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img001"
-    },
-    {
-        "id" : 3,
-        "volume" : "100мл",
-        "title" : "BMWbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img002"
-    },
-    {
-        "id" : 4,
-        "volume" : "100мл",
-        "title" : "BMWbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img002"
-    },
-    {
-        "id" : 1,
-        "volume" : "100мл",
-        "title" : "ATBbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img00"
-    },
-    {
-        "id" : 2,
-        "volume" : "100мл",
-        "title" : "ATBEcoBag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img001"
-    },
-    {
-        "id" : 3,
-        "volume" : "100мл",
-        "title" : "BMWbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img002"
     }
 ]

@@ -79,7 +79,7 @@ export const Leftarroww = styled(NavLink)`
 `;
 
 export const Svg = styled.div`
-height: 22px;
+  height: 22px;
   @media screen and (min-width: 320px) {
     width: 18px;
   }

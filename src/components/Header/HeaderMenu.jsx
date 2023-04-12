@@ -163,24 +163,21 @@ const HeaderMenu = () => {
           <MenuText>Каталог</MenuText>
         </MenuCatalog>
         <DivLinks>
-          <StyledLink1 to="/product1" onClick={scrollTop}>
+          <StyledLink1 to="/health" onClick={scrollTop}>
             {t("header.links_product1")}
           </StyledLink1>
-          <StyledLink2 to="/product2" onClick={scrollTop}>
+          <StyledLink2 to="/active-component" onClick={scrollTop}>
             {t("header.links_product2")}
           </StyledLink2>
-          <StyledLink3 to="/product3" onClick={scrollTop}>
+          <StyledLink3 to="/programs-and-packs" onClick={scrollTop}>
             {t("header.links_product3")}
           </StyledLink3>
-          <StyledLink4 to="/product4" onClick={scrollTop}>
+          <StyledLink4 to="/beauty" onClick={scrollTop}>
             {t("header.links_product4")}
           </StyledLink4>
-          <StyledLink5 to="/product5" onClick={scrollTop}>
+          <StyledLink5 to="/protection" onClick={scrollTop}>
             {t("header.links_product5")}
           </StyledLink5>
-          <StyledLink6 to="/" onClick={scrollTop}>
-            {t("header.links_product6")}
-          </StyledLink6>
         </DivLinks>
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />

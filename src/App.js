@@ -13,12 +13,11 @@ import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import Instagram from "./components/Instagram/PageInstagram";
 import Description from "./components/Description/description";
 
-import Product1 from "./components/Page/product1";
-import Product2 from "./components/Page/product2";
-import Product3 from "./components/Page/product3";
-import Product4 from "./components/Page/product4";
-import Product5 from "./components/Page/product5";
-import Product6 from "./components/Page/product6";
+import Health from "./components/Page/Health/Health";
+import ActiveComponent from "./components/Page/ActiveComponent/ActiveComponent";
+import Programs from "./components/Page/Programs/Programs";
+import Beauty from "./components/Page/Beauty/Beauty";
+import Protection from "./components/Page/Protection/Protection";
 
 const App = () => {
   return (
@@ -39,12 +38,14 @@ const App = () => {
                   </>
                 }
               />
-              <Route path="/product1" element={<Product1 />}></Route>
-              <Route path="/product2" element={<Product2 />}></Route>
-              <Route path="/product3" element={<Product3 />}></Route>
-              <Route path="/product4" element={<Product4 />}></Route>
-              <Route path="/product5" element={<Product5 />}></Route>
-              <Route path="/product6" element={<Product6 />}></Route>
+              <Route path="/health" element={<Health />}></Route>
+              <Route
+                path="/active-component"
+                element={<ActiveComponent />}
+              ></Route>
+              <Route path="/programs-and-packs" element={<Programs />}></Route>
+              <Route path="/beauty" element={<Beauty />}></Route>
+              <Route path="/protection" element={<Protection />}></Route>
               <Route path="/buy" element={<Search />}></Route>
               <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
               <Route path="*" element={<Navigate to="/" />} />

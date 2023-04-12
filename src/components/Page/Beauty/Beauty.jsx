@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react";
+// import { useState } from "react";
 import {
   UlCard,
   Container,
@@ -8,19 +8,29 @@ import {
   ProductCard,
   NameCard,
   BtnGo,
-} from "../Search/Search.styled";
-import productsJson from "./ItemProducts2.json";
+} from "../../Search/Search.styled";
+import productsJson3 from "./BeautyJ.json";
 
-const Product2 = () => {
+import { CatalogBreadcrumbs, Home, Arrow, SelectedTab } from "../Page.style";
+import home from "../../../images/png/home.png";
+
+const Beauty = () => {
   return (
     <Container>
+      <CatalogBreadcrumbs>
+        <Home to="/">
+          <img src={home} alt="home" width={10} />
+        </Home>
+        <Arrow />
+        <SelectedTab>Beauty</SelectedTab>
+      </CatalogBreadcrumbs>
       <UlCard>
-        {productsJson.map((country, index) => {
+        {productsJson3.map((country, index) => {
           return (
             <Card key={index}>
               <div>
                 <img
-                  src={require("../../images/jpg/" + country.img + ".jpg")}
+                  src={require("../../../images/jpg/" + country.img + ".jpg")}
                   alt="country.img"
                   width={300}
                   height={350}
@@ -45,4 +55,4 @@ const Product2 = () => {
   );
 };
 
-export default Product2;
+export default Beauty;

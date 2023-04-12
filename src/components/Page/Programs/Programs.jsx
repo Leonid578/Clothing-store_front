@@ -8,19 +8,29 @@ import {
   ProductCard,
   NameCard,
   BtnGo,
-} from "../Search/Search.styled";
-import productsJson from "./ItemProducts1.json";
+} from "../../Search/Search.styled";
+import productsJson from "./ProgramsJ.json";
 
-const Product1 = () => {
+import { CatalogBreadcrumbs, Home, Arrow, SelectedTab } from "../Page.style";
+import home from "../../../images/png/home.png";
+
+const Product3 = () => {
   return (
     <Container>
+      <CatalogBreadcrumbs>
+        <Home to="/">
+          <img src={home} alt="home" width={10} />
+        </Home>
+        <Arrow />
+        <SelectedTab>Programs and packs</SelectedTab>
+      </CatalogBreadcrumbs>
       <UlCard>
         {productsJson.map((country, index) => {
           return (
             <Card key={index}>
               <div>
                 <img
-                  src={require("../../images/jpg/" + country.img + ".jpg")}
+                  src={require("../../../images/jpg/" + country.img + ".jpg")}
                   alt="country.img"
                   width={300}
                   height={350}
@@ -45,4 +55,4 @@ const Product1 = () => {
   );
 };
 
-export default Product1;
+export default Product3;
