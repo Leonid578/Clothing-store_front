@@ -3,8 +3,7 @@ import { NavLink } from "react-router-dom";
 import MenuPhoto from "../../images/png/freeIconMenuLight.png";
 
 export const Container = styled.div`
-  border-bottom: 1px ffffff solid;
-  height: 92px;
+  // height: 92px;
   width: 100%;
   display: block;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
@@ -15,9 +14,9 @@ export const Container = styled.div`
   background: white;
   transition: transform 0.1s linear;
 
-  @media screen and (max-width: 1023px) {
-    height: 60px;
-  }
+  // @media screen and (max-width: 1023px) {
+  //   height: 60px;
+  // }
 `;
 
 export const SwitchThemeText = styled.div`

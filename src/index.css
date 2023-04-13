@@ -8,18 +8,19 @@
 
 body {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 92px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f6f7fb;
+ 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body {
-    padding-top: 92px;
+    padding-top: 60px;
   }
 }
 
