@@ -82,7 +82,7 @@ export const StyledLinkLogo = styled(NavLink)`
 export const StyledLink1 = styled(NavLink)`
   font-weight: 600;
   line-height: 27px;
-  margin-left: 30px;
+  // margin-left: 30px;
 
   text-transform: uppercase;
   color: #212121;
@@ -95,14 +95,10 @@ export const StyledLink1 = styled(NavLink)`
     color: #212121;
   }
   @media screen and (max-width: 1023px) {
-    display: none;
-  }
-  @media screen and (min-width: 1024px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 17px;
-    padding: 19px 10px 14px;
+  @media screen and (min-width: 1024px) {
+    dislay: none;
   }
 `;
 export const StyledLink2 = styled(NavLink)`
@@ -119,14 +115,10 @@ export const StyledLink2 = styled(NavLink)`
     color: #212121;
   }
   @media screen and (max-width: 1023px) {
-    display: none;
-  }
-  @media screen and (min-width: 1024px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 17px;
-    padding: 19px 10px 14px;
+  @media screen and (min-width: 1024px) {
+    dislay: none;
   }
 `;
 export const StyledLink3 = styled(NavLink)`
@@ -143,14 +135,10 @@ export const StyledLink3 = styled(NavLink)`
     color: #212121;
   }
   @media screen and (max-width: 1023px) {
-    display: none;
-  }
-  @media screen and (min-width: 1024px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 17px;
-    padding: 19px 10px 14px;
+  @media screen and (min-width: 1024px) {
+    dislay: none;
   }
 `;
 export const StyledLink4 = styled(NavLink)`
@@ -167,14 +155,10 @@ export const StyledLink4 = styled(NavLink)`
     color: #212121;
   }
   @media screen and (max-width: 1023px) {
-    display: none;
-  }
-  @media screen and (min-width: 1024px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 17px;
-    padding: 19px 10px 14px;
+  @media screen and (min-width: 1024px) {
+    dislay: none;
   }
 `;
 export const StyledLink5 = styled(NavLink)`
@@ -191,38 +175,10 @@ export const StyledLink5 = styled(NavLink)`
     color: #212121;
   }
   @media screen and (max-width: 1023px) {
-    display: none;
-  }
-  @media screen and (min-width: 1024px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 17px;
-    padding: 19px 10px 14px;
-  }
-`;
-export const StyledLink6 = styled(NavLink)`
-  font-weight: 600;
-  line-height: 27px;
-  text-transform: uppercase;
-  color: #212121;
-  display: inline-block;
-  padding: 19px 3px 14px;
-  user-select: none;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.7;
-    color: #212121;
-  }
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
   @media screen and (min-width: 1024px) {
-    font-size: 12px;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 17px;
-    padding: 19px 10px 14px;
+    dislay: none;
   }
 `;
 
@@ -413,7 +369,7 @@ export const CloseModal = styled.div`
   }
 `;
 
-export const MenuCatalog = styled.div`
+export const MenuCatalog = styled.button`
   display: flex;
   border: solid 3px rgba(173, 191, 191, 0.25);
   padding: 2px 20px 2px 15px;
@@ -421,7 +377,20 @@ export const MenuCatalog = styled.div`
   align-items: center;
   border-radius: 10px;
   height: 40px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
+
+export const MenuTellCatalog = styled.div`
+  margin: 8px;
+  // width: calc(33.3333333333% - 16px);
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
 export const MenuImg = styled.div`
   width: 24px;
   height: 24px;
@@ -437,3 +406,44 @@ export const MenuText = styled.span`
   text-align: left;
   color: #413d58;
 `;
+
+export const General = styled.div`
+  width: 1000px;
+  height: 1000px;
+  opacity: 0.2;
+  background-color: black;
+  z-index: 100;
+`;
+
+export const ContainerMenu = styled.div`
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 1000px;
+  z-index: 99;
+  overflow: auto;
+  background-color: white;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const MobileNavigatorUl = styled.ul`
+  display: block;
+  m
+`;
+
+export const MobileNavigatorLi = styled.li`
+  height: 64px;
+  line-height: 64px;
+  padding: 0 calc(16px + (32 - 16) * (100vw - 360px) / (780 - 360));
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #ebebeb;
+`;
+
+// export const  = styled.`
+
+// `;

@@ -15,10 +15,15 @@ import {
   StyledLink3,
   StyledLink4,
   StyledLink5,
-  DivLinks,
+  // DivLinks,
   MenuCatalog,
   MenuImg,
   MenuText,
+  // General,
+  ContainerMenu,
+  MobileNavigatorUl,
+  MobileNavigatorLi,
+  MenuTellCatalog,
 } from "./Header.styled";
 
 import { RowLine } from "../Flags/flag.style";
@@ -42,6 +47,7 @@ import "../utils/i18next";
 // };
 
 const HeaderMenu = () => {
+  const [activeButton, setActiveButton] = useState(true);
   const { items } = useContext(CartContext);
 
   const [flagActive, setFlagActive] = useState(false);
@@ -79,6 +85,10 @@ const HeaderMenu = () => {
       lastScroll = scrollPosition();
     });
   });
+
+  const OnChange = () => {
+    setActiveButton(!activeButton);
+  };
 
   // <ButtonSun
   //         onMouseEnter={handleMouseEnter}
@@ -144,32 +154,63 @@ const HeaderMenu = () => {
       </TopHeader>
 
       <LogInContainer>
-        <MenuCatalog>
+        <MenuTellCatalog onClick={OnChange}>
+          <MenuImg />
+        </MenuTellCatalog>
+        <MenuCatalog onClick={OnChange}>
           <MenuImg />
           <MenuText>Каталог</MenuText>
         </MenuCatalog>
-        <DivLinks>
-          <StyledLink1 to="/health" onClick={scrollTop}>
-            {t("header.links_product1")}
-          </StyledLink1>
-          <StyledLink2 to="/active-component" onClick={scrollTop}>
-            {t("header.links_product2")}
-          </StyledLink2>
-          <StyledLink3 to="/programs-and-packs" onClick={scrollTop}>
-            {t("header.links_product3")}
-          </StyledLink3>
-          <StyledLink4 to="/beauty" onClick={scrollTop}>
-            {t("header.links_product4")}
-          </StyledLink4>
-          <StyledLink5 to="/protection" onClick={scrollTop}>
-            {t("header.links_product5")}
-          </StyledLink5>
-        </DivLinks>
+        {/* <DivLinks></DivLinks> */}
         <StyledButton to="/buy" onClick={scrollTop}>
           <Magnifier />
         </StyledButton>
         <Flag flagActive={flagActive} onChange={handleNameChange} />
       </LogInContainer>
+      {activeButton && (
+        <ContainerMenu>
+          <MobileNavigatorUl>
+            <MobileNavigatorLi>
+              {" "}
+              <StyledLink1 to="/health" onClick={scrollTop}>
+                {t("header.links_product1")}
+              </StyledLink1>
+            </MobileNavigatorLi>
+            <MobileNavigatorLi>
+              {" "}
+              <StyledLink2 to="/active-component" onClick={scrollTop}>
+                {t("header.links_product2")}
+              </StyledLink2>
+            </MobileNavigatorLi>
+            <MobileNavigatorLi>
+              {" "}
+              <StyledLink3 to="/programs-and-packs" onClick={scrollTop}>
+                {t("header.links_product3")}
+              </StyledLink3>
+            </MobileNavigatorLi>
+            <MobileNavigatorLi>
+              {" "}
+              <StyledLink4 to="/beauty" onClick={scrollTop}>
+                {t("header.links_product4")}
+              </StyledLink4>
+            </MobileNavigatorLi>
+            <MobileNavigatorLi>
+              {" "}
+              <StyledLink5 to="/protection" onClick={scrollTop}>
+                {t("header.links_product5")}
+              </StyledLink5>
+            </MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+            <MobileNavigatorLi></MobileNavigatorLi>
+          </MobileNavigatorUl>
+        </ContainerMenu>
+      )}
     </Container>
   );
 };
