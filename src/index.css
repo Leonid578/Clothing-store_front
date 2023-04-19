@@ -15,7 +15,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f6f7fb;
- 
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {

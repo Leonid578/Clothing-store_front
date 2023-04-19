@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import ReactLoading from "react-loading";
 
 import Header from "./components/Header/HeaderMenu";
 import Footer from "./components/Footer/Footer";
@@ -23,7 +24,16 @@ const App = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense
+        fallback={
+          <ReactLoading
+            type="bubbles"
+            color="#fff"
+            height={"20%"}
+            width={"50%"}
+          />
+        }
+      >
         <ThemeProvider>
           <Layout>
             <Routes>

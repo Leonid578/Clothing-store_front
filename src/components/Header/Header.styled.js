@@ -82,13 +82,11 @@ export const StyledLinkLogo = styled(NavLink)`
 export const StyledLink1 = styled(NavLink)`
   font-weight: 600;
   line-height: 27px;
-  // margin-left: 30px;
-
   text-transform: uppercase;
   color: #212121;
-  display: inline3block;
-  padding: 19px 8px 14px;
-  user-select: none;
+  display: inline-block;
+  padding: 19px 3px 14px;
+  // user-select: none;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -97,9 +95,9 @@ export const StyledLink1 = styled(NavLink)`
   @media screen and (max-width: 1023px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1024px) {
-    dislay: none;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   dislay: none;
+  // }
 `;
 export const StyledLink2 = styled(NavLink)`
   font-weight: 600;
@@ -108,7 +106,7 @@ export const StyledLink2 = styled(NavLink)`
   color: #212121;
   display: inline-block;
   padding: 19px 3px 14px;
-  user-select: none;
+  // user-select: none;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -117,9 +115,9 @@ export const StyledLink2 = styled(NavLink)`
   @media screen and (max-width: 1023px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1024px) {
-    dislay: none;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   dislay: none;
+  // }
 `;
 export const StyledLink3 = styled(NavLink)`
   font-weight: 600;
@@ -128,7 +126,7 @@ export const StyledLink3 = styled(NavLink)`
   color: #212121;
   display: inline-block;
   padding: 19px 3px 14px;
-  user-select: none;
+  // user-select: none;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -137,9 +135,9 @@ export const StyledLink3 = styled(NavLink)`
   @media screen and (max-width: 1023px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1024px) {
-    dislay: none;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   dislay: none;
+  // }
 `;
 export const StyledLink4 = styled(NavLink)`
   font-weight: 600;
@@ -148,7 +146,7 @@ export const StyledLink4 = styled(NavLink)`
   color: #212121;
   display: inline-block;
   padding: 19px 3px 14px;
-  user-select: none;
+  // user-select: none;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -157,9 +155,9 @@ export const StyledLink4 = styled(NavLink)`
   @media screen and (max-width: 1023px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1024px) {
-    dislay: none;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   dislay: none;
+  // }
 `;
 export const StyledLink5 = styled(NavLink)`
   font-weight: 600;
@@ -168,7 +166,7 @@ export const StyledLink5 = styled(NavLink)`
   color: #212121;
   display: inline-block;
   padding: 19px 3px 14px;
-  user-select: none;
+  // user-select: none;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -177,9 +175,9 @@ export const StyledLink5 = styled(NavLink)`
   @media screen and (max-width: 1023px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1024px) {
-    dislay: none;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   dislay: none;
+  // }
 `;
 
 export const StyledButton = styled(NavLink)`
@@ -323,12 +321,6 @@ export const Div = styled.div`
   position: relative;
 `;
 
-export const DivLinks = styled.div`
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-`;
-
 export const MenuLi = styled.li`
   color: black;
   font-size: 16px;
@@ -407,31 +399,24 @@ export const MenuText = styled.span`
   color: #413d58;
 `;
 
-export const General = styled.div`
-  width: 1000px;
-  height: 1000px;
-  opacity: 0.2;
-  background-color: black;
-  z-index: 100;
-`;
-
 export const ContainerMenu = styled.div`
-  position: absolute;
-  left: 0;
-  top: 60px;
-  width: 1000px;
+  // position: absolute;
+  // left: 0;
+  // top: 100%;
+  width: 100%;
   z-index: 99;
   overflow: auto;
-  background-color: white;
-
-  @media (min-width: 1024px) {
-    display: none;
-  }
+  display: flex;
+  background-color: #fafafa;
+  justify-content: center;
 `;
 
 export const MobileNavigatorUl = styled.ul`
   display: block;
-  m
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const MobileNavigatorLi = styled.li`
@@ -444,6 +429,59 @@ export const MobileNavigatorLi = styled.li`
   border-bottom: 1px solid #ebebeb;
 `;
 
-// export const  = styled.`
+export const DesktopMenu = styled.div`
+  width: 1150px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  margin-top: 30px;
 
-// `;
+  columns: 201px;
+  @media (max-width: 1023px) {
+    display: none;
+  }
+`;
+
+export const NameMenyItems = styled.p`
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+`;
+
+export const HealthMenu = styled.ul`
+  display: block;
+  padding: 8px;
+`;
+
+export const PopupMenuProduct = styled.div`
+  display: block;
+  padding: 8px;
+`;
+export const ActiveComponentMenu = styled.ul`
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+`;
+export const ProgramMenu = styled.ul`
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+`;
+export const BeautyMenu = styled.ul`
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+`;
+export const PurityMenu = styled.ul`
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+`;
+export const ListMenu = styled.li`
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+`;
