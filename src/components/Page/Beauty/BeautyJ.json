@@ -1,58 +1,37 @@
 [
     {
         "id" : 1,
-        "title" : "ATBbag",
-        "volume" : "100мл",
+        "volume" : "15мл",
+        "title" : "Emu Oil",
         "link" : "http://localhost:3000/Home",
-        "img" : "img00"
+        "img" : "EmuOil"
     },
     {
         "id" : 2,
-        "volume" : "100мл",
-        "title" : "ATBEcoBag",
+        "volume" : "44мл",
+        "title" : "Silver Gel",
         "link" : "http://localhost:3000/Home",
-        "img" : "img001"
+        "img" : "SilverGel"
     },
     {
         "id" : 3,
-        "volume" : "100мл",
-        "title" : "BMWbag",
+        "volume" : "30мл",
+        "title" : "Tea Tree Oil",
         "link" : "http://localhost:3000/Home",
-        "img" : "img002"
+        "img" : "TeaTreeOil"
     },
     {
         "id" : 4,
-        "volume" : "100мл",
-        "title" : "BMWbag",
+        "volume" : "80g",
+        "title" : "Coralbrite Toothpaste",
         "link" : "http://localhost:3000/Home",
-        "img" : "img002"
-    },
-    {
-        "id" : 1,
-        "volume" : "100мл",
-        "title" : "ATBbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img00"
+        "img" : "CoralbriteToothpaste"
     },
     {
         "id" : 2,
-        "volume" : "100мл",
-        "title" : "ATBEcoBag",
+        "volume" : "1 box of 10 bottles",
+        "title" : "Promarine Collagen Peptides",
         "link" : "http://localhost:3000/Home",
-        "img" : "img001"
-    },
-    {
-        "id" : 3,
-        "volume" : "100мл",
-        "title" : "BMWbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img002"
-    },
-    {
-        "id" : 4,
-        "volume" : "100мл",
-        "title" : "BMWbag",
-        "link" : "http://localhost:3000/Home",
-        "img" : "img002"
+        "img" : "PromarineCollagenPeptides"
     }
 ]

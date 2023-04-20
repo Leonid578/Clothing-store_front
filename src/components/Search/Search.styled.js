@@ -5,7 +5,9 @@ export const Container = styled.div`
   padding-top: 20px;
   background-color: #e9eaee;
   min-height: calc(100vh - 362px);
-
+  display: flex;
+  justify-content: center;
+  //  align-items: center;
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 332px);
   }
@@ -19,9 +21,10 @@ export const UlCard = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
+  // padding: 25px;
   flex-wrap: wrap;
-
+  width: 100%;
+  max-width: 1900px;
   @media screen and (min-width: 576px) {
     margin-left: -15px;
   }
@@ -100,10 +103,10 @@ export const LeftarrowwText = styled.p`
   }
 `;
 
-export const ImgCard = styled.img`
-  color: black;
-  margin: 0 0 0 8px;
-`;
+// export const ImgCard = styled.img`
+//   color: black;
+//   margin: 0 0 0 8px;
+// `;
 
 export const InformationCard = styled.div`
   width: 250px;
@@ -118,21 +121,21 @@ export const Card = styled.div`
   align-items: center;
   flex-direction: column;
   background: white;
-  height: 450px;
+  // height: 450px;
   margin-top: 30px;
-  flex-basis: calc(100% - 15px);
+  flex-basis: calc(100% - 64px);
 
   @media screen and (min-width: 576px) {
     margin-left: 15px;
-    flex-basis: calc(50% - 15px);
+    flex-basis: calc(40% - 15px);
   }
   @media screen and (min-width: 1024px) {
     margin-left: 15px;
-    flex-basis: calc(33.333% - 15px);
+    flex-basis: calc(26.666% - 15px);
   }
   @media screen and (min-width: 1280px) {
     margin-left: 15px;
-    flex-basis: calc(25% - 15px);
+    flex-basis: calc(20%);
   }
 `;
 
@@ -147,6 +150,7 @@ export const ProductCard = styled.div`
 export const NameCard = styled.div`
   color: black;
   margin: 0 0 0 8px;
+  margin: 10px;
 `;
 
 export const BtnCard = styled.div`

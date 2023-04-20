@@ -17,23 +17,27 @@ import home from "../../../images/png/home.png";
 const Beauty = () => {
   return (
     <Container>
-      <CatalogBreadcrumbs>
-        <Home to="/">
-          <img src={home} alt="home" width={10} />
-        </Home>
-        <Arrow />
-        <SelectedTab>Beauty</SelectedTab>
-      </CatalogBreadcrumbs>
+      {/* <div>
+        <CatalogBreadcrumbs>
+          <Home to="/">
+            <img src={home} alt="home" width={10} />
+          </Home>
+          <Arrow />
+          <SelectedTab>Beauty</SelectedTab>
+        </CatalogBreadcrumbs>
+      </div> */}
       <UlCard>
         {productsJson3.map((country, index) => {
           return (
             <Card key={index}>
               <div>
                 <img
-                  src={require("../../../images/jpg/" + country.img + ".jpg")}
+                  src={require("../../../images/webp/Beauty/" +
+                    country.img +
+                    ".webp")}
                   alt="country.img"
-                  width={300}
-                  height={350}
+                  width={"100%"}
+                  height={"100%"}
                 />
               </div>
               <InformationCard>

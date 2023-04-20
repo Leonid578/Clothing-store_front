@@ -8,10 +8,15 @@ export const CatalogBreadcrumbs = styled.div`
   margin-top: 5px;
 `;
 
+export const Div = styled.div`
+  position: relative;
+  top: 120px;
+  left: 10%;
+`;
+
 export const Home = styled(NavLink)`
   padding: 5px;
   display: block;
- 
 `;
 
 export const Arrow = styled.i`
@@ -33,6 +38,7 @@ export const SelectedTab = styled(NavLink)`
   user-select: none;
   color: #212121;
   opacity: 0.7;
+  margin: 0 0 0 3px;
   &:hover {
     color: #212121;
   }
