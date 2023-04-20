@@ -17,7 +17,7 @@ import home from "../../../images/png/home.png";
 const Beauty = () => {
   return (
     <Container>
-      {/* <div>
+      <div>
         <CatalogBreadcrumbs>
           <Home to="/">
             <img src={home} alt="home" width={10} />
@@ -25,7 +25,7 @@ const Beauty = () => {
           <Arrow />
           <SelectedTab>Beauty</SelectedTab>
         </CatalogBreadcrumbs>
-      </div> */}
+      </div>
       <UlCard>
         {productsJson3.map((country, index) => {
           return (
