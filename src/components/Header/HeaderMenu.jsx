@@ -99,10 +99,10 @@ const HeaderMenu = () => {
   };
 
   function changeClass() {
-    document.body.classList.toggle('modal-open');
+    document.body.classList.toggle("modal-open");
     setActiveButton(!activeButton);
   }
- 
+
   // <ButtonSun
   //         onMouseEnter={handleMouseEnter}
   //         onMouseLeave={handleMouseLeave}
@@ -253,34 +253,36 @@ const HeaderMenu = () => {
                 <ListMenu>Упаковка жизни</ListMenu>
               </ProgramMenu>
             </PopupMenuProduct>
-            <PopupMenuProduct>
-              <NameMenyItems>
-                <StyledLink4 to="/beauty" onClick={OnChange}>
-                  {t("header.links_product4")}
-                </StyledLink4>
-              </NameMenyItems>
-              <BeautyMenu>
-                <ListMenu>Подарочные наборы</ListMenu>
-                <ListMenu>Уход за лицом</ListMenu>
-                <ListMenu>Уход за телом</ListMenu>
-                <ListMenu>Уход за волосами</ListMenu>
-                <ListMenu>Уход за полостью рта</ListMenu>
-                <ListMenu>Специальный уход</ListMenu>
-              </BeautyMenu>
-            </PopupMenuProduct>
-            <PopupMenuProduct>
-              <NameMenyItems>
-                {" "}
-                <StyledLink5 to="/protection" onClick={OnChange}>
-                  {t("header.links_product5")}
-                </StyledLink5>
-              </NameMenyItems>
-              <PurityMenu>
-                <ListMenu>Средства для уборки</ListMenu>
-                <ListMenu>Средства для мытья посуды</ListMenu>
-                <ListMenu>Средства для стирки</ListMenu>
-              </PurityMenu>
-            </PopupMenuProduct>
+            <div>
+              <PopupMenuProduct>
+                <NameMenyItems>
+                  <StyledLink4 to="/beauty" onClick={OnChange}>
+                    {t("header.links_product4")}
+                  </StyledLink4>
+                </NameMenyItems>
+                <BeautyMenu>
+                  <ListMenu>Подарочные наборы</ListMenu>
+                  <ListMenu>Уход за лицом</ListMenu>
+                  <ListMenu>Уход за телом</ListMenu>
+                  <ListMenu>Уход за волосами</ListMenu>
+                  <ListMenu>Уход за полостью рта</ListMenu>
+                  <ListMenu>Специальный уход</ListMenu>
+                </BeautyMenu>
+              </PopupMenuProduct>
+              <PopupMenuProduct>
+                <NameMenyItems>
+                  {" "}
+                  <StyledLink5 to="/protection" onClick={OnChange}>
+                    {t("header.links_product5")}
+                  </StyledLink5>
+                </NameMenyItems>
+                <PurityMenu>
+                  <ListMenu>Средства для уборки</ListMenu>
+                  <ListMenu>Средства для мытья посуды</ListMenu>
+                  <ListMenu>Средства для стирки</ListMenu>
+                </PurityMenu>
+              </PopupMenuProduct>
+            </div>
           </DesktopMenu>
 
           {/* <!--  ############# МОБИЛЬНОЕ МЕНЮ НАЧАЛО ######### --> */}

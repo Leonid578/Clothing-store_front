@@ -85,19 +85,16 @@ export const StyledLink1 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 3px 14px;
-  // user-select: none;
+  padding: 0 16px;
+  font-size: 12px;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
     color: #212121;
   }
-  @media screen and (max-width: 1023px) {
-    font-size: 12px;
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
   }
-  // @media screen and (min-width: 1024px) {
-  //   dislay: none;
-  // }
 `;
 export const StyledLink2 = styled(NavLink)`
   font-weight: 600;
@@ -105,19 +102,16 @@ export const StyledLink2 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 3px 14px;
-  // user-select: none;
+  padding: 0 16px;
+  font-size: 12px;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
     color: #212121;
   }
-  @media screen and (max-width: 1023px) {
-    font-size: 12px;
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
   }
-  // @media screen and (min-width: 1024px) {
-  //   dislay: none;
-  // }
 `;
 export const StyledLink3 = styled(NavLink)`
   font-weight: 600;
@@ -125,19 +119,16 @@ export const StyledLink3 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 3px 14px;
-  // user-select: none;
+  padding: 0 16px;
+  font-size: 12px;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
     color: #212121;
   }
-  @media screen and (max-width: 1023px) {
-    font-size: 12px;
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
   }
-  // @media screen and (min-width: 1024px) {
-  //   dislay: none;
-  // }
 `;
 export const StyledLink4 = styled(NavLink)`
   font-weight: 600;
@@ -145,19 +136,16 @@ export const StyledLink4 = styled(NavLink)`
   text-transform: uppercase;
   color: #212121;
   display: inline-block;
-  padding: 19px 3px 14px;
-  // user-select: none;
+  padding: 0 16px;
+  font-size: 12px;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
     color: #212121;
   }
-  @media screen and (max-width: 1023px) {
-    font-size: 12px;
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
   }
-  // @media screen and (min-width: 1024px) {
-  //   dislay: none;
-  // }
 `;
 export const StyledLink5 = styled(NavLink)`
   font-weight: 600;
@@ -165,19 +153,16 @@ export const StyledLink5 = styled(NavLink)`
   line-height: 27px;
   color: #212121;
   display: inline-block;
-  padding: 19px 3px 14px;
-  // user-select: none;
+  padding: 0 16px;
+  font-size: 12px;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
     color: #212121;
   }
-  @media screen and (max-width: 1023px) {
-    font-size: 12px;
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
   }
-  // @media screen and (min-width: 1024px) {
-  //   dislay: none;
-  // }
 `;
 
 export const StyledButton = styled(NavLink)`
@@ -413,7 +398,7 @@ export const ContainerMenu = styled.div`
 
 export const MobileNavigatorUl = styled.ul`
   display: block;
-
+  width: 80%;
   @media (min-width: 1024px) {
     display: none;
   }
@@ -422,7 +407,7 @@ export const MobileNavigatorUl = styled.ul`
 export const MobileNavigatorLi = styled.li`
   height: 64px;
   line-height: 64px;
-  padding: 0 calc(16px + (32 - 16) * (100vw - 360px) / (780 - 360));
+  // padding: 0 calc(16px + (32 - 16) * (100vw - 360px) / (780 - 360));
   font-family: Roboto;
   font-size: 16px;
   font-weight: bold;
@@ -430,14 +415,14 @@ export const MobileNavigatorLi = styled.li`
 `;
 
 export const DesktopMenu = styled.div`
-  width: 1150px;
+  width: 1050px;
   height: 800px;
   display: flex;
   justify-content: center;
   // text-align: center;
   margin-top: 30px;
 
-  columns: 201px;
+  // columns: 201px;
   @media (max-width: 1023px) {
     display: none;
   }
@@ -447,7 +432,7 @@ export const NameMenyItems = styled.p`
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
-  text-align: center;
+  // text-align: center;
 `;
 
 export const HealthMenu = styled.ul`

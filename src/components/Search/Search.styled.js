@@ -2,12 +2,11 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-  padding-top: 20px;
+  padding-top: 40px;
   background-color: #e9eaee;
   min-height: calc(100vh - 362px);
   display: flex;
   justify-content: center;
-  //  align-items: center;
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 332px);
   }
@@ -15,6 +14,17 @@ export const Container = styled.div`
   @media screen and (max-width: 575px) {
     min-height: calc(100vh - 482px);
   }
+`;
+
+export const Div = styled.div`
+  position: absolute;
+  top: 80px;
+  left: 10%;
+
+  @media screen and (min-width: 1024px) {
+    top: 110px;
+  }
+
 `;
 
 export const UlCard = styled.ul`
@@ -111,7 +121,7 @@ export const LeftarrowwText = styled.p`
 export const InformationCard = styled.div`
   width: 250px;
   display: flex;
-  align-items: center;
+  // align-items: center;
   flex-direction: column;
 `;
 
@@ -121,9 +131,11 @@ export const Card = styled.div`
   align-items: center;
   flex-direction: column;
   background: white;
-  // height: 450px;
   margin-top: 30px;
   flex-basis: calc(100% - 64px);
+  padding: 15px;
+
+  cursor: pointer;
 
   @media screen and (min-width: 576px) {
     margin-left: 15px;
@@ -140,17 +152,44 @@ export const Card = styled.div`
 `;
 
 export const ProductCard = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 10px;
+  display: block;
+  white-space: nowrap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: calc(16px + (18 - 16) * (100vw - 575px) / (1920 - 575));
+  line-height: calc(18px + (24 - 18) * (100vw - 575px) / (1920 - 575));
+  color: #36424c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  padding-top: 12px;
+
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  margin-bottom: 12px;
 `;
 
 export const NameCard = styled.div`
-  color: black;
-  margin: 0 0 0 8px;
-  margin: 10px;
+  text-transform: uppercase;
+  font-size: calc(18px + (20 - 18) * (100vw - 575px) / (1920 - 575));
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #adbfbf;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 12px;
+  border-bottom: 1px #e6e6e6 solid;
+  padding-bottom: 4px;
 `;
 
 export const BtnCard = styled.div`

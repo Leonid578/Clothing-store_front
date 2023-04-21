@@ -8,6 +8,7 @@ import {
   ProductCard,
   NameCard,
   BtnGo,
+  Div
 } from "../../Search/Search.styled";
 import productsJson3 from "./BeautyJ.json";
 
@@ -17,15 +18,15 @@ import home from "../../../images/png/home.png";
 const Beauty = () => {
   return (
     <Container>
-      <div>
+      <Div>
         <CatalogBreadcrumbs>
           <Home to="/">
-            <img src={home} alt="home" width={10} />
+            <img src={home} alt="home" width={12} />
           </Home>
           <Arrow />
           <SelectedTab>Beauty</SelectedTab>
         </CatalogBreadcrumbs>
-      </div>
+      </Div>
       <UlCard>
         {productsJson3.map((country, index) => {
           return (

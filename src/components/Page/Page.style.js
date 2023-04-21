@@ -4,19 +4,12 @@ import { NavLink } from "react-router-dom";
 export const CatalogBreadcrumbs = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 30px;
-  margin-top: 5px;
-`;
-
-export const Div = styled.div`
-  position: relative;
-  top: 120px;
-  left: 10%;
 `;
 
 export const Home = styled(NavLink)`
   padding: 5px;
   display: block;
+  margin: 0 0 -3px 0;
 `;
 
 export const Arrow = styled.i`
@@ -27,7 +20,7 @@ export const Arrow = styled.i`
   display: inline-block;
   padding: 2px;
   transform: rotate(45deg);
-  margin: 0 0 3px 3px;
+  margin: 0 0 -3px 3px;
 `;
 
 export const SelectedTab = styled(NavLink)`
@@ -37,7 +30,7 @@ export const SelectedTab = styled(NavLink)`
   cursor: text;
   user-select: none;
   color: #212121;
-  opacity: 0.7;
+  opacity: 0.5;
   margin: 0 0 0 3px;
   &:hover {
     color: #212121;
