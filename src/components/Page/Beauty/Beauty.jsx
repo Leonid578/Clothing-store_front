@@ -37,8 +37,8 @@ const Beauty = () => {
                     country.img +
                     ".webp")}
                   alt="country.img"
-                  width={"100%"}
-                  height={"100%"}
+                  width={285}
+                  height={190}
                 />
               </div>
               <InformationCard>

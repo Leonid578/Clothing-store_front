@@ -18,6 +18,7 @@ import Health from "./components/Page/Health/Health";
 import ActiveComponent from "./components/Page/ActiveComponent/ActiveComponent";
 import Programs from "./components/Page/Programs/Programs";
 import Beauty from "./components/Page/Beauty/Beauty";
+import Purity from "./components/Page/Purity/Purity"
 import Protection from "./components/Page/Protection/Protection";
 
 const App = () => {
@@ -55,6 +56,7 @@ const App = () => {
               ></Route>
               <Route path="/programs-and-packs" element={<Programs />}></Route>
               <Route path="/beauty" element={<Beauty />}></Route>
+              <Route path="/purity" element={<Purity />}></Route>
               <Route path="/protection" element={<Protection />}></Route>
               <Route path="/buy" element={<Search />}></Route>
               <Route path="/privacyPolicy" element={<PrivacyPolicy />} />

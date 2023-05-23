@@ -35,6 +35,7 @@ export const UlCard = styled.ul`
   flex-wrap: wrap;
   width: 100%;
   max-width: 1900px;
+  margin-bottom: 30px;
   @media screen and (min-width: 576px) {
     margin-left: -15px;
   }

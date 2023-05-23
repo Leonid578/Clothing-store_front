@@ -10,12 +10,12 @@ import {
   BtnGo,
   Div,
 } from "../../Search/Search.styled";
-import productsJson from "./ProgramsJ.json";
-
+import productsJson from "./PurityJ.json";
+// import {  } from "../../../images/purity/AliveUltraConcentrated.webp";
 import { CatalogBreadcrumbs, Home, Arrow, SelectedTab } from "../Page.style";
 import home from "../../../images/png/home.png";
 
-const Product3 = () => {
+const Product1 = () => {
   return (
     <Container>
       <Div>
@@ -24,20 +24,21 @@ const Product3 = () => {
             <img src={home} alt="home" width={12} />
           </Home>
           <Arrow />
-          <SelectedTab>Programs and packs</SelectedTab>
+          <SelectedTab>Purity</SelectedTab>
         </CatalogBreadcrumbs>
       </Div>
-
       <UlCard>
         {productsJson.map((country, index) => {
           return (
             <Card key={index}>
               <div>
                 <img
-                  src={require("../../../images/jpg/" + country.img + ".jpg")}
-                  alt={country.img}
-                  width={300}
-                  height={350}
+                  src={require("../../../images/purity/" +
+                    country.img +
+                    ".webp")}
+                  alt="country.img"
+                  width={285}
+                  height={190}
                 />
               </div>
               <InformationCard>
@@ -59,4 +60,4 @@ const Product3 = () => {
   );
 };
 
-export default Product3;
+export default Product1;

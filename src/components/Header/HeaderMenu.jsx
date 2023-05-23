@@ -95,7 +95,8 @@ const HeaderMenu = () => {
 
   const OnChange = () => {
     setActiveButton(!activeButton);
-    scrollTop();
+    document.body.classList.toggle("modal-open");
+    window.scrollTo(0, 0);
   };
 
   function changeClass() {
@@ -272,7 +273,7 @@ const HeaderMenu = () => {
               <PopupMenuProduct>
                 <NameMenyItems>
                   {" "}
-                  <StyledLink5 to="/protection" onClick={OnChange}>
+                  <StyledLink5 to="/purity" onClick={OnChange}>
                     {t("header.links_product5")}
                   </StyledLink5>
                 </NameMenyItems>
@@ -313,7 +314,7 @@ const HeaderMenu = () => {
             </MobileNavigatorLi>
             <MobileNavigatorLi>
               {" "}
-              <StyledLink5 to="/protection" onClick={OnChange}>
+              <StyledLink5 to="/purity" onClick={OnChange}>
                 {t("header.links_product5")}
               </StyledLink5>
             </MobileNavigatorLi>

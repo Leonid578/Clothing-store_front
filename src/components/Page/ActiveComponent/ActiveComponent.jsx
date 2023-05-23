@@ -8,6 +8,7 @@ import {
   ProductCard,
   NameCard,
   BtnGo,
+  Div,
 } from "../../Search/Search.styled";
 import productsJson from "./ActiveComponentJ.json";
 
@@ -17,13 +18,16 @@ import home from "../../../images/png/home.png";
 const Product2 = () => {
   return (
     <Container>
-      <CatalogBreadcrumbs>
-        <Home to="/">
-          <img src={home} alt="home" width={10} />
-        </Home>
-        <Arrow />
-        <SelectedTab>Active Component</SelectedTab>
-      </CatalogBreadcrumbs>
+      <Div>
+        <CatalogBreadcrumbs>
+          <Home to="/">
+            <img src={home} alt="home" width={12} />
+          </Home>
+          <Arrow />
+          <SelectedTab>Active Component</SelectedTab>
+        </CatalogBreadcrumbs>
+      </Div>
+
       <UlCard>
         {productsJson.map((country, index) => {
           return (
@@ -31,7 +35,7 @@ const Product2 = () => {
               <div>
                 <img
                   src={require("../../../images/jpg/" + country.img + ".jpg")}
-                  alt="country.img"
+                  alt={country.img}
                   width={300}
                   height={350}
                 />

@@ -8,6 +8,7 @@ import {
   ProductCard,
   NameCard,
   BtnGo,
+  Div,
 } from "../../Search/Search.styled";
 import productsJson from "./ProtectionJ.json";
 
@@ -17,13 +18,16 @@ import home from "../../../images/png/home.png";
 const Protection = () => {
   return (
     <Container>
-      <CatalogBreadcrumbs>
-        <Home to="/">
-          <img src={home} alt="home" width={10} />
-        </Home>
-        <Arrow />
-        <SelectedTab>Protection</SelectedTab>
-      </CatalogBreadcrumbs>
+      <Div>
+        <CatalogBreadcrumbs>
+          <Home to="/">
+            <img src={home} alt="home" width={12} />
+          </Home>
+          <Arrow />
+          <SelectedTab>Protection</SelectedTab>
+        </CatalogBreadcrumbs>
+      </Div>
+
       <UlCard>
         {productsJson.map((country, index) => {
           return (
