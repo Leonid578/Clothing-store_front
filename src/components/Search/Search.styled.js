@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-  padding-top: 40px;
+  padding-top: 50px;
   background-color: #e9eaee;
   min-height: calc(100vh - 362px);
   display: flex;
@@ -120,23 +120,39 @@ export const LeftarrowwText = styled.p`
 // `;
 
 export const InformationCard = styled.div`
-  width: 250px;
+  // width: 250px;
   display: flex;
   // align-items: center;
   flex-direction: column;
+
+  padding: 15px;
 `;
 
 export const Card = styled.div`
-  border: 3px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: white;
-  margin-top: 30px;
-  flex-basis: calc(100% - 64px);
-  padding: 15px;
+  // border: 3px;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+  // background: white;
+  // margin-top: 30px;
+  // flex-basis: calc(100% - 64px);
+  // padding: 15px;
+
+   width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
 
   cursor: pointer;
+
+  &:hover{
+    transform: translateY(-5px);
+  }
 
   @media screen and (min-width: 576px) {
     margin-left: 15px;
@@ -173,6 +189,10 @@ export const ProductCard = styled.div`
   // flex-direction: column;
   // align-items: flex-start;
   margin-bottom: 12px;
+
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
 `;
 
 export const NameCard = styled.div`
@@ -191,18 +211,45 @@ export const NameCard = styled.div`
   margin-top: 12px;
   border-bottom: 1px #e6e6e6 solid;
   padding-bottom: 4px;
+
+   font-size: 20px;
+    margin: 10px 0;
 `;
 
 export const BtnCard = styled.div`
-  width: 100%;
+  // width: 100%;
   margin-bottom: 10px;
   cursor: pointer;
+// background-color: #007bff;
+  // &:hover{
+  //    background-color: #0056b3;
+  // }
 `;
 
 export const BtnGo = styled.button`
-  border: 0px;
-  width: 100%;
-  height: 30px;
-  color: aliceblue;
-  background-color: red;
+background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover{
+      background-color: #0056b3;
+   }
+    
+  // border: 0px;
+  // width: 100%;
+  // height: 30px;
+  // color: aliceblue;
+  // background-color: red;
+  
+`;
+
+export const ImgCard = styled.img`
+width: 100%;
+max-height: 200px;
+object-fit: cover;
+  
 `;

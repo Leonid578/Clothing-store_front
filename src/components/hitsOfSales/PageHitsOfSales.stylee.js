@@ -38,6 +38,22 @@ export const ElementorColumn2 = styled.div`
   @media screen and (min-width: 768px) {
     width: 50%;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::before {
+    opacity: 0.2;
+  }
 `;
 
 export const ElementorBackgroundOverlay = styled.div`

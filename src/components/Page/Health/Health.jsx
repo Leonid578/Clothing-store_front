@@ -9,6 +9,7 @@ import {
   NameCard,
   BtnGo,
   Div,
+  ImgCard
 } from "../../Search/Search.styled";
 import productsJson from "./HealthJ.json";
 
@@ -33,7 +34,7 @@ const Product1 = () => {
           return (
             <Card key={index}>
               <div>
-                <img
+                <ImgCard
                   src={require("../../../images/jpg/" + country.img + ".jpg")}
                   alt={country.img}
                   width={300}
@@ -47,9 +48,9 @@ const Product1 = () => {
                 <ProductCard>
                   <p>{country.title}</p>
                 </ProductCard>
-                <BtnCard>
+                {/* <BtnCard> */}
                   <BtnGo>Перейти</BtnGo>
-                </BtnCard>
+                {/* </BtnCard> */}
               </InformationCard>
             </Card>
           );

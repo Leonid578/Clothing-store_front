@@ -44,7 +44,7 @@ const App = () => {
                   <>
                     <Carousel />
                     <PageHitsOfSales />
-                    <Instagram />
+                    {/* <Instagram /> */}
                     <Description />
                   </>
                 }

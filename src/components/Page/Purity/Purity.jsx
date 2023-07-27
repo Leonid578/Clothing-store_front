@@ -9,6 +9,7 @@ import {
   NameCard,
   BtnGo,
   Div,
+  ImgCard
 } from "../../Search/Search.styled";
 import productsJson from "./PurityJ.json";
 // import {  } from "../../../images/purity/AliveUltraConcentrated.webp";
@@ -32,7 +33,7 @@ const Product1 = () => {
           return (
             <Card key={index}>
               <div>
-                <img
+                <ImgCard
                   src={require("../../../images/purity/" +
                     country.img +
                     ".webp")}

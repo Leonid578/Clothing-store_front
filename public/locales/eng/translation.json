@@ -1,17 +1,20 @@
 {
   "about": {
     "title": "Coral Club products",
-    "part1": "Chapter 1",
-    "part2": "Chapter 2",
-    "part3": "Chapter 3"
+    "part1": "DRINK",
+    "part2": "CLEAN",
+    "part3": "FEED",
+    "part4": "PROTECT"
   },
   "links": {
-    "links_one": "health",
-    "links_two": "beauty",
-    "links_tree": "nutrition",
-    "Health": "La fotografia corporate come valorizzazione dell’azienda, delle persone, della filosofia, dei prodotti, dei processi produttivi.",
-    "Beauty": "La fotografia corporate come valorizzazione dell’azienda, delle persone, della filosofia, dei prodotti, dei processi produttivi.",
-    "Nutrition": "La fotografia corporate come valorizzazione dell’azienda, delle persone, della filosofia, dei prodotti, dei processi produttivi.",
+    "links_one": "DRINK",
+    "links_two": "CLEAN",
+    "links_tree": "FEED",
+    "links_four": "PROTECT",
+    "Drink": "The cell needs living water! It is water that performs the transport function. Only with water the cell receives all the nutrients it needs, and for all this to get into the cell, the water must be close in structure to the intracellular fluid, only then physiological processes can function normally.",
+    "Clean": "Our body is like a filter, it tends not only to receive useful substances, but also toxins, toxins, viruses, bacteria, and parasites accumulate in it. All this affects the state of health, thereby causing not only premature aging, but also various diseases. To avoid and protect the body from such exposure, regular cleaning is needed, which should be natural and gentle.",
+    "Feed": "Today, the popularity of dietary supplements (safe food supplements) is rapidly growing - dietary supplements that are needed as an addition to the main food. The lack of building materials obtained by the body from ordinary food leads to all kinds of disorders and diseases. Therefore, supplements significantly change the quality of our lives, as they are able to fully fill the gaps in daily nutrition.",
+    "Protect": "Modern life dictates its own rules. We need to take a set of measures aimed at preserving and increasing the health results obtained through the first three steps. Coral Club has a number of safe preventive measures that help the body resist the aggressive effects of external and internal factors, as well as raise energy, strengthen the immune system and protect the body from various infections.",
     "footer_data": "© {{dateNow}} Назввание.com. All Rights Reserved",
     "Privacy": "Privacy Policy"
   },

@@ -8,9 +8,11 @@ import {
   ProductCard,
   NameCard,
   BtnGo,
-  Div
+  Div,
+  ImgCard,
 } from "../../Search/Search.styled";
 import productsJson3 from "./BeautyJ.json";
+import "./Test.css";
 
 import { CatalogBreadcrumbs, Home, Arrow, SelectedTab } from "../Page.style";
 import home from "../../../images/png/home.png";
@@ -32,13 +34,14 @@ const Beauty = () => {
           return (
             <Card key={index}>
               <div>
-                <img
+                <ImgCard
                   src={require("../../../images/webp/Beauty/" +
                     country.img +
                     ".webp")}
                   alt="country.img"
-                  width={285}
-                  height={190}
+                  // width={285}
+                  // height={190}
+                  
                 />
               </div>
               <InformationCard>
